@@ -1,0 +1,34 @@
+/* Button */
+.sun-button {
+  position: relative;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: @sun-button-letter-spacing;
+  height: @sun-button-height;
+  border: 0;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  padding: 0 20px;
+  min-width: @sun-button-width;
+  margin: 0;
+  background-color: #f8f9fa;
+  color: #000000;
+  vertical-align: middle;
+}
+.sun-button[disabled] {
+  cursor: default;
+  background-color: rgba(255, 255, 255, 0.6);
+  color: rgba(0, 0, 0, 0.2);
+}
+.sun-button.active:not([disabled]),
+.sun-button.pressed:not([disabled]){
+  background-color: #dfe0e1
+}
+.sun-button-text {
+  width: 100%;
+}
+
+

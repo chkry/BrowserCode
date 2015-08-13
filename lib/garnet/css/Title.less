@@ -1,0 +1,60 @@
+/* Title.css */
+
+.g-title {
+	// Background Properties
+	background-color: #000;
+
+	// Box Properties
+	position: absolute;
+	width: 148px;
+	height: 60px;
+	top: 0;
+	padding: 0 86px;
+}
+.g-title-content {
+
+	.g-common-mask-fade-out;
+
+	// Box Properties
+	display: inline-block;
+	width: 100%;
+	padding-top: 25px;
+	overflow: hidden;
+
+	// Color Propertie
+	color: @g-default-font-color;
+
+	// Text Properties
+	text-overflow: clip;
+	text-align: center;
+	white-space: nowrap;
+	line-height: 27px;
+
+	// Font Properties
+	font-weight: 800;
+	font-size: @g-title-content-font-size;
+}
+.g-title:after {
+	// Box Properties
+	position: absolute;
+	top: 0;
+	bottom: -7px;
+	left: 0;
+	right: 0;
+
+	// Basic User Interface Properties
+	content:'';
+}
+.g-title.g-title-icon .g-title-content:before {
+	// Background Properties
+	background: @g-icon-drawer-menu no-repeat;
+
+	// Box Properties
+	display: inline-block;
+	width: 22px;
+	height: 20px;
+	margin-right: 3px;
+
+	// Basic User Interface Properties
+	content:'';
+}

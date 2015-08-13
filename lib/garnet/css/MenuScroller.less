@@ -1,0 +1,124 @@
+/* MenuScroller.css */
+
+.g-menu-scroller {
+
+	.g-layout-absolute-wrapper;
+	.g-common-width-height-fit;
+}
+.g-menu-scroller > div {
+	// Masking Properties
+	-webkit-mask-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,1) 37px, rgba(0,0,0,1) 283px, rgba(0,0,0,0));
+	-webkit-mask-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,1) 37px, rgba(0,0,0,1) 283px, rgba(0,0,0,0));
+}
+.g-menu-scroller .stretch-client > div::before{
+	// Box Properties
+
+	content: "";
+	width: 100%;
+	height: 37px;
+	display: block;
+}
+.g-menu-scroller .stretch-client > div::after{
+	// Box Properties
+
+	content: "";
+	width: 100%;
+	height: 37px;
+	display: block;
+}
+
+.g-menu-scroller-item-content {
+	// Box Properties
+
+	position: relative;
+	height: 100%;
+  	min-height: 78px;
+}
+.g-menu-scroller-item-title-content {
+	// Box Properties
+
+	max-height: 64px;
+	overflow: hidden;
+}
+.g-menu-scroller-item-title-content.singleline {
+	line-height: 64px;
+	-webkit-mask-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0), #FFFFFF 28px, #FFFFFF);
+	-webkit-mask-image: linear-gradient(right, rgba(0, 0, 0, 0), #FFFFFF 28px, #FFFFFF);
+}
+.g-menu-scroller-item-check-title {
+	// Box Properties
+
+	width: 174px;
+	height: 66px;
+	display: table-cell;
+	vertical-align: middle;
+	left: 0;
+	white-space: normal;
+	line-height: 32px;
+	padding: 6px 0 6px 60px;
+
+	// Text Properties
+
+	text-align: left;
+}
+.g-menu-scroller-item-title {
+	// Box Properties
+
+	width: 222px;
+	height: 66px;
+	display: table-cell;
+	vertical-align: middle;
+	left: 0;
+	white-space: normal;
+	line-height: 32px;
+	padding: 6px 0 6px 60px;
+
+	// Text Properties
+
+	text-align: left;
+}
+.g-menu-scroller-item-checkbox.g-toggle-icon-button {
+	// Box Properties
+
+	position: absolute;
+	width: 48px;
+	height: 48px;
+	margin: auto;
+	right: 38px;
+	top: 0;
+	bottom: 0;
+}
+.g-menu-scroller-item-checkbox.g-checkbox {
+	// Box Properties
+
+	position: absolute;
+	width: 48px;
+	height: 48px;
+	margin: auto;
+	right: 38px;
+	top: 0;
+	bottom: 0;
+}
+.g-menu-scroller-item {
+	// Box Properties
+
+	border-width: 1px;
+	border-bottom-style: solid;
+	border-color: #4d5258;
+}
+.g-menu-scroller-item.pressed{
+	// Background Properties
+
+	background-color: rgba(230, 230, 230, 0.2);
+}
+.g-menu-scroller-item.disabled {
+	// Color Properties
+
+	opacity: 0.4;
+	filter: alpha(opacity=40);
+}
+.g-menu-scroller-item:nth-last-child(1) {
+	// Box Properties
+
+	border: 0;
+}

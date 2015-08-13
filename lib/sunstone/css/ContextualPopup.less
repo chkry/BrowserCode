@@ -1,0 +1,529 @@
+/* ContextualPopup.css */
+.sun-contextual-popup {
+	-webkit-user-select: none;
+  border:1px solid rgba(0,0,0,0.25);
+	border-radius: @sun-contextual-border-radius;
+  -webkit-box-shadow:0px 2px 0px rgba(0,0,0,0.45);
+}
+
+.sun-contextual-popup.top::before {
+	border-color: @sun-contextual-knob-border-color-down;
+	border-width: @sun-contextual-knob-border-width-down;
+	border-style:solid;
+	position:absolute;
+	content:"";
+	top:-15px;
+	width: @sun-contextual-knob-size;
+	height: @sun-contextual-knob-size;
+}
+
+
+.sun-contextual-popup.top.left::before {
+	left:@sun-contextual-knob-margin;
+}
+
+.sun-contextual-popup.top.right::before {
+	right: @sun-contextual-knob-margin;
+}
+
+.sun-contextual-popup.bottom::after {
+	border-color: @sun-contextual-knob-border-color-up;
+	border-width: @sun-contextual-knob-border-width-up;
+	border-style:solid;
+	position:absolute;
+	content:"";
+	top:calc(100% ~"-" @sun-contextual-knob-position-Correction);
+	width: @sun-contextual-knob-size;
+	height: @sun-contextual-knob-size;
+}
+
+.sun-contextual-popup.bottom.right::after {
+	right: @sun-contextual-knob-margin;
+}
+
+.sun-contextual-popup.bottom.left::after {
+	left:@sun-contextual-knob-margin;
+}
+
+.sun-contextual-popup.bottom.left.center::after {
+	left:@sun-contextual-knob-center;
+}
+
+.sun-contextual-popup.top.left.center::before {
+	left:@sun-contextual-knob-center;
+}
+
+.sun-contextual-popup.top.right.center::before {
+	left:@sun-contextual-knob-center;
+}
+
+.sun-contextual-popup.inner-scrim.inner-scrim-translucent {
+	opacity: 0.4;
+  border-radius:0;
+}
+
+/**************** Start of contextual popup animation********************/
+/*Popup Animation for 0.5 seconds*/
+.sun-contextual-popup.context-menu-effect.iconType,
+.enyo.sun-contextual-popup.context-menu-effect.iconType {
+  -webkit-animation: context-menu-effect 0.3s ease-in-out;
+  -moz-animation: context-menu-effect 0.3s ease-in-out;
+  -ms-animation: context-menu-effect 0.3s ease-in-out;
+  -o-animation: context-menu-effect 0.3s ease-in-out;
+  animation: context-menu-effect 0.3s ease-in-out;
+}
+/*Popup Animation keyframe with scaling and svg image masking for webkit*/
+@-webkit-keyframes context-menu-effect {
+  0% {
+    border-radius: 50%;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  15% {
+    border-radius: 50%;
+    -webkit-transform: scale(0.2, 0.5);
+    transform: scale(0.2, 0.5);
+  }
+  20% {
+    border-radius: 0;
+    -webkit-transform: scale(0.3, 0.6);
+    transform: scale(0.3, 0.6);
+    -webkit-mask-box-image: url(../images/context_menu_popup1.svg);
+  }
+  25% {
+    -webkit-transform: scale(0.4, 0.6);
+    transform: scale(0.4, 0.6);
+    -webkit-mask-box-image: url(../images/context_menu_popup2.svg);
+  }
+  30% {
+    -webkit-transform: scale(0.4, 0.55);
+    transform: scale(0.4, 0.55);
+    -webkit-mask-box-image: url(../images/context_menu_popup3.svg);
+  }
+  35% {
+    -webkit-transform: scale(0.7, 0.6);
+    transform: scale(0.7, 0.6);
+    -webkit-mask-box-image: url(../images/context_menu_popup4.svg);
+  }
+  55% {
+    -webkit-transform: scale(1, 0.6);
+    transform: scale(1, 0.6);
+    -webkit-mask-box-image: url(../images/context_menu_popup5.svg);
+  }
+  65% {
+    border-radius: 0;
+    -webkit-transform: scale(1.15, 0.9);
+    transform: scale(1.15, 0.9);
+    -webkit-mask-box-image: url(../images/context_menu_popup6.svg);
+  }
+  85% {
+    -webkit-transform: scale(1.2, 1.05);
+    transform: scale(1.2, 1.05);
+    -webkit-mask-box-image: url(../images/context_menu_popup7.svg);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+/*Popup Animation keyframe with scaling and svg image masking for other browser(default browser)*/
+@keyframes context-menu-effect {
+  0% {
+    border-radius: 50%;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  15% {
+    border-radius: 50%;
+    -webkit-transform: scale(0.2, 0.5);
+    transform: scale(0.2, 0.5);
+  }
+  20% {
+    border-radius: 0;
+    -webkit-transform: scale(0.3, 0.6);
+    transform: scale(0.3, 0.6);
+    -webkit-mask-box-image: url(../images/context_menu_popup1.svg);
+  }
+  25% {
+    -webkit-transform: scale(0.4, 0.6);
+    transform: scale(0.4, 0.6);
+    -webkit-mask-box-image: url(../images/context_menu_popup2.svg);
+  }
+  30% {
+    -webkit-transform: scale(0.4, 0.55);
+    transform: scale(0.4, 0.55);
+    -webkit-mask-box-image: url(../images/context_menu_popup3.svg);
+  }
+  35% {
+    -webkit-transform: scale(0.7, 0.6);
+    transform: scale(0.7, 0.6);
+    -webkit-mask-box-image: url(../images/context_menu_popup4.svg);
+  }
+  55% {
+    -webkit-transform: scale(1, 0.6);
+    transform: scale(1, 0.6);
+    -webkit-mask-box-image: url(../images/context_menu_popup5.svg);
+  }
+  65% {
+    border-radius: 0;
+    -webkit-transform: scale(1.15, 0.9);
+    transform: scale(1.15, 0.9);
+    -webkit-mask-box-image: url(../images/context_menu_popup6.svg);
+  }
+  85% {
+    -webkit-transform: scale(1.2, 1.05);
+    transform: scale(1.2, 1.05);
+    -webkit-mask-box-image: url(../images/context_menu_popup7.svg);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+/*Pseudo nub after Animation*/
+.sun-contextual-popup.nub-after-effect.iconType:after,
+.enyo.sun-contextual-popup.nub-after-effect.iconType:after {
+  -webkit-animation: nub-after-effect 0.3s;
+  -moz-animation: nub-after-effect 0.3s;
+  -ms-animation: nub-after-effect 0.3s;
+  -o-animation: nub-after-effect 0.3s;
+  animation: nub-after-effect 0.3s;
+}
+/*Pseudo nub after Animation keyframe with transform for webkit*/
+@-webkit-keyframes nub-after-effect {
+  0% {
+    -webkit-transform: translateY(-35px);
+    transform: translateY(-35px);
+  }
+  95% {
+    -webkit-transform: translateY(-35px);
+    transform: translateY(-35px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+/*Pseudo nub after Animation keyframe with transform for other browser (default browser)*/
+@keyframes nub-after-effect {
+  0% {
+    -webkit-transform: translateY(-35px);
+    transform: translateY(-35px);
+  }
+  95% {
+    -webkit-transform: translateY(-35px);
+    transform: translateY(-35px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+/*Pseudo nub before Animation*/
+.sun-contextual-popup.nub-before-effect.iconType:before,
+.enyo.sun-contextual-popup.nub-before-effect.iconType:before {
+  -webkit-animation: nub-before-effect 0.3s;
+  -moz-animation: nub-before-effect 0.3s;
+  -ms-animation: nub-before-effect 0.3s;
+  -o-animation: nub-before-effect 0.3s;
+  animation: nub-before-effect 0.3s;
+}
+/*Pseudo nub after Animation keyframe with transform for webkit*/
+@-webkit-keyframes nub-before-effect {
+  0% {
+    -webkit-transform: translateY(35px);
+    transform: translateY(35px);
+  }
+  95% {
+    -webkit-transform: translateY(35px);
+    transform: translateY(35px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+/*Pseudo nub after Animation keyframe with transform for other browser (default browser)*/
+@keyframes nub-before-effect {
+  0% {
+    -webkit-transform: translateY(35px);
+    transform: translateY(35px);
+  }
+  95% {
+    -webkit-transform: translateY(35px);
+    transform: translateY(35px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+/**************** end of context popup animation ********************/
+/**************** start of option menu animation********************/
+/*top left OptionMenu Animation for 0.4 seconds*/
+.sun-contextual-popup.top.left.option-menu-effect {
+  -webkit-transform-origin: 10% 0;
+  -moz-transform-origin: 10% 0;
+  -o-transform-origin: 10% 0;
+  -ms-transform-origin: 10% 0;
+  transform-origin: 10% 0;
+  -webkit-animation: option-menu-top-effect 0.4s ease-in-out;
+  -moz-animation: option-menu-top-effect 0.4s ease-in-out;
+  -ms-animation: option-menu-top-effect 0.4s ease-in-out;
+  -o-animation: option-menu-top-effect 0.4s ease-in-out;
+  animation: option-menu-top-effect 0.4s ease-in-out;
+}
+/*top right OptionMenu Animation for 0.4 seconds*/
+.sun-contextual-popup.top.right.option-menu-effect {
+  -webkit-transform-origin: 90% 0;
+  -moz-transform-origin: 90% 0;
+  -o-transform-origin: 90% 0;
+  -ms-transform-origin: 90% 0;
+  transform-origin: 90% 0;
+  -webkit-animation: option-menu-top-effect 0.4s ease-in-out;
+  -moz-animation: option-menu-top-effect 0.4s ease-in-out;
+  -ms-animation: option-menu-top-effect 0.4s ease-in-out;
+  -o-animation: option-menu-top-effect 0.4s ease-in-out;
+  animation: option-menu-top-effect 0.4s ease-in-out;
+}
+/*top center OptionMenu Animation for 0.4 seconds*/
+.sun-contextual-popup.top.left.center.option-menu-effect {
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  -o-transform-origin: 50% 0;
+  -ms-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-animation: option-menu-top-effect 0.4s ease-in-out;
+  -moz-animation: option-menu-top-effect 0.4s ease-in-out;
+  -ms-animation: option-menu-top-effect 0.4s ease-in-out;
+  -o-animation: option-menu-top-effect 0.4s ease-in-out;
+  animation: option-menu-top-effect 0.4s ease-in-out;
+}
+/*bottom left OptionMenu Animation for 0.4 seconds*/
+.sun-contextual-popup.bottom.left.option-menu-effect {
+  -webkit-transform-origin: 10% 100%;
+  -moz-transform-origin: 10% 100%;
+  -o-transform-origin: 10% 100%;
+  -ms-transform-origin: 10% 100%;
+  transform-origin: 10% 100%;
+  -webkit-animation: option-menu-bottom-effect 0.4s ease-in-out;
+  -moz-animation: option-menu-bottom-effect 0.4s ease-in-out;
+  -ms-animation: option-menu-bottom-effect 0.4s ease-in-out;
+  -o-animation: option-menu-bottom-effect 0.4s ease-in-out;
+  animation: option-menu-bottom-effect 0.4s ease-in-out;
+}
+/*bottom right OptionMenu Animation for 0.4 seconds*/
+.sun-contextual-popup.bottom.right.option-menu-effect {
+  -webkit-transform-origin: 90% 100%;
+  -moz-transform-origin: 90% 100%;
+  -o-transform-origin: 90% 100%;
+  -ms-transform-origin: 90% 100%;
+  transform-origin: 90% 100%;
+  -webkit-animation: option-menu-bottom-effect 0.4s ease-in-out;
+  -moz-animation: option-menu-bottom-effect 0.4s ease-in-out;
+  -ms-animation: option-menu-bottom-effect 0.4s ease-in-out;
+  -o-animation: option-menu-bottom-effect 0.4s ease-in-out;
+  animation: option-menu-bottom-effect 0.4s ease-in-out;
+}
+/*bottom center OptionMenu Animation for 0.4 seconds*/
+.sun-contextual-popup.bottom.left.center.option-menu-effect {
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -o-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-animation: option-menu-bottom-effect 0.4s ease-in-out;
+  -moz-animation: option-menu-bottom-effect 0.4s ease-in-out;
+  -ms-animation: option-menu-bottom-effect 0.4s ease-in-out;
+  -o-animation: option-menu-bottom-effect 0.4s ease-in-out;
+  animation: option-menu-bottom-effect 0.4s ease-in-out;
+}
+/*bottom OptionMenu Animation keyframe definition with scaling and svg image masking for webkit*/
+@-webkit-keyframes option-menu-bottom-effect {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-mask-box-image: url(../images/optionmenu1.svg) 0 0 0 0 stretch stretch;
+  }
+  20% {
+    -webkit-transform: scale(0.3, 0.4);
+    transform: scale(0.3, 0.4);
+    -webkit-mask-box-image: url(../images/optionmenu1.svg) 0 0 0 0 stretch stretch;
+  }
+  25% {
+    -webkit-transform: scale(0.4, 0.5);
+    transform: scale(0.5, 0.6);
+    -webkit-mask-box-image: url(../images/optionmenu2.svg) 0 0 0 0 stretch stretch;
+  }
+  30% {
+    -webkit-transform: scale(0.5, 0.6);
+    transform: scale(0.7, 0.8);
+    -webkit-mask-box-image: url(../images/optionmenu3.svg) 0 0 0 0 stretch stretch;
+  }
+  31% {
+    -webkit-transform: scale(0.5, 0.6);
+    transform: scale(0.7, 0.8);
+    -webkit-mask-box-image: url(../images/optionmenu4.svg) 0 0 0 0 stretch stretch;
+  }
+  50% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-mask-box-image: url(../images/optionmenu4.svg) 0 0 0 0 stretch stretch;
+  }
+  70% {
+    -webkit-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
+    -webkit-mask-box-image: url(../images/optionmenu5.svg) 0 0 0 0 stretch stretch;
+  }
+  90% {
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+    -webkit-mask-box-image: url(../images/optionmenu6.svg) 0 0 0 0 stretch stretch;
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+/*bottom OptionMenu Animation keyframe definition with scaling and svg image masking for other browsers*/
+@keyframes option-menu-bottom-effect {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-mask-box-image: url(../images/optionmenu1.svg) 0 0 0 0 stretch stretch;
+  }
+  20% {
+    -webkit-transform: scale(0.3, 0.4);
+    transform: scale(0.3, 0.4);
+    -webkit-mask-box-image: url(../images/optionmenu1.svg) 0 0 0 0 stretch stretch;
+  }
+  25% {
+    -webkit-transform: scale(0.4, 0.5);
+    transform: scale(0.5, 0.6);
+    -webkit-mask-box-image: url(../images/optionmenu2.svg) 0 0 0 0 stretch stretch;
+  }
+  30% {
+    -webkit-transform: scale(0.5, 0.6);
+    transform: scale(0.7, 0.8);
+    -webkit-mask-box-image: url(../images/optionmenu3.svg) 0 0 0 0 stretch stretch;
+  }
+  31% {
+    -webkit-transform: scale(0.5, 0.6);
+    transform: scale(0.7, 0.8);
+    -webkit-mask-box-image: url(../images/optionmenu4.svg) 0 0 0 0 stretch stretch;
+  }
+  50% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-mask-box-image: url(../images/optionmenu4.svg) 0 0 0 0 stretch stretch;
+  }
+  70% {
+    -webkit-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
+    -webkit-mask-box-image: url(../images/optionmenu5.svg) 0 0 0 0 stretch stretch;
+  }
+  90% {
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+    -webkit-mask-box-image: url(../images/optionmenu6.svg) 0 0 0 0 stretch stretch;
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+/*top OptionMenu Animation keyframe definition with scaling and svg image masking for webkit*/
+@-webkit-keyframes option-menu-top-effect {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-mask-box-image: url(../images/optionmenu1i.svg) 0 0 0 0 stretch stretch;
+  }
+  20% {
+    -webkit-transform: scale(0.3, 0.4);
+    transform: scale(0.3, 0.4);
+    -webkit-mask-box-image: url(../images/optionmenu1i.svg) 0 0 0 0 stretch stretch;
+  }
+  25% {
+    -webkit-transform: scale(0.4, 0.5);
+    transform: scale(0.5, 0.6);
+    -webkit-mask-box-image: url(../images/optionmenu2i.svg) 0 0 0 0 stretch stretch;
+  }
+  30% {
+    -webkit-transform: scale(0.5, 0.6);
+    transform: scale(0.7, 0.8);
+    -webkit-mask-box-image: url(../images/optionmenu3i.svg) 0 0 0 0 stretch stretch;
+  }
+  31% {
+    -webkit-transform: scale(0.5, 0.6);
+    transform: scale(0.7, 0.8);
+    -webkit-mask-box-image: url(../images/optionmenu4i.svg) 0 0 0 0 stretch stretch;
+  }
+  50% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-mask-box-image: url(../images/optionmenu4i.svg) 0 0 0 0 stretch stretch;
+  }
+  70% {
+    -webkit-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
+    -webkit-mask-box-image: url(../images/optionmenu5i.svg) 0 0 0 0 stretch stretch;
+  }
+  90% {
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+    -webkit-mask-box-image: url(../images/optionmenu6i.svg) 0 0 0 0 stretch stretch;
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+/*top OptionMenu Animation keyframe definition with scaling and svg image masking for other browsers*/
+@keyframes option-menu-top-effect {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-mask-box-image: url(../images/optionmenu1i.svg) 0 0 0 0 stretch stretch;
+  }
+  20% {
+    -webkit-transform: scale(0.3, 0.4);
+    transform: scale(0.3, 0.4);
+    -webkit-mask-box-image: url(../images/optionmenu1i.svg) 0 0 0 0 stretch stretch;
+  }
+  25% {
+    -webkit-transform: scale(0.4, 0.5);
+    transform: scale(0.5, 0.6);
+    -webkit-mask-box-image: url(../images/optionmenu2i.svg) 0 0 0 0 stretch stretch;
+  }
+  30% {
+    -webkit-transform: scale(0.5, 0.6);
+    transform: scale(0.7, 0.8);
+    -webkit-mask-box-image: url(../images/optionmenu3i.svg) 0 0 0 0 stretch stretch;
+  }
+  31% {
+    -webkit-transform: scale(0.5, 0.6);
+    transform: scale(0.7, 0.8);
+    -webkit-mask-box-image: url(../images/optionmenu4i.svg) 0 0 0 0 stretch stretch;
+  }
+  50% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-mask-box-image: url(../images/optionmenu4i.svg) 0 0 0 0 stretch stretch;
+  }
+  70% {
+    -webkit-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
+    -webkit-mask-box-image: url(../images/optionmenu5i.svg) 0 0 0 0 stretch stretch;
+  }
+  90% {
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+    -webkit-mask-box-image: url(../images/optionmenu6i.svg) 0 0 0 0 stretch stretch;
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+/**************** End of option menu animation********************/

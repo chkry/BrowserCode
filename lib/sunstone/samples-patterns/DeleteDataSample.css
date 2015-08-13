@@ -1,0 +1,30 @@
+.checkbox-divider {
+	border-bottom: 1px solid #e6e6e6;
+}
+.general-index{
+	height: 48px;
+	line-height: 48px;
+	font-weight: bold;
+	font-size: 14px;
+	color: #797979;
+	padding: 0 16px;
+	background-color: #fafafa;
+}
+.checkbox-sample {
+	margin: 12px 0;
+}
+.checkbox-table-cell {
+	display:table-cell;
+	vertical-align:middle;
+}
+.checkbox-table {
+	background-color: #f8f9fa;
+	height:48px;
+	display:table;
+	table-layout: fixed;
+}
+.button-divider {
+	background-color: #aaaaaa;
+	margin: 8px 0;
+	height: 32px;
+}

@@ -1,0 +1,161 @@
+/* DatePickerPanel.css */
+
+.g-panel.g-date-picker-panel {
+	// Background Properties
+
+	background-color: @g-time-picker-bg-color;
+
+	// Box Properties
+
+	border-radius: 50%;
+
+	// Text Properties
+
+	text-align: center;
+
+}
+.g-panel.g-date-picker-panel .g-datepickerknob-bg {
+	// Background Properties
+
+	background-image: @g-wheel-date-bg-image;
+
+	// Box Properties
+
+	height: 100%;
+	border-radius: 50%;
+}
+.g-date-picker .g-date-picker-wrap {
+	// Box Properties
+
+	position: absolute;
+	height: 78px;
+
+	// Basic User Interface Properties
+
+	cursor: pointer;
+}
+.g-date-picker .g-date-picker-wrap.year {
+	// Box Properties
+
+	width: 190px;
+	left: 0;
+	right: 0;
+	top: 40px;
+	margin: 0 65px;
+}
+.g-date-picker .g-date-picker-wrap.month {
+	// Box Properties
+
+	width: 90px;
+	right: 50%;
+	top: 109px;
+
+	// Text Properties
+
+	text-align: right;
+}
+.g-date-picker .g-date-picker-wrap.day {
+	// Box Properties
+
+	width: 90px;
+	left: 50%;
+	right: 0;
+	top: 109px;
+
+	// Text Properties
+
+	text-align: left;
+}
+.g-date-picker .g-date-picker-field  {
+	// Box Properties
+
+	height: 78px;
+	margin: 12px;
+
+	// Color Properties
+
+	color: @g-time-picker-default-font-color;
+
+	// Text Properties
+
+	line-height: 78px;
+
+	// Font Properties
+
+	font-size: @g-date-picker-date-font-size;
+}
+.g-date-picker .g-date-picker-field.selected {
+	color: @g-color-point;
+}
+.g-date-picker .g-ok-image {
+	// Background Properties
+
+	background: @g-icon-commandbar-done no-repeat;
+
+	// Box Properties
+
+	position: absolute;
+	width: 68px;
+	height: 68px;
+	right: 75px;
+	bottom: 52px;
+}
+.g-date-picker .g-cancel-image {
+	// Background Properties
+
+	background: @g-icon-commandbar-close no-repeat;
+
+	// Box Properties
+
+	position: absolute;
+	width: 68px;
+	height: 68px;
+	left: 75px;
+	bottom: 52px;
+}
+.g-date-picker .day-animation {
+	//Transition Properties
+	animation: g-date-picker-animation 0.6s ease-out;
+	-webkit-animation: g-date-picker-animation 0.6s ease-out;
+}
+
+.g-date-picker .month-animation {
+	//Transition Properties
+	animation: g-date-picker-animation 0.5s ease-out;
+	-webkit-animation: g-date-picker-animation 0.5s ease-out;
+}
+
+.g-date-picker .year-animation {
+	//Transition Properties
+	animation: g-date-picker-animation 0.4s ease-out;
+	-webkit-animation: g-date-picker-animation 0.4s ease-out;
+}
+.g-date-picker .hide-date {
+	opacity: 0;
+	transform: translate3d(0, -78px, 0);
+}
+
+// Animation Properties
+// Dropdown animation effect for date picker
+@keyframes g-date-picker-animation {
+	0% {
+		opacity: 0;
+		transform: translate3d(0, -78px, 0);
+	}
+	100% {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+@-webkit-keyframes g-date-picker-animation {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -78px, 0);
+		transform: translate3d(0, -78px, 0);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+}

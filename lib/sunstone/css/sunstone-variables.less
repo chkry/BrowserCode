@@ -1,0 +1,388 @@
+/* App */
+/* ---------------------------------------*/
+@sun-resolution-width: 1080px;
+@sun-resolution-height: 1920px;
+@sun-app-keepout: 20px;
+
+/* Font */
+/* ---------------------------------------*/
+
+/* Font Sizes */
+@sun-body-font-size: 60px;
+@sun-button-font-size: 18px;
+@sun-button-large-font-size: 54px;
+@sun-button-small-font-size: 24px;
+@sun-divider-font-size: 60px;
+@sun-dropdown-header-font-size: 54px;
+@sun-gridlist-font-size: 46px;
+@sun-header-font-size: 20px;
+@sun-small-header-font-size: 90px;
+@sun-item-font-size: 30px;
+@sun-sub-header-font-size: 60px;
+@sun-groupindex-font-size: 48px;
+@sun-small-list-font-size: 50px;
+@sun-input-font-size: 18px;
+@sun-viewtype-button-font-size: 50px;
+@sun-tooltip-font-size: 50px;
+@sun-checkboxRadio-subContent-font-size: 14px;
+
+
+/* Other Font Properties */
+
+
+@sun-body-font-weight: normal;
+
+@sun-button-font-weight: bold;
+@sun-button-font-style: normal;
+
+@sun-divider-font-weight: normal;
+@sun-divider-font-style: italic;
+@sun-divider-letter-spacing: 0.05em;
+
+@sun-dropdown-font-weight: normal;
+
+@sun-gridlist-font-weight: normal;
+
+@sun-header-font-style: normal;
+@sun-header-letter-spacing: -0.05em;
+@sun-sub-header-letter-spacing: -0.04em;
+@sun-sub-header-font-style: bold;
+@sun-sub-header-line-height: 2em;
+
+@sun-item-font-weight: normal;
+@sun-item-letter-spacing: -0.04em;
+@sun-item-font-style: normal;
+@sun-item-line-height: 2em;
+
+
+@sun-input-body-font-weight: normal;
+@sun-input-body-letter-spacing: 0;
+@sun-input-body-font-style: normal;
+@sun-input-body-line-height: 0;
+
+@sun-input-decorator-font-weight: normal;
+@sun-input-decorator-letter-spacing: 0;
+@sun-input-decorator-font-style: normal;
+
+@sun-tooltip-font-weight: bold;
+
+
+/*Basement*/
+/* ---------------------------------------*/
+@sun-basement-width:70%;
+@sun-basement-drawer-width:53px;
+@sun-basement-drawer-height:97px;
+@sun-basement-image: url(../images/drawer_list_point.svg);
+
+/*Checkbox*/
+/* ---------------------------------------*/
+@sun-checkbox-on-image: url(../images/btn_check_on.svg);
+@sun-checkbox-off-image: url(../images/btn_check_off.svg);
+
+@sun-checkbox-image-width: 32px;
+@sun-checkbox-image-height: 32px;
+@sun-checkbox-leftRight-margin: 16px;
+@sun-checkbox-disabled-opacity: 0.3;
+@sun-checkbox-disabled-opacity-ie : @sun-checkbox-disabled-opacity*100;
+@sun-checkbox-border-width:5px;
+@sun-checkbox-border-radius: 0;
+
+/*Radio*/
+/* ---------------------------------------*/
+@sun-radio-image: url(../images/btn_radio.svg);
+@sun-radio-on-image: url(../images/btn_radio_on.svg);
+@sun-radio-off-image: url(../images/btn_radio_off.svg);
+
+@sun-radio-image-width: 32px;
+@sun-radio-image-height: 32px;
+@sun-radio-leftRight-margin: 16px;
+@sun-radio-disabled-opacity: 0.3;
+@sun-radio-disabled-opacity-ie : @sun-checkbox-disabled-opacity*100;
+@sun-radio-border-width:5px;
+@sun-radio-border-radius: 0;
+
+
+/* Calendar */
+/* ---------------------------------------*/
+@sun-calendar-font-size: 48px;
+@sun-calendar-font-weight: bold;
+
+@sun-calendar-arrow-button-width: 54px;
+@sun-calendar-arrow-button-height: 54px;
+
+@sun-calendar-current-picker-wrapper-height: 66px;
+@sun-calendar-current-picker-wrapper-margin-bottom: 19px;
+@sun-calendar-current-picker-margin: 0 100px;
+@sun-calendar-current-picker-min-width: 576px;
+@sun-calendar-current-picker-line-height: 66px;
+
+@sun-calendar-day-base-font-size: 60px;
+@sun-calendar-day-base-font-weight: normal;
+@sun-calendar-day-base-width: 100px;
+@sun-calendar-day-base-height: 77px;
+@sun-calendar-day-base-line-height: 77px;
+@sun-calendar-day-base-margin: 0 19px;
+
+@sun-calendar-date-width: 100px;
+@sun-calendar-date-height: 100px;
+@sun-calendar-date-border-radius: 9999px;
+@sun-calendar-date-margin: 0 19px;
+@sun-calendar-date-margin-left: 19px;
+@sun-calendar-date-margin-right: 19px;
+@sun-calendar-date-line-height: 48px;
+
+/* CircleProgress */
+/* ---------------------------------------*/
+@sun-circle-progress-width: 144px;
+@sun-circle-progress-height: 144px;
+@sun-circle-progress-radius: 72px;
+@sun-circle-progress-font-size: 50px;
+@sun-circle-progress-font-weight: bold;
+
+/*ContextualPopup*/
+/* ---------------------------------------*/
+@sun-contextual-border-radius: 3px;
+@sun-contextual-button-height: 40px;
+@sun-contextual-button-dropdown-icon-width: 9px;
+@sun-contextual-button-dropdown-icon-height: 4px;
+@sun-contextual-dropdown-icon-image: url(../images/spinner_arrow_close.svg);
+@sun-contextual-popup-min-width: 80px;
+@sun-contextual-knob-size: 0px;
+@sun-contextual-knob-margin: 60px;
+@sun-contextual-knob-center: 45%;
+@sun-contextual-knob-border-color-down : transparent transparent #D0D0D0 transparent;
+@sun-contextual-knob-border-color-up : #D0D0D0 transparent transparent transparent;
+@sun-contextual-knob-border-width-down : 0px 17px 17px 17px;
+@sun-contextual-knob-border-width-up : 17px 17px 0px 17px;
+@sun-contextual-knob-position-Correction : 2px;
+
+/* Divider */
+/* ---------------------------------------*/
+@sun-divider-border-width: 6px;
+
+/* Drawer */
+/* ---------------------------------------*/
+@sun-drawer-width: 120px;
+@sun-drawer-height: 109px;
+@sun-drawer-padding: 36px;
+
+/* DropdownPicker */
+/* ---------------------------------------*/
+@sun-dropdown-height: 120px;
+@sun-dropdown-border-radius: 60px;
+@sun-dropdown-text-margin: 58px;
+@sun-dropdown-icon-open: url(../images/sun-icon-draweropen.svg);
+@sun-dropdown-icon-close: url(../images/sun-icon-drawerclosed.svg);
+@sun-dropdown-icon-width: 54px;
+@sun-dropdown-icon-height: 30px;
+@sun-dropdown-item-height: 138px;
+
+/* GridList(include GridListImageItem) */
+/* ---------------------------------------*/
+@sun-griditem-font-size:18px;
+@sun-griditem-caption-padding:6px;
+
+/* Header */
+/* ---------------------------------------*/
+@sun-header-height: 56px;
+@sun-backIcon-width: 56px;
+@sun-header-background: url("../images/bg_action_bar_watch_manager.svg") no-repeat;
+@sun-backIcon-background: url("../images/ic_ab_back_am.svg") center center no-repeat;
+@sun-header-margin-left: 12px;
+@sun-header-client-padding: 8px;
+
+/* Icon Sizes */
+/* ---------------------------------------*/
+@sun-icon-size: 96px;
+@sun-small-icon-size: 97px;
+@sun-small-icon-button-size: 107px;
+
+/* Footer */
+/* ---------------------------------------*/
+@sun-footer-height: 161px;
+@sun-footer-border-width: 6px;
+@sun-footer-back-icon-width:117px;
+@sun-footer-back-icon-bg: url(../images/btn_back_bg_normal.svg) no-repeat left center;
+@sun-footer-back-icon: url(../images/btn_back_icon_normal.svg) no-repeat left center;
+@sun-footer-back-icon-bg-active: url(../images/btn_back_bg_focus.svg) no-repeat left center;
+@sun-footer-back-icon-active: url(../images/btn_back_icon_focus.svg) no-repeat left center;
+
+/* Button */
+/* ---------------------------------------*/
+@sun-button-border-width: 1px;
+@sun-button-height: 40px;
+@sun-button-width: 60px;
+@sun-button-border-radius: 9999px;
+@sun-button-letter-spacing: normal;
+@sun-button-text-max-width: 313px;
+
+/* DatePicker */
+/* ---------------------------------------*/
+@sun-date-picker-width: 30%;
+@sun-date-picker-padding: 4%;
+@sun-date-picker-border-width: 2px;
+
+/* DataList */
+/* ---------------------------------------*/
+@sun-datalist-hidden-height: 162px;
+
+/* GridList */
+/* ---------------------------------------*/
+@sun-gridlist-caption-height: 1.67em;
+@sun-gridlist-sub-caption-height: 1.25em;
+
+/* IconButton */
+/* ---------------------------------------*/
+@sun-icon-button-size: 48px;
+@sun-icon-sprite-size: (@sun-icon-button-size - (@sun-button-border-width * 2));
+@sun-icon-button-small-size: 32px;
+@sun-icon-sprite-small-size: (@sun-icon-button-small-size - (@sun-button-border-width * 2));
+@sun-icon-button-large-size: 64px;
+@sun-icon-sprite-large-size: (@sun-icon-button-large-size - (@sun-button-border-width * 2));
+
+/* IntegerPicker */
+/* ---------------------------------------*/
+@sun-integer-picker-height: 600px;
+@sun-integer-picker-width: 100%;
+@sun-integer-picker-button-width: 60px;
+@sun-integer-picker-min-width: 60px;
+@sun-integer-picker-min-padding: 5px;
+@sun-integer-picker-font-weight: bold;
+@sun-integer-picker-font-size: 96px;
+@sun-integer-picker-line-height: 108px;
+@sun-integer-picker-padding: 246px;
+
+/* Scroller */
+/* ---------------------------------------*/
+@sun-scroller-thumb-container-size: 50px;
+@sun-scroller-thumb-size: 13px;
+@sun-scroller-handler-width: 55px;
+@sun-scroller-handler-height: 154px;
+@sun-scroller-handler-radius: 27px;
+
+/* Spinner */
+/* ---------------------------------------*/
+@sun-spinner-normal-size: 48px;
+@sun-spinner-time: 1.83s;
+@sun-spinner-normal-img: url("../images/spinner_white_48.svg") no-repeat center center;
+@sun-spinner-small-size: 24px;
+@sun-spinner-small-img: url("../images/spinner_white_24.svg") no-repeat center center;
+
+
+/* Tab */
+/* ---------------------------------------*/
+@sun-tabbar-font-size: 78px;
+@sun-tabbar-border-height: 25px;
+@sun-tabbar-min-width: 228px;
+@sun-tabbar-max-width: 390px;
+@sun-tabbar-padding-top: 40px;
+@sun-tabbar-padding-left: 20px;
+@sun-tabbar-padding-bottom: 15px;
+@sun-tab-divider-width: 2px;
+@sun-tab-divider-height: 56px;
+@sun-tab-divider-margin: 32px;
+@sun-tab-font-weight: bold;
+@sun-tab-background-image: url(../images/bg_action_bar_watch_manager.svg);
+
+/* ToastPopup */
+/* ---------------------------------------*/
+@sun-toastpopup-font-size: 16px;
+
+/* ToggleSwitch */
+/* ---------------------------------------*/
+@sun-toggle-image: url(../images/switch_bg_latin.svg);
+@sun-toggle-image-height: 34px;
+@sun-toggle-image-width: 62px;
+@sun-toggle-knob-image:url(../images/switch_thumb_latin_activated.svg);
+@sun-toggle-knob-image-off:url(../images/switch_thumb_latin.svg);
+@sun-toggle-button-knob-width: 34px;
+@sun-toggle-button-knob-height: 34px;
+
+
+
+@sun-toggleswitch-image-height: 103px;
+@sun-toggleswitch-image-width: 196px;
+@sun-toggleswitch-button-size: 91px;
+@sun-toggleswitch-border-radius: 51px;
+@sun-toggleswitch-font-size: 50px;
+@sun-toggleswitch-button-margin: 6px;
+
+/* Input */
+/* ---------------------------------------*/
+@sun-input-height: 120px;
+@sun-input-margin: 0px;
+@sun-input-padding: 0px;
+@sun-input-line-height: 40px;
+@sun-input-border-width: 1px;
+@sun-input-webkit-scrollbar-width: 13px;
+@sun-input-webkit-scrollbar-margin-top: 4px;
+@sun-input-webkit-scrollbar-margin-bottom: 4px;
+@sun-input-webkit-scrollbar-border-radius: 6px;
+@sun-input-webkit-scrollbar-thumb-height: 10px;
+
+/* InputDecorator */
+/* ---------------------------------------*/
+@sun-input-decorator-height: 40px;
+@sun-input-decorator-opacity: 0.2;
+@sun-input-decorator-radius: 3px;
+@sun-input-decorator-margin: 0px;
+@sun-input-decorator-padding-top-bottom: 8.5px;
+@sun-input-decorator-padding-left-right: 16px;
+
+/* ProgressBar */
+/* ---------------------------------------*/
+@sun-progress-height: 4px;
+@sun-progress-radius: 3px;
+@sun-progress-min-width: 128px;
+
+/* RichText */
+/* ---------------------------------------*/
+@sun-richtext-height: 216px;
+@sun-richtext-width: 555px;
+@sun-richtext-margin: 0px;
+@sun-richtext-padding: 0px;
+
+/* Slider */
+/* ---------------------------------------*/
+@sun-slider-height: 20px;
+@sun-slider-scrubber-image: url(../images/scrubber_control.svg);
+@sun-slider-margin: 0px;
+@sun-slider-padding: 0px;
+
+/* TextArea */
+/* ---------------------------------------*/
+@sun-textarea-height: 216px;
+@sun-textarea-width: 555px;
+@sun-textarea-margin: 0px;
+@sun-textarea-padding: 0px;
+
+/* Tooltip */
+/* ---------------------------------------*/
+@sun-tooltip-height: 90px;
+@sun-tooltip-border-radius: 40px;
+@sun-tooltip-arrow-top-left: url(../images/tooltip_arrow_top_left.png);;
+@sun-tooltip-arrow-top-right: url(../images/tooltip_arrow_top_right.png);;
+@sun-tooltip-arrow-bottom-left: url(../images/tooltip_arrow_bottom_left.png);;
+@sun-tooltip-arrow-bottom-right: url(../images/tooltip_arrow_bottom_right.png);;
+
+
+/* ViewTypeButton */
+/* ---------------------------------------*/
+@sun-viewtype-button-size: 180px;
+@sun-viewtype-button-margin: 32px;
+
+/* Video Player */
+/* ---------------------------------------*/
+@sun-videoplayer-control-height: 161px;
+@sun-videoplayer-control-padding-top: 20px;
+@sun-videoplayer-slider-height: 16px;
+
+/* Video Slider */
+/* ---------------------------------------*/
+@sun-video-slider-knob-height: 48px;
+@sun-video-slider-height: 52px;
+@sun-video-slider-top: -68px;
+@sun-video-slider-font-size: 64px;
+@sun-video-slider-font-weight: bold;
+@sun-video-slider-popup-font-size: 50px;
+@sun-video-slider-popup-arrow: url(../images/bg_tooltip_arroq_lgred.png);

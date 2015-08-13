@@ -1,0 +1,51 @@
+/* Checkbox.css */
+.sun-checkbox {
+	// Background Properties
+
+	background: @sun-checkbox-off-image no-repeat;
+
+	// Box Properties
+
+	display: inline-block;
+	width: @sun-checkbox-image-width;
+	height: @sun-checkbox-image-height;
+	margin: 0; /* reset for ? */
+	vertical-align: middle; /* these entries cause toggle-button and checkbox to line up properly */
+
+	// Basic User Interface Properties
+
+	cursor: pointer;
+}
+.sun-checkbox[pressed] {
+	// Background Properties
+	background: @sun-checkbox-off-image no-repeat;
+	background-position: 0 -@sun-checkbox-image-height * 3;
+}
+.sun-checkbox[disabled] {
+	// Background Properties
+	background: @sun-checkbox-off-image no-repeat;
+	background-position: 0 -@sun-checkbox-image-height * 1;
+
+	// Basic User Interface Properties
+
+	cursor: default;
+}
+.sun-checkbox[checked] {
+	// Background Properties
+	background: @sun-checkbox-on-image no-repeat;
+	background-position: 0 0;
+}
+.sun-checkbox[checked][pressed] {
+	// Background Properties
+	background: @sun-checkbox-on-image no-repeat;
+	background-position: 0 -@sun-checkbox-image-height * 3;
+}
+.sun-checkbox[checked][disabled] {
+	// Background Properties
+	background: @sun-checkbox-on-image no-repeat;
+	background-position: 0 -@sun-checkbox-image-height * 1;
+
+	// Basic User Interface Properties
+
+	cursor: default;
+}

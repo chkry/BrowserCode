@@ -1,0 +1,8 @@
+{ "settings": { 
+	"emergencyContactNumber": "9059057059", 
+	"safetycareStatus": true 
+	}, 
+"category": "option", 
+"method": "getSystemSettings", 
+"returnValue": true 
+}

@@ -1,0 +1,179 @@
+/* ToggleIconButton.css */
+
+.g-toggle-icon-button {
+	// Background Properties
+
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	// Box Properties
+
+	position: relative;
+	display: inline-block;
+	width: @g-icon-size;
+	height: @g-icon-size;
+	border-radius: 10em;
+	vertical-align: middle;
+
+	// Basic User Interface Properties
+
+	cursor: pointer;
+}
+.g-toggle-icon-button-disabled {
+	// Background Properties
+
+	background-color: #4A4C4F !important;
+
+	// Basic User Interface Properties
+
+	cursor: default;
+}
+.g-toggle-icon-button.pressed:before {
+	// Box Properties : Basic Box Properties, Border Properties & Flexible Box Layout
+
+	position: absolute;
+	left: -5px;
+	right: -5px;
+	top: -5px;
+	bottom: -5px;
+
+	// Basic User Interface Properties
+
+	content: '';
+}
+/****************** start of toggle icon button animation *******************/
+//off toggle animation for 300ms
+.g-toggle-icon-button-off-effect {
+	// Animation Properties
+	-webkit-animation: g-toggle-icon-button-off-effect 0.3s ease-in-out;
+	-moz-animation: g-toggle-icon-button-off-effect 0.3s ease-in-out;
+	animation: g-toggle-icon-button-off-effect 0.3s ease-in-out;
+}
+@-webkit-keyframes g-toggle-icon-button-off-effect {
+	0% {
+		// Background Properties
+		background-position: 0 0, 0 0;
+	}
+	100% {
+		// Background Properties
+		background-position: 0 0, 0 -100%;
+	}
+}
+@keyframes g-toggle-icon-button-off-effect {
+	0% {
+		// Background Properties
+		background-position: 0 0, 0 0;
+	}
+	100% {
+		// Background Properties
+		background-position: 0 0, 0 -100%;
+	}
+}
+
+//on toggle animation for 300ms
+.g-toggle-icon-button-on-effect {
+	// Animation Properties
+	-webkit-animation: g-toggle-icon-button-on-effect 0.3s ease-in-out;
+	-moz-animation: g-toggle-icon-button-on-effect 0.3s ease-in-out;
+	animation: g-toggle-icon-button-on-effect 0.3s ease-in-out;
+}
+@-webkit-keyframes g-toggle-icon-button-on-effect {
+	0% {
+		// Background Properties
+		background-position: 0 60%, 0 -100%;
+	}
+	100% {
+		// Background Properties
+		background-position: 0 60%, 0 0;
+	}
+}
+@keyframes g-toggle-icon-button-on-effect {
+	0% {
+		// Background Properties
+		background-position: 0 60%, 0 -100%;
+	}
+	100% {
+		// Background Properties
+		background-position: 0 60%, 0 0;
+	}
+}
+
+// on pending toggle animation
+.g-toggle-icon-button-on-pending-effect {
+	// Background Properties
+	background-position: 0 60%, 0 -100%;
+
+	// Animation Properties
+	-webkit-animation: g-toggle-icon-button-on-pending-effect 1s infinite ease-in-out;
+	-moz-animation: g-toggle-icon-button-on-pending-effect 1s infinite ease-in-out;
+	animation: g-toggle-icon-button-on-pending-effect 1s infinite ease-in-out;
+}
+@-webkit-keyframes g-toggle-icon-button-on-pending-effect {
+	0% {
+		// Background Properties
+		background-color: rgba(28, 210, 210, 1.0);
+		background-position: 0 60%, 0 -100%;
+	}
+	50% {
+		// Background Properties
+		background-color: rgba(28, 210, 210, 0.5);
+	}
+	100% {
+		// Background Properties
+		background-color: rgba(28, 210, 210, 1.0);
+		background-position: 0 60%, 0 -100%;
+	}
+}
+@keyframes g-toggle-icon-button-on-pending-effect {
+	0% {
+		// Background Properties
+		background-color: rgba(28, 210, 210, 1.0);
+		background-position: 0 60%, 0 -100%;
+	}
+	50% {
+		// Background Properties
+		background-color: rgba(28, 210, 210, 0.5);
+	}
+	100% {
+		// Background Properties
+		background-color: rgba(28, 210, 210, 1.0);
+		background-position: 0 60%, 0 -100%;
+	}
+}
+
+//off pending toggle animation
+.g-toggle-icon-button-off-pending-effect {
+	// Animation Properties
+	-webkit-animation: g-toggle-icon-button-off-pending-effect 1s infinite ease-in-out;
+	-moz-animation: g-toggle-icon-button-off-pending-effect 1s infinite ease-in-out;
+	animation: g-toggle-icon-button-off-pending-effect 1s infinite ease-in-out;
+}
+@-webkit-keyframes g-toggle-icon-button-off-pending-effect {
+	0% {
+		// Background Properties
+		background-color: rgba(160, 160, 160, 1.0);
+	}
+	50% {
+		// Background Properties
+		background-color: rgba(160, 160, 160, 0.5);
+	}
+	100% {
+		// Background Properties
+		background-color: rgba(160, 160, 160, 1.0);
+	}
+}
+@keyframes g-toggle-icon-button-off-pending-effect {
+	0% {
+		// Background Properties
+		background-color: rgba(160, 160, 160, 1.0);
+	}
+	50% {
+		// Background Properties
+		background-color: rgba(160, 160, 160, 0.5);
+	}
+	100% {
+		// Background Properties
+		background-color: rgba(160, 160, 160, 1.0);
+	}
+}
+/****************** end of toggle icon button animation *******************/

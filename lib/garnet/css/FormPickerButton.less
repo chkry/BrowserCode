@@ -1,0 +1,90 @@
+/* FormPickerButton.css */
+
+.g-form-picker-button {
+	// Background Properties
+
+	background-color: @g-form-input-background-color;
+
+	// Box Properties
+
+	position: relative;
+	display: block;
+	width: @g-form-input-width;
+	height: @g-form-input-height;
+	padding: @g-form-picker-button-padding;
+	box-sizing: border-box;
+	border-style: none;
+	border: @g-form-input-border-width solid @g-form-input-border-color;
+	border-radius: @g-form-input-border-radius;
+	box-shadow: none;
+	margin: @g-form-input-margin;
+	overflow: hidden;
+
+	// Color Properties
+
+	color: @g-default-font-color;
+
+	// Text Properties
+
+	text-align: left;
+	white-space: nowrap;
+
+	// Font Properties
+
+	.g-button-text; // font-weight / font-size / font-style
+	font-size: @g-form-input-font-size;
+
+	// Basic User Interface Properties
+
+	cursor: pointer;
+	outline: none;
+}
+
+/*
+	IE8 can't handle these selectors in tandem:
+	.g-picker-button.active, .g-picker-button:active:not([disabled]) {
+
+	the effect is as if .g-picker-button.active doesn't exist
+*/
+.g-form-picker-button.pressed {
+	// Background Properties
+
+	background-color: @g-form-input-background-color-pressed;
+
+	// Color Properties
+
+	border-color: @g-form-input-border-color-pressed;
+	color: @g-button-text-color-pressed;
+}
+
+.g-form-picker-button.active {
+	// Background Properties
+
+	background-color: @g-form-input-background-color-active;
+
+	// Color Properties
+
+	border-color: @g-form-input-border-color-active;
+	color: @g-button-text-color-active;
+}
+
+.g-form-picker-button[disabled] {
+	// Background Properties
+
+	background-color: @g-form-input-background-color-disabled;
+
+	// Color Properties
+
+	border-color: @g-form-input-border-color-disabled;
+	color: @g-button-text-color-disabled;
+
+	// Basic User Interface Properties
+
+	cursor: default;
+}
+
+.g-form-picker-button:focus {
+	// Basic User Interface Properties
+
+	outline: none;
+}

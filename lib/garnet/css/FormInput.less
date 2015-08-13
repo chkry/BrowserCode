@@ -1,0 +1,73 @@
+/* FormInput.css */
+
+.g-form-input {
+	// Background Properties
+
+	background: transparent;
+
+	// Box Properties
+
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	border: none;
+	outline: none;
+	box-shadow: none;
+
+	// Color Properties
+
+	color: @g-button-text-color-active;
+	&::selection {
+		color: @g-form-input-text-color-disabled;
+	}
+
+	// Text Properties
+
+	text-align: left;
+	white-space: nowrap;
+
+	// Font Properties
+
+	.g-button-text; // font-weight / font-size / font-style
+	-webkit-mask-image: -webkit-linear-gradient(right, rgba(0,0,0,0), rgba(0,0,0,1) 10px, rgba(0,0,0,1));
+	-webkit-mask-image: linear-gradient(right, rgba(0,0,0,0), rgba(0,0,0,1) 10px, rgba(0,0,0,1));
+	font-size: @g-form-input-font-size;
+
+	// Basic User Interface Properties
+
+	cursor: pointer;
+	outline: none;
+}
+
+/*
+	IE8 can't handle these selectors in tandem:
+	.g-form-input.active, .g-form-input:active:not([disabled]) {
+
+	the effect is as if .g-form-input.active doesn't exist
+*/
+.g-form-input.pressed,
+.g-form-input:active:hover:not([disabled]) {
+	// Color Properties
+
+	color: @g-button-text-color-active;
+}
+.g-form-input.active {
+	// Color Properties
+
+	color: @g-button-text-color-active;
+}
+.g-form-input[disabled] {
+	// Color Properties
+
+	color: @g-form-input-text-color-disabled;
+
+	// Basic User Interface Properties
+
+	cursor: default;
+}
+.g-form-input:focus {
+
+	// Color Properties
+
+	color: @g-button-text-color-pressed;
+}

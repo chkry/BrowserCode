@@ -1,0 +1,8 @@
+/* LayoutPositioningSample.css */
+
+.garnet.g-sample .g-icon-button {
+	border-radius: 0;
+}
+.garnet.g-sample .g-sample-setting .g-icon-button {
+	border-radius: 100%;
+}

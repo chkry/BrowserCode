@@ -1,0 +1,21 @@
+{
+	"wd_safetycare_add_emergency_contact": "タップして緊急連絡先に追加してください",
+	"wd_safetycare_add_emergency_contact_cancel": "キャンセル",
+	"wd_safetycare_add_emergency_contact_content": "緊急警告を使用するには、緊急用連絡先をとうろくしてください。",
+	"wd_safetycare_alert_content": "緊急連絡先に発信して、現在位置をメッセージで送信しますか？",
+	"wd_safetycare_alert_title": "緊急",
+	"wd_safetycare_app_description": "戻るキーを押し続けることで緊急連絡先に発信し、位置情報をメッセージで送信することができます。",
+	"wd_safetycare_app_title": "安全看護活動",
+	"wd_safetycare_check_phone": "本体で読み取る",
+	"wd_safetycare_emergency_contact_header": "緊急連絡先",
+	"wd_safetycare_emergency_contact_number": "緊急連絡先番号を入力してください",
+	"wd_safetycare_false": "緊急時に備えてSafety careをONにしますか？",
+	"wd_safetycare_location_fail_message_content": "位置情報を取得できませんでした",
+	"wd_safetycare_location_popup_agree": "同意する",
+	"wd_safetycare_location_popup_content": "ウォッチ端末でGPSまたはワイヤレスネットワークがOFFになっていても、位置情報がメッセージ送信に使用されます。その際、ウォッチ端末側でデータ料金が発生する可能性があります。",
+	"wd_safetycare_location_popup_disagree": "同意しない",
+	"wd_safetycare_location_popup_header": "位置情報の同意",
+	"wd_safetycare_no_contact": "緊急時に備えて、緊急連絡先を登録しますか？",
+	"wd_safetycare_not_connected": "スマートフォンと接続されていません。LG Watch Manager Bluetoothが接続されていることを確認してください。",
+	"wd_safetycare_not_paired": "緊急警報を使用するには電話機と接続してください"
+}

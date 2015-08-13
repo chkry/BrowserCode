@@ -1,0 +1,63 @@
+/* ConfirmPopup.css */
+
+.g-confirm-popup > * {
+	// Box Properties
+
+	margin-left: auto;
+	margin-right: auto;
+
+	// Text Properties
+
+	text-align: center;
+}
+.g-confirm-popup-client {
+	// Box Properties
+
+	width: @g-width;
+	height: 218px;
+	overflow: hidden;
+}
+.g-confirm-popup-client .g-scroller-both-mask-fade-out > .enyo-touch-scroller {
+	-webkit-mask-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,1) 16px, rgba(0,0,0,1) 188px, rgba(0,0,0,0));
+	-webkit-mask-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,1) 16px, rgba(0,0,0,1) 188px, rgba(0,0,0,0));
+}
+.g-confirm-popup .g-confirm-popup-button-container {
+	// Box Properties
+
+	position: absolute;
+	width: 320px;
+	height: 68px;
+	top: 218px;
+
+	// Basic User Interface Properties
+
+	pointer-events: none;
+}
+.g-confirm-popup .g-icon-button {
+	// Box Properties
+
+	width: 68px;
+	height: 68px;
+
+	// Basic User Interface Properties
+
+	pointer-events: auto;
+}
+.g-confirm-popup .g-ok-image {
+	// Background Properties
+
+	background: @g-icon-done no-repeat;
+
+	// Box Properties
+
+	margin: 0 24px;
+}
+.g-confirm-popup .g-cancel-image {
+	// Background Properties
+
+	background: @g-icon-close no-repeat;
+
+	// Box Properties
+
+	margin: 0 24px;
+}

@@ -1,0 +1,53 @@
+/* RadioItem */
+.sun-radio-item {
+	display: block;
+	position: relative;
+	font-size: 18px;
+	font-weight: normal;
+	font-style: normal;
+	color : #000000;
+	padding: 0 16px;
+	min-height:@sun-radio-image-height;
+}
+
+.sun-radio-item .sun-radio-item-label-wrapper {
+	margin-right:@sun-radio-image-width+(@sun-radio-leftRight-margin);
+	line-height:@sun-radio-image-height;
+}
+
+.sun-radio-item .sun-radio-item-subContent-wrapper{
+	font-size:@sun-checkboxRadio-subContent-font-size;
+	color: @sun-checkboxRadio-subContent-color;
+	margin-right:@sun-radio-image-width+(@sun-radio-leftRight-margin);
+	line-height:@sun-radio-image-height/2;
+}
+
+.sun-radio-item .sun-radio {
+	position: absolute;
+	top:50%;
+	left: auto;
+	right: @sun-radio-leftRight-margin;
+	margin-top:-(@sun-radio-image-height/2);
+}
+
+.sun-radio-item.disabled {
+	.sun-radio-item-label-wrapper, .sun-radio-item-subContent-wrapper {
+		cursor: default;
+		opacity: @sun-radio-disabled-opacity;
+		filter: alpha(opacity=@sun-radio-disabled-opacity-ie);
+	}
+}
+
+/* Left-handed radio */
+.sun-radio-item.left-handed .sun-radio {
+	left: @sun-radio-leftRight-margin;
+}
+/* Label */
+.sun-radio-item.left-handed .sun-radio-item-label-wrapper {
+	margin-right: 0px;
+	margin-left:  @sun-radio-image-width + (@sun-radio-leftRight-margin) + 8;
+}
+.sun-radio-item.left-handed .sun-radio-item-subContent-wrapper {
+	margin-right: 0px;
+	margin-left:  @sun-radio-image-width + (@sun-radio-leftRight-margin) + 8;
+}

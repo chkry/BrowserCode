@@ -1,0 +1,49 @@
+.g-scrollerknob {
+	// Box Properties : Basic Box Properties, Border Properties & Flexible Box Layout
+
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+
+	// Transform Properties
+
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+
+	// Basic User Interface Properties
+
+	pointer-events: none;
+}
+.g-scrollerknob-grab {
+	// Box Properties : Basic Box Properties, Border Properties & Flexible Box Layout
+
+	width: 110px;
+	height: 57px;
+	margin: auto;
+
+	// Basic User Interface Properties
+
+	pointer-events: auto;
+}
+.g-scrollerknob-visible {
+	// Box Properties : Basic Box Properties, Border Properties & Flexible Box Layout
+
+	background: @g-scroller-knob-normal no-repeat;
+	position: relative;
+	width: 100px;
+	height: 42px;
+	margin: auto;
+	overflow: hidden;
+	margin-top: -11px;
+
+	// Basic User Interface Properties
+
+	pointer-events: none;
+}
+.g-scrollerknob-visible.pressed {
+	// Box Properties : Basic Box Properties, Border Properties & Flexible Box Layout
+
+	background: @g-scroller-knob-pressed no-repeat;
+}

@@ -1,0 +1,67 @@
+/* PageIndicator.css */
+
+.g-page-indicator {
+	// Box Properties
+
+	position: absolute;
+	width: 100px;
+	height: 8px;
+	margin: 8px 110px 0;
+	top: 0;
+
+	// Text Properties
+
+	text-align: center;
+	line-height: @g-page-indicator-font-size;
+
+	// Font Properties
+
+	font-size: @g-page-indicator-font-size;
+
+	// Basic User Interface Properties
+
+	.g-common-hw-accelerated;
+}
+.page-indicator-container {
+	// Box Properties
+
+	width: @g-width;
+	height: 24px;
+	pointer-events: none;
+}
+.page-indicator-container.fadeout {
+	// Background Properties
+
+	background: @g-icon-page-indicator no-repeat;
+}
+.g-page-indicator .g-page-indicator-decorator {
+	// Box Properties
+
+	height: 8px;
+}
+.g-page-indicator .g-page-indicator-decorator > * {
+	// Box Properties
+
+	vertical-align: inherit;
+}
+.g-page-indicator .g-page-indicator-icon {
+	// Background Properties
+
+	background-color: #a0a0a0;
+
+	// Box Properties
+
+	width: 8px;
+	height: 8px;
+	border-radius: 9999px;
+	margin: 0 6px;
+}
+.g-page-indicator .g-page-indicator-icon.current {
+	// Background Properties
+
+	background-color: @g-color-point;
+}
+.g-page-indicator .hide {
+	-webkit-transform: translate3d(-320px, 0, 0);
+	transform: translate3d(-320px, 0, 0);
+}

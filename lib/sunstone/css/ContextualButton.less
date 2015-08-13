@@ -1,0 +1,50 @@
+/* ContextualButton.css */
+.sun-contextual-button {
+	font-size: @sun-button-font-size;
+	color: @sun-black;
+	letter-spacing: 0;
+	overflow: visible;
+	border: @sun-button-border-width solid @sun-contextual-button-border-color;
+	border-radius: @sun-contextual-border-radius;
+	background-color: @sun-contextual-button-bg-color;
+	padding-right: 6px;
+	padding-left: 16px;
+	min-height: @sun-contextual-button-height;
+	min-width: @sun-contextual-popup-min-width;
+	line-height: @sun-contextual-button-height - @sun-button-border-width*2;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	&.disabled {
+		opacity: 0.2;
+	}
+}
+
+.sun-contextual-button[pressed] {
+	background-color: @sun-contextual-button-pressed-bg-color;
+}
+.sun-dropdown-icon-container {
+	float: right;
+}
+.sun-dropdown-icon {
+	min-width: @sun-contextual-button-dropdown-icon-width;
+	min-height: @sun-contextual-button-dropdown-icon-height;
+	margin-left: 12px;
+	margin-top: @sun-contextual-button-height/2 - @sun-contextual-button-dropdown-icon-height/2;
+	background: @sun-contextual-dropdown-icon-image no-repeat;
+	/*&.open{
+		background: @sun-dropdown-icon-open no-repeat center center;
+	}*/
+}
+
+/* prevent button pressed GUI when popup open */
+.sun-contextual-button.popupShow.pressed:not([disabled]) {
+   background-color: @sun-button-background-color;
+   color: @sun-button-text-color;
+}
+.sun-icon-button.popupShow.pressed:not([disabled]) {
+   background-color: @sun-icon-button-bg-color;
+   background-position: center 0;
+}
+.sun-footer .sun-icon-button.popupShow.pressed:not([disabled]) {
+   background-color: @sun-white;
+}

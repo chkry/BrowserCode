@@ -1,0 +1,127 @@
+/* PopupScrimAnimator.css */
+
+// popup scale transition animation effect
+.g-popup-scale-transition {
+	// Background Properties
+
+	background-color: @g-popup-scrim-color;
+
+	// Box Properties
+	position: absolute;
+	width: @g-width;
+	height: @g-height;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	border-radius: 50%;
+
+	// Text Properties
+	line-height: @g-height;
+
+	// Animation Properties
+
+	-webkit-animation: pop-up @g-popup-scrim-animation-duration ease-out forwards;
+	animation: pop-up @g-popup-scrim-animation-duration ease-out forwards;
+}
+
+// popdown scale transition animation effect
+.g-popdown-scale-transition {
+	// Background Properties
+
+	background-color: @g-popup-scrim-color;
+
+	// Box Properties
+	position: absolute;
+	width: @g-width;
+	height: @g-height;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	border-radius: 50%;
+
+	// Text Properties
+	line-height: @g-height;
+
+	// Animation Properties
+
+	-webkit-animation: pop-down @g-popdown-scrim-animation-duration ease-in forwards;
+	animation: pop-down @g-popdown-scrim-animation-duration ease-in forwards;
+}
+
+// Animation of popup scale transition effect
+// Animation Properties
+@-webkit-keyframes pop-up {
+	// Transform Properties
+	0% {
+		-webkit-transform: scale3D(0, 0, 0);
+		transform: scale3D(0, 0, 0);
+	}
+	100% {
+		-webkit-transform: scale3D(1, 1, 1);
+		transform: scale3D(1, 1, 1);
+	}
+}
+
+// Animation of spinner second half for 0.2 second, for default browser support
+// Animation Properties
+@keyframes pop-up {
+	0% {
+		// Transform Properties
+		transform: scale3D(0, 0, 0);
+	}
+	100% {
+		// Transform Properties
+		transform: scale3D(1, 1, 1);
+	}
+}
+
+@-webkit-keyframes pop-down {
+	0% {
+		// Transform Properties
+		-webkit-transform: scale3D(1, 1, 1);
+		transform: scale3D(1, 1, 1);
+	}
+	44% {
+		// Transform Properties
+		-webkit-transform: scale3D(1, 1, 1);
+		transform: scale3D(1, 1, 1);
+	}
+	77% {
+		// Color Properties
+		opacity: 0;
+	}
+	100% {
+		// Color Properties
+		opacity: 0;
+		// Transform Properties
+		-webkit-transform: scale3D(0, 0, 0);
+		transform: scale3D(0, 0, 0);
+	}
+}
+
+// Animation of popdown scale transition effect
+// Animation Properties
+@keyframes pop-down {
+	0% {
+		// Transform Properties
+		transform: scale3D(1, 1, 1);
+	}
+	44% {
+		// Transform Properties
+		transform: scale3D(1, 1, 1);
+	}
+	77% {
+		// Color Properties
+		opacity: 0;
+	}
+	100% {
+		// Color Properties
+		opacity: 0;
+		// Transform Properties
+		transform: scale3D(0, 0, 0);
+	}
+}

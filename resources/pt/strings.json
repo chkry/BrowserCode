@@ -1,0 +1,20 @@
+{
+	"wd_safetycare_add_emergency_contact": "Toque em adicionar contato de emergência",
+	"wd_safetycare_add_emergency_contact_cancel": "Cancelar",
+	"wd_safetycare_add_emergency_contact_content": "Adicionar contato de emergência para usar alerta de emergência.",
+	"wd_safetycare_alert_content": "Ligar para contato de emergência e enviar localização atual na mensagem?",
+	"wd_safetycare_alert_title": "Emergência",
+	"wd_safetycare_app_description": "Você pode segurar para baixo Voltar para ligar seu contato de emergência e enviar uma mensagem com sua localização.",
+	"wd_safetycare_check_phone": "Ler no telefone",
+	"wd_safetycare_emergency_contact_header": "Contatos de emergência",
+	"wd_safetycare_emergency_contact_number": "Inserir número de emergência",
+	"wd_safetycare_false": "Ativar Safety care na preparação de emergências?",
+	"wd_safetycare_location_fail_message_content": "As informações de localização não foram coletadas.",
+	"wd_safetycare_location_popup_agree": "Concordar",
+	"wd_safetycare_location_popup_content": "Informação de localização será usada para enviar mensagens, mesmo quando GPS ou rede sem fio em monitoramento estiver desligada. Cobranças de dados podem se aplicar em monitoramento.",
+	"wd_safetycare_location_popup_disagree": "Não aceito",
+	"wd_safetycare_location_popup_header": "Consentir localização",
+	"wd_safetycare_no_contact": "Adicionar contato de emergência em preparação para emergências?",
+	"wd_safetycare_not_connected": "Não conectado ao telefone. Verifique a conexão com LG Watch Manager através do Bluetooth",
+	"wd_safetycare_not_paired": "Conectar telefone para alerta de Emergência"
+}

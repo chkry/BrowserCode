@@ -1,0 +1,23 @@
+{
+	"Safety Care": "[W2] Safetycare",
+	"wd_safetycare_add_emergency_contact": "Tocar para añadir contactos de emergencia",
+	"wd_safetycare_add_emergency_contact_cancel": "Cancelar",
+	"wd_safetycare_add_emergency_contact_content": "Añadir contacto de emergencia para usar alerta de emergencia.",
+	"wd_safetycare_add_emergency_contact_ok": "OK",
+	"wd_safetycare_alert_content": "¿Llamar al contacto de emergencia y enviar la ubicación actual en el mensaje?",
+	"wd_safetycare_alert_title": "Emergencia",
+	"wd_safetycare_app_description": "Usted puede mantener pulsado Volver a llamar a su contacto de emergencia y enviarle un mensaje con su ubicación.",
+	"wd_safetycare_app_title": "Safety Care",
+	"wd_safetycare_check_phone": "Leer en el teléfono",
+	"wd_safetycare_emergency_contact_header": "Contactos de emergencia",
+	"wd_safetycare_emergency_contact_number": "Ingresar número de emergencia",
+	"wd_safetycare_false": "¿Activar el Safety care en la preparación para emergencias?",
+	"wd_safetycare_location_fail_message_content": "La información de ubicación no se ha reunido.",
+	"wd_safetycare_location_popup_agree": "Aceptar",
+	"wd_safetycare_location_popup_content": "La información de la ubicación se utilizará para enviar mensajes, incluso cuando el GPS o la red inalámbrica en el reloj estén apagados. Pueden aplicar cargos por datos en el reloj.",
+	"wd_safetycare_location_popup_disagree": "No acepto",
+	"wd_safetycare_location_popup_header": "Consentir ubicación",
+	"wd_safetycare_no_contact": "¿Añadir contactos de emergencia en preparación para emergencias?",
+	"wd_safetycare_not_connected": "No está conectado al teléfono. Comprobar la conexión con el LG Watch Manager a través de Bluetooth",
+	"wd_safetycare_not_paired": "Conectar el teléfono para utilizar la alerta de emergencia"
+}

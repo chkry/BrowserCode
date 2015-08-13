@@ -1,0 +1,37 @@
+/* IconButton.css */
+
+.g-icon-button {
+	// Background Properties
+
+	background-repeat: no-repeat;
+
+	// Box Properties
+
+	position: relative;
+	display: inline-block;
+	width: @g-icon-size;
+	height: @g-icon-size;
+	vertical-align: middle;
+
+	// Basic User Interface Properties
+
+	cursor: pointer;
+}
+.g-icon-button[disabled] {
+	// Basic User Interface Properties
+
+	cursor: default;
+}
+.g-icon-button.pressed:before {
+	// Box Properties : Basic Box Properties, Border Properties & Flexible Box Layout
+
+	position: absolute;
+	left: -5px;
+	right: -5px;
+	top: -5px;
+	bottom: -5px;
+
+	// Basic User Interface Properties
+
+	content: '';
+}

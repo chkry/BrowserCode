@@ -1,0 +1,133 @@
+/* Layout.css */
+
+/* Flex */
+
+.g-layout.fixed {
+	table-layout: fixed;
+}
+.g-layout.auto {
+	table-layout: auto;
+}
+.flex {
+	width: auto;
+}
+table.g-layout {
+	border-collapse: collapse;
+}
+.g-layout > * > * > td {
+	overflow: hidden;
+}
+.g-layout > * > * > td {
+	border: 0;
+}
+
+/* Absolute */
+
+.g-layout-absolute-wrapper {
+	position: relative;
+}
+.g-layout-absolute-wrapper > * {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.g-layout-absolute-center {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.g-layout-absolute-fit {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+/* Text */
+
+.g-layout-text-wrapper > .center,
+.g-layout-text-center {
+	text-align: center;
+}
+.g-layout-text-wrapper > .left,
+.g-layout-text-left {
+	text-align: left;
+}
+.g-layout-text-wrapper > .right,
+.g-layout-text-right {
+	text-align: right;
+}
+
+/* Block */
+
+.g-layout-block-center {
+	display: block;
+	margin: auto;
+}
+
+/* Box */
+
+.g-layout-box-wrapper > .outside-circle,
+.g-layout-box-outside-circle {
+	width: @g-width;
+	height: @g-height;
+	margin: auto;
+}
+.g-layout-box-wrapper > .outside-circle-no-wheel,
+.g-layout-box-outside-circle-no-wheel {
+	width: 0.875 * @g-width;
+	height: 0.875 * @g-height;
+	margin: auto;
+}
+.g-layout-box-wrapper > .inside-circle-no-wheel,
+.g-layout-box-inside-circle-no-wheel {
+	width: 0.70625 * @g-width;
+	height: 0.70625 * @g-height;
+	margin: auto;
+}
+.g-layout-box-wrapper > .inside-circle,
+.g-layout-box-inside-circle {
+	width: 0.61875 * @g-width;
+	height: 0.61875 * @g-height;
+	margin: auto;
+}
+
+/* Positioning */
+
+.g-layout-absolute-wrapper > .left {
+	left: 0;
+	right: auto;
+	margin: auto auto auto 0;
+}
+.g-layout-absolute-wrapper > .right {
+	left: auto;
+	right: 0;
+	margin: auto 0 auto auto;
+}
+.g-layout-absolute-wrapper > .top {
+	top: 0;
+	bottom: auto;
+	margin: 0 auto auto auto;
+}
+.g-layout-absolute-wrapper > .bottom {
+	top: auto;
+	bottom: 0;
+	margin: auto auto 0 auto;
+}
+.g-layout-absolute-wrapper > .left.right {
+	left: 0px;
+	right: 0px;
+}
+.g-layout-absolute-wrapper > .top.bottom {
+	top: 0px;
+	bottom: 0px;
+}
+.g-layout-absolute-wrapper > .center {
+	margin: auto;
+}

@@ -1,0 +1,66 @@
+/* MultiPicker.css */
+
+.g-multi-picker {
+	// Transform Properties
+
+	-webkit-transform: scale3d(1,1,1);
+	transform: scale3d(1,1,1);
+}
+.g-multi-picker .g-multi-picker-list {
+	// Background Properties
+
+	background-color: @g-time-picker-bg-color;
+}
+.g-multipicker-item {
+	// Box Properties
+
+	position: relative; /* Do not omit this. It's critical */
+	height: 80px;
+
+	// Text Properties
+
+	line-height: 80px;
+
+	// Basic User Interface Properties
+
+	cursor: pointer;
+}
+.g-multi-picker .g-multi-picker-item-border {
+	// Box Properties
+
+	width: 100%;
+	height: 1px;
+	border-bottom: 1px solid #202328;
+	bottom: 0;
+}
+
+.g-multi-picker .g-multi-picker-commandbar {
+	// Basic User Interface Properties
+
+	pointer-event: auto;
+}
+.g-multipicker-item .g-multipicker-item-title {
+	// Box Properties
+
+	width: 186px;
+	height: 80px;
+	margin-left: 96px;
+
+	// Text Properties
+
+	text-align: left;
+	-webkit-mask-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0), #FFFFFF 28px, #FFFFFF);
+	-webkit-mask-image: linear-gradient(right, rgba(0, 0, 0, 0), #FFFFFF 28px, #FFFFFF);
+}
+.g-multipicker-item .disabled {
+	// Color Properties
+
+	opacity: 0.4;
+	filter: alpha(opacity=40);
+}
+/* This for always showing checkbox */
+.g-selection-overlay-support-scrim {
+	// Box Properties
+
+	display: inline;
+}

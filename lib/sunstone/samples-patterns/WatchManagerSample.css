@@ -1,0 +1,86 @@
+.imageArea {
+	height: 128px;
+	line-height: 128px;
+	text-align: center;
+}
+.imageArea img{
+	vertical-align: middle;
+	width: 72px;
+}
+.general-index{
+	height: 48px;
+	line-height: 48px;
+	font-weight: bold;
+	font-size: 14px;
+	color: #797979;
+	padding: 0 16px;
+	background-color: #ffffff;
+}
+.checkbox-sample {
+	height:64px;
+	line-height: 64px;
+	margin-left: 12px;
+}
+.setting-container{
+	display:table;
+	table-layout: fixed;
+	width:100%;
+}
+.content-area{
+	display: table-cell;
+	vertical-align: middle;
+	padding: 17.5px 16px;
+}
+
+.main-content{
+	font-size: 18px;
+	color:#000000;
+}
+
+.sub-content{
+	font-size: 14px;
+	color:#5b6770;
+}
+
+.setting-checkbox{
+	display:table-cell;
+	vertical-align: middle;
+	width:40px;
+}
+
+.divider{
+	width:100%;
+	border-bottom: 1px solid #e6e6e6;
+}
+
+.setting-toggle{
+	display:table-cell;
+	vertical-align: middle;
+	text-align: center;
+	width:70px;
+}
+
+.setting-slider{
+	display:table-cell;
+	vertical-align: middle;
+	text-align: center;
+	width:150px;
+}
+
+.setting4-checkbox{
+	display:table-cell;
+	vertical-align: middle;
+	text-align: right;
+	width:44px;
+}
+
+.setting4-iconbutton{
+	display:table-cell;
+	vertical-align: middle;
+	text-align: right;
+	width:48px;
+}
+
+.divider {
+	border-bottom: 1px solid #e6e6e6;
+}

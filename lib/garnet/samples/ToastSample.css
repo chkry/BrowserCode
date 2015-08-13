@@ -1,0 +1,10 @@
+/* ToastSample.css */
+
+.g-sample-toast-popup {
+	font-size: 30px;
+	text-align: center;
+}
+.garnet.g-sample .g-sample-toast-popup-button {
+	position: absolute;
+	margin: auto;
+}

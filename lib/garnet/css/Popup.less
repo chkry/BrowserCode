@@ -1,0 +1,162 @@
+/* Popup.css */
+
+.g-popup {
+	// Background Properties
+
+	background-color: rgba(56,64,75,0.98);
+
+	// Box Properties
+
+	width: 320px;
+	height: 320px;
+
+	// Color Properties
+
+	color: @g-default-font-color;
+
+	// Text Properties
+
+	text-align: center;
+
+	// Font Properties
+
+	font-weight: 400;
+	font-size: @g-popup-font-size;
+}
+
+// Showing gradual opacity to g-popup children for 0.2 second
+.g-popup-gradual-showing {
+	// Animation Properties
+	-webkit-animation: popup-gradual-showing @g-popup-gradual-showing-duration forwards;
+	animation: popup-gradual-showing @g-popup-gradual-showing-duration forwards;
+}
+
+// Animation of gradual opacity to g-popup children for 0.2 second, for webkit browser support
+// Animation Properties
+@-webkit-keyframes popup-gradual-showing {
+	0% {
+		// Color Properties
+		opacity: 0;
+	}
+	100% {
+		// Color Properties
+		opacity: 1;
+	}
+}
+
+// Animation of gradual opacity to g-popup children for 0.2 second, for default browser support
+// Animation Properties
+@keyframes popup-gradual-showing {
+	0% {
+		// Color Properties
+		opacity: 0;
+	}
+	100% {
+		// Color Properties
+		opacity: 1;
+	}
+}
+
+// Showing gradual opacity to g-popup children for 0.2 second
+.g-popdown-gradual-hiding {
+	// Animation Properties
+	-webkit-animation: popdown-gradual-hiding @g-popdown-gradual-hiding-duration forwards;
+	animation: popdown-gradual-hiding @g-popdown-gradual-hiding-duration forwards;
+}
+
+// Animation of gradual opacity to g-popdown children for 0.2 second, for webkit browser support
+// Animation Properties
+@-webkit-keyframes popdown-gradual-hiding {
+	0% {
+		// Color Properties
+		opacity: 1;
+	}
+	100% {
+		// Color Properties
+		opacity: 0;
+	}
+}
+
+// Animation of gradual opacity to g-popdown children for 0.2 second, for default browser support
+// Animation Properties
+@keyframes popdown-gradual-hiding {
+	0% {
+		// Color Properties
+		opacity: 1;
+	}
+	100% {
+		// Color Properties
+		opacity: 0;
+	}
+}
+
+// popup depth transition animation effect
+.g-popup-depth-transition {
+	// Animation Properties
+	-webkit-animation: pop-up-depth-transition @g-popup-depth-animation-duration forwards;
+	animation: pop-up-depth-transition @g-popup-depth-animation-duration forwards;
+}
+
+// Animation of popup depth transition effect
+// Animation Properties
+@-webkit-keyframes pop-up-depth-transition {
+	0% {
+		// Transform Properties
+		-webkit-transform: translate3d(@g-width, 0, 0);
+		transform: translate3d(@g-width, 0, 0);
+	}
+	100% {
+		// Transform Properties
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+// Animation of popup depth transition effect
+// Animation Properties
+@keyframes pop-up-depth-transition {
+	0% {
+		// Transform Properties
+		transform: translate3d(@g-width, 0, 0);
+	}
+	100% {
+		// Transform Properties
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+// popdown depth transition animation effect
+.g-popdown-depth-transition {
+	// Animation Properties
+	-webkit-animation: pop-down-depth-transition @g-popdown-depth-animation-duration forwards;
+	animation: pop-down-depth-transition @g-popdown-depth-animation-duration forwards;
+}
+
+// Animation of popdown depth transition effect
+// Animation Properties
+@-webkit-keyframes pop-down-depth-transition {
+	0% {
+		// Transform Properties
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+	100% {
+		// Transform Properties
+		-webkit-transform: translate3d(@g-width, 0, 0);
+		transform: translate3d(@g-width, 0, 0);
+	}
+}
+
+// Animation of popdown depth transition effect
+// Animation Properties
+@keyframes pop-down-depth-transition {
+	0% {
+		// Transform Properties
+		transform: translate3d(0, 0, 0);
+	}
+	100% {
+		// Transform Properties
+		transform: translate3d(@g-width, 0, 0);
+	}
+}
+

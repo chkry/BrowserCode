@@ -1,0 +1,32 @@
+/* IconButton.css */
+.sun-icon-button {
+	cursor: pointer;
+	box-sizing: border-box;
+	border-radius: @sun-icon-button-size/2;
+	&.small {
+		border-radius: @sun-icon-button-small-size/2;
+	}
+	&.large {
+		border-radius: @sun-icon-button-large-size/2;
+	}
+	&.pressed:not([disabled]) {
+		background-position: center -@sun-icon-button-size;
+		&.no-background{
+			background-color: transparent;
+		}
+		&.small {
+			background-position: center -@sun-icon-sprite-small-size;
+		}
+		&.large {
+			background-position: center -@sun-icon-sprite-large-size;
+		}
+	}
+	&[disabled] {
+		cursor: default;
+		background-position: center -@sun-icon-button-size*3;
+	}
+}
+.sun-icon-button.no-background {
+	background-color: transparent;
+	border-color: transparent;
+}

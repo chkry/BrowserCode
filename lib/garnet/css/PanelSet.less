@@ -1,0 +1,312 @@
+/* PanelSet.css */
+
+/* Panel default */
+
+.g-panelset {
+	// Box Properties
+
+	position: absolute;
+	width: @g-width;
+	height: @g-height;
+	overflow: hidden;
+}
+.g-panelset .g-panelset,
+.g-panel .g-panelset {
+	// Box Properties
+
+	width: 100%;
+	height: 100%;
+}
+.g-panelset .hidden {
+	// Box Properties
+
+	display: none;
+
+	// Transition Properties
+
+	-webkit-transition-duration: 0;
+	transition-duration: 0;
+}
+.g-panelset .g-panelset-panel {
+	// Transition Properties
+
+	-webkit-transition-property: all;
+	-webkit-transition-timing-function: ease-in-out;
+	-webkit-transition-delay: 0;
+	-webkit-transition-duration: 0;
+	transition-property: all;
+	transition-timing-function: ease-in-out;
+	transition-delay: 0;
+	transition-duration: 0;
+}
+.g-panelset > .client {
+	// Box Properties
+
+	position: absolute;
+	width: 320px;
+	height: 320px;
+	z-index: 0;
+}
+.g-panelset > .page-indicator-container {
+	// Box Properties
+
+	position: absolute;
+}
+/* PanelSet depth Transition layer effect start */
+// Animation effect while Panel coming to focus
+ .g-panelset-depth-transition-card-next-child-effect {
+
+	// Transition Properties
+
+	animation: depth-transition-from-next-child-effect 0s cubic-bezier(0,0,0.1,1) forwards;
+	perspective: 1000;
+	-webkit-animation: depth-transition-from-next-child-effect 0s cubic-bezier(0,0,0.1,1) forwards;
+	-webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
+	-moz-animation: depth-transition-from-next-child-effect 0s cubic-bezier(0,0,0.1,1) forwards;
+}
+// Animation effect while Panel going out of focus
+
+.g-panelset-depth-transition-previous-child-effect {
+
+	// Transition Properties
+
+	animation: depth-transition-from-previous-child-effect 0s forwards;
+	perspective: 1000;
+	-webkit-animation: depth-transition-from-previous-child-effect 0s forwards;
+	-webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
+	-moz-animation: depth-transition-from-previous-child-effect 0s forwards;
+}
+// Animation Properties
+/* Animation effect on panel children while coming to focus */
+@keyframes depth-transition-from-next-child-effect {
+	0% {transform: translate3d(100%, 0, 0);}
+	100% {transform: translate3d(0, 0, 0);}
+}
+@-webkit-keyframes depth-transition-from-next-child-effect {
+	0% {-webkit-transform: translate3d(100%, 0, 0);}
+	100% {-webkit-transform: translate3d(0, 0, 0);}
+}
+/* Animation effect on panel children while going out of focus */
+
+@keyframes depth-transition-from-previous-child-effect {
+	0% {transform:translate3d(0, 0, 0);}
+	100% {transform:translate3d(100%, 0, 0);}
+}
+@-webkit-keyframes depth-transition-from-previous-child-effect {
+	0% {-webkit-transform: translate3d(0, 0, 0);}
+	100% {-webkit-transform: translate3d(100%, 0, 0);}
+}
+/*PanelSet depth-transition Transition layer effect End */
+
+/* Panel effect for hidden at start */
+@keyframes panel-hidden {
+	0% {transform: translate3d(@g-height, 0px, 0px);}
+	100% {transform: translate3d(@g-height, 0px, 0px);}
+}
+@-webkit-keyframes panel-hidden {
+	0% {-webkit-transform: translate3d(@g-height, 0px, 0px);}
+	100% {-webkit-transform: translate3d(@g-height, 0px, 0px);}
+}
+
+/* Panel effect */
+@keyframes flip-vertical-from-next {
+	0% {transform: rotate3d(1, 0, 0, 90deg);}
+	50% {transform: rotate3d(1, 0, 0, 90deg);}
+	100% {transform: rotate3d(0, 0, 0, 0deg);}
+}
+@-webkit-keyframes flip-vertical-from-next {
+	0% {-webkit-transform: rotate3d(1, 0, 0, 90deg);}
+	50% {-webkit-transform: rotate3d(1, 0, 0, 90deg);}
+	100% {-webkit-transform: rotate3d(0, 0, 0, 0deg);}
+}
+@keyframes flip-vertical-from-previous {
+	0% {transform: rotate3d(1, 0, 0, 90deg);}
+	50% {transform: rotate3d(1, 0, 0, 90deg);}
+	100% {transform: rotate3d(0, 0, 0, 0deg);}
+}
+@-webkit-keyframes flip-vertical-from-previous {
+	0% {-webkit-transform: rotate3d(1, 0, 0, 90deg);}
+	50% {-webkit-transform: rotate3d(1, 0, 0, 90deg);}
+	100% {-webkit-transform: rotate3d(0, 0, 0, 0deg);}
+}
+@keyframes flip-vertical-to-next {
+	0% {transform: rotate3d(0, 0, 0, 0deg);}
+	50% {transform: rotate3d(1, 0, 0, 90deg);}
+	100% {transform: rotate3d(1, 0, 0, 90deg);}
+}
+@-webkit-keyframes flip-vertical-to-next {
+	0% {-webkit-transform: rotate3d(0, 0, 0, 0deg);}
+	50% {-webkit-transform: rotate3d(1, 0, 0, 90deg);}
+	100% {-webkit-transform: rotate3d(1, 0, 0, 90deg);}
+}
+@keyframes flip-vertical-to-previous {
+	0% {transform: rotate3d(0, 0, 0, 0deg);}
+	50% {transform: rotate3d(1, 0, 0, 90deg);}
+	100% {transform: rotate3d(1, 0, 0, 90deg);}
+}
+@-webkit-keyframes flip-vertical-to-previous {
+	0% {-webkit-transform: rotate3d(0, 0, 0, 0deg);}
+	50% {-webkit-transform: rotate3d(1, 0, 0, 90deg);}
+	100% {-webkit-transform: rotate3d(1, 0, 0, 90deg);}
+}
+@keyframes slide-vertical-from-next {
+	0% {transform: translate3d(0px, @g-width, 0px);}
+	100% {transform: translate3d(0px, 0px, 0px);}
+}
+@-webkit-keyframes slide-vertical-from-next {
+	0% {-webkit-transform: translate3d(0px, @g-width, 0px);}
+	100% {-webkit-transform: translate3d(0px, 0px, 0px);}
+}
+@keyframes slide-vertical-from-previous {
+	0% {transform: translate3d(0px, -@g-width, 0px);}
+	100% {transform: translate3d(0px, 0px, 0px);}
+}
+@-webkit-keyframes slide-vertical-from-previous {
+	0% {-webkit-transform: translate3d(0px, -@g-width, 0px);}
+	100% {-webkit-transform: translate3d(0px, 0px, 0px);}
+}
+@keyframes slide-vertical-to-next {
+	0% {transform: translate3d(0px, 0px, 0px);}
+	100% {transform: translate3d(0px, @g-width, 0px);}
+}
+@-webkit-keyframes slide-vertical-to-next {
+	0% {-webkit-transform: translate3d(0px, 0px, 0px);}
+	100% {-webkit-transform: translate3d(0px, @g-width, 0px);}
+}
+@keyframes slide-vertical-to-previous {
+	0% {transform: translate3d(0px, 0px, 0px);}
+	100% {transform: translate3d(0px, -@g-width, 0px);}
+}
+@-webkit-keyframes slide-vertical-to-previous {
+	0% {-webkit-transform: translate3d(0px, 0px, 0px);}
+	100% {-webkit-transform: translate3d(0px, -@g-width, 0px);}
+}
+
+/* Panel move-transition effect end*/
+@keyframes move-transition-from-next {
+	0% {transform: translate3d(@g-height, 0px, 0px);}
+	100% {transform: translate3d(0px, 0px, 0px);}
+}
+@-webkit-keyframes move-transition-from-next {
+	0% {-webkit-transform: translate3d(@g-height, 0px, 0px);}
+	100% {-webkit-transform: translate3d(0px, 0px, 0px);}
+}
+@keyframes move-transition-from-previous {
+	0% {transform: translate3d(-@g-height, 0px, 0px);}
+	100% {transform: translate3d(0px, 0px, 0px);}
+}
+@-webkit-keyframes move-transition-from-previous {
+	0% {-webkit-transform: translate3d(-@g-height, 0px, 0px);}
+	100% {-webkit-transform: translate3d(0px, 0px, 0px);}
+}
+@keyframes move-transition-to-next {
+	0% {transform: translate3d(0px, 0px, 0px);}
+	100% {transform: translate3d(@g-height, 0px, 0px);}
+}
+@-webkit-keyframes move-transition-to-next {
+	0% {-webkit-transform: translate3d(0px, 0px, 0px);}
+	100% {-webkit-transform: translate3d(@g-height, 0px, 0px);}
+}
+@keyframes move-transition-to-previous {
+	0% {transform: translate3d(0px, 0px, 0px);}
+	100% {transform: translate3d(-@g-height, 0px, 0px);}
+}
+@-webkit-keyframes move-transition-to-previous {
+	0% {-webkit-transform: translate3d(0px, 0px, 0px);}
+	100% {-webkit-transform: translate3d(-@g-height, 0px, 0px);}
+}
+/* Panel move-transition effect end*/
+
+/* Panel depth-transition effect start*/
+
+@keyframes depth-transition-from-next {
+	0% {
+		transform: translate3d(@g-height, 0, 0);
+		z-index: @g-zindex-next-panel;
+	}
+	100% {
+		transform: translate3d(0, 0, 0);
+		z-index: @g-zindex-next-panel;
+	}
+}
+@-webkit-keyframes depth-transition-from-next {
+	0% {
+		-webkit-transform: translate3d(@g-height, 0, 0);
+		transform: translate3d(@g-height, 0, 0);
+		z-index: @g-zindex-next-panel;
+	}
+	100% {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+		z-index: @g-zindex-next-panel;
+	}
+}
+@keyframes depth-transition-from-previous {
+	0% {
+		transform: translate3d(0, 0, 0);
+		z-index: @g-zindex-previous-panel;
+	}
+	100% {
+		transform: translate3d(0, 0, 0);
+		z-index: @g-zindex-previous-panel;
+	}
+}
+@-webkit-keyframes depth-transition-from-previous {
+	0% {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+		z-index: @g-zindex-previous-panel;
+	}
+	100% {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+		z-index: @g-zindex-previous-panel;
+	}
+}
+@keyframes depth-transition-to-next {
+	0% {
+		transform: translate3d(0, 0, 0);
+		z-index: @g-zindex-next-panel;
+	}
+	100% {
+		transform: translate3d(@g-height, 0, 0);
+		z-index: @g-zindex-next-panel;
+	}
+}
+@-webkit-keyframes depth-transition-to-next {
+	0% {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+		z-index: @g-zindex-next-panel;
+	}
+	100% {
+		-webkit-transform: translate3d(@g-height, 0, 0);
+		transform: translate3d(@g-height, 0, 0);
+		z-index: @g-zindex-next-panel;
+	}
+}
+@keyframes depth-transition-to-previous {
+	0% {
+		transform: translate3d(0, 0, 0);
+		z-index: @g-zindex-previous-panel;
+	}
+	100% {
+		transform: translate3d(0, 0, 0);
+		z-index: @g-zindex-previous-panel;
+	}
+}
+@-webkit-keyframes depth-transition-to-previous {
+	0% {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+		z-index: @g-zindex-previous-panel;
+	}
+	100% {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+		z-index: @g-zindex-previous-panel;
+	}
+}
+/* Panel depth-transition effect end*/

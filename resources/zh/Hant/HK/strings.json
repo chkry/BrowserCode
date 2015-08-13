@@ -1,0 +1,19 @@
+{
+	"wd_safetycare_add_emergency_contact": "點選以新增緊急連絡人",
+	"wd_safetycare_add_emergency_contact_content": "新增緊急聯絡人以使用緊急報警。",
+	"wd_safetycare_add_emergency_contact_ok": "確定",
+	"wd_safetycare_alert_content": "是否呼叫緊急聯絡人並傳送目前位置訊息？",
+	"wd_safetycare_alert_title": "緊急",
+	"wd_safetycare_app_description": "您可以按住上一步以呼叫您的緊急聯絡人並向其傳送您的位置訊息。",
+	"wd_safetycare_app_title": "安全保護",
+	"wd_safetycare_check_phone": "讀取電話",
+	"wd_safetycare_emergency_contact_header": "緊急通訊錄",
+	"wd_safetycare_emergency_contact_number": "輸入緊急號碼",
+	"wd_safetycare_false": "是否開啟 Safety care 以備不時之需？",
+	"wd_safetycare_location_fail_message_content": "位置資訊未收集。",
+	"wd_safetycare_location_popup_content": "位置資訊將被用於傳送訊息，即使手錶上的 GPS 或無線網路關閉。可能會收取手錶數據費用。",
+	"wd_safetycare_location_popup_header": "位置同意",
+	"wd_safetycare_no_contact": "添加緊急連絡人以備不時之需？",
+	"wd_safetycare_not_connected": "未連接手機。請通過藍牙檢查LG Watch Manager確認連接。",
+	"wd_safetycare_not_paired": "連接行動電話以使用緊急通知"
+}

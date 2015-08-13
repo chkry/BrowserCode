@@ -1,0 +1,9 @@
+{
+    "subscribed": true,
+    "category": "option",
+    "method": "getSystemSettings",
+    "settings": {
+        "emergencyContactNumber": "8050613137"
+    },
+    "returnValue": true
+}

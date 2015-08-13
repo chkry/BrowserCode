@@ -1,0 +1,39 @@
+body{
+	background-color:white;
+}
+.sun-sample-font {
+	font-size: 20px;
+}
+#iconButtonSample_custom1 {
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+	background-position: center 0;
+	background-size: 50px 250px; /* will be removed when normal/pressed image is ready */
+	line-height: 50px;
+}
+#iconButtonSample_custom1.pressed:not([disabled]) {
+	background-position: center -50px;
+}
+#iconButtonSample_custom2 {
+	width: 80px;
+	height: 80px;
+	border-radius: 40px;
+	background-position: center 0;
+	background-size: 80px 400px; /* will be removed when normal/pressed image is ready */
+	line-height: 80px;
+}
+#iconButtonSample_custom2.pressed:not([disabled]) {
+	background-position: center -80px;
+}
+#iconButtonSample_custom3 {
+	width: 120px;
+	height: 120px;
+	border-radius: 60px;
+	background-position: center 0;
+	background-size: 120px 600px; /* will be removed when normal/pressed image is ready */
+	line-height: 120px;
+}
+#iconButtonSample_custom3.pressed:not([disabled]) {
+	background-position: center -120px;
+}

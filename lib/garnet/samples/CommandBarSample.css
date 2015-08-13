@@ -1,0 +1,43 @@
+/* CommandBarSample.css */
+
+.g-sample-command-bar-single-wrapper {
+	display: inline-block;
+	width: 320px;
+	height: 93px;
+	overflow: hidden;
+}
+.g-sample-command-bar-wrapper {
+	display: inline-block;
+	width: 160px;
+	height: 93px;
+	overflow: hidden;
+}
+
+.g-sample-previous-image {
+	background: url(assets/btn_command_previous.svg);
+
+	height: 68px;
+	width: 68px;
+	margin: 0 24px 0 68px;
+}
+.g-sample-previous-image:active{
+	background-position: 0 -68px;
+}
+.g-sample-next-image {
+	background: url(assets/btn_command_next.svg);
+
+	height: 68px;
+	width: 68px;
+	margin: 0 68px 0 24px;
+}
+.g-sample-single-image {
+	background: url(assets/btn_command_done.svg);
+
+	height: 68px;
+	width: 68px;
+	margin: 0 126px;
+}
+
+.g-sample-next-image:active{
+	background-position: 0 -68px;
+}

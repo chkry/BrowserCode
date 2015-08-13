@@ -1,0 +1,29 @@
+.sun-button-sample-wrapper,
+.sun-button-sample-group button,
+.sun-button-sample-wrapper > button {
+	margin: 10px;
+}
+
+.sun-sample-font {
+	font-size: 20px;
+}
+
+.sun-button-sample .visible-tap-area .small-button-tap-area {
+/*	background: rgba(0, 100, 200, 0.2);
+	border: 1px solid rgba(0, 100, 200, 0.4);*/
+}
+
+.sun-button-sample {
+/*	background-color:#00ffff;
+	width: 300px;
+	height: 50px;
+	font-size: 30px;*/
+}
+
+
+.sun-button-sample.active:not([disabled]),
+.sun-button-sample.pressed:not([disabled]){
+/*  color: red;
+  background: green;
+  border: @sun-button-border-width solid @sun-button-focus-color;*/
+}

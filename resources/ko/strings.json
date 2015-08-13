@@ -1,0 +1,22 @@
+{
+	"wd_safetycare_add_emergency_contact": "보호자 연락처를 등록하려면 터치하세요.",
+	"wd_safetycare_add_emergency_contact_cancel": "취소",
+	"wd_safetycare_add_emergency_contact_content": "응급 상황 시 연락할 보호자 연락처를 등록해 주세요.",
+	"wd_safetycare_add_emergency_contact_ok": "확인",
+	"wd_safetycare_alert_content": "보호자 연락처로 전화를 걸고 현재 위치를 메시지로 보낼까요?",
+	"wd_safetycare_alert_title": "응급 상황 알림",
+	"wd_safetycare_app_description": "시계의 이전 버튼을 길게 누르면 등록된 보호자 연락처로 전화를 걸고 현재 위치를 메시지로 보냅니다.",
+	"wd_safetycare_app_title": "안전지킴이",
+	"wd_safetycare_check_phone": "휴대폰을 확인해 주세요.",
+	"wd_safetycare_emergency_contact_header": "보호자 연락처",
+	"wd_safetycare_emergency_contact_number": "보호자 연락처를 입력하세요",
+	"wd_safetycare_false": "응급 상황에 대비해, 안전 지킴이를 켜시겠습니까?",
+	"wd_safetycare_location_fail_message_content": "현재 위치를 확인할 수 없습니다.",
+	"wd_safetycare_location_popup_agree": "동의",
+	"wd_safetycare_location_popup_content": "시계의 Wi-Fi, 모바일 데이터, 위치 정보가 꺼져 있어도 현재 위치가 메시지로 전송되며 데이터 요금이 부과될 수 있습니다.",
+	"wd_safetycare_location_popup_disagree": "동의 안 함",
+	"wd_safetycare_location_popup_header": "위치 정보 사용 동의",
+	"wd_safetycare_no_contact": "응급 상황을 대비해 보호자 연락처를 등록하시겠습니까?",
+	"wd_safetycare_not_connected": "휴대폰과 연결되지 않았습니다. 휴대폰과 Bluetooth로 연결되었는지 확인해 주세요.",
+	"wd_safetycare_not_paired": "응급 상황 알림을 사용하려면 휴대폰과 연결해 주세요."
+}

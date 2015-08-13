@@ -1,0 +1,58 @@
+.sun-checkbox-item {
+	display: block;
+	position: relative;
+	font-size: 18px;
+	font-weight: normal;
+	font-style: normal;
+	color : #000000;
+	padding: 0 16px;
+}
+
+/* Checkbox */
+.sun-checkbox-item .sun-checkbox-item-label-wrapper {
+	margin-right:@sun-checkbox-image-width+(@sun-checkbox-leftRight-margin);
+	line-height:@sun-checkbox-image-height;
+}
+
+.sun-checkbox-item .sun-checkbox-item-subContent-wrapper{
+	font-size:@sun-checkboxRadio-subContent-font-size;
+	color: @sun-checkboxRadio-subContent-color;
+	margin-right:@sun-checkbox-image-width+(@sun-checkbox-leftRight-margin);
+	line-height:@sun-checkbox-image-height/2;
+}
+
+.sun-checkbox-item .sun-checkbox {
+	position: absolute;
+	top:50%;
+	left: auto;
+	right: @sun-checkbox-leftRight-margin;
+	margin-top:-(@sun-checkbox-image-height/2);
+}
+
+.sun-checkbox-item.disabled {
+	.sun-checkbox-item-label-wrapper, .sun-checkbox-item-subContent-wrapper {
+		cursor: default;
+		opacity: @sun-checkbox-disabled-opacity;
+		filter: alpha(opacity=@sun-checkbox-disabled-opacity-ie);
+	}
+}
+.sun-checkbox-item .sun-checkbox[disabled] {
+	cursor: default;
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+
+/* Left-handed checkbox */
+/* Label */
+.sun-checkbox-item.left-handed .sun-checkbox {
+	left: @sun-checkbox-leftRight-margin;
+}
+/* Label */
+.sun-checkbox-item.left-handed .sun-checkbox-item-label-wrapper {
+	margin-right: 0px;
+	margin-left:  @sun-checkbox-image-width + (@sun-checkbox-leftRight-margin) + 8;
+}
+.sun-checkbox-item.left-handed .sun-checkbox-item-subContent-wrapper {
+	margin-right: 0px;
+	margin-left:  @sun-checkbox-image-width + (@sun-checkbox-leftRight-margin) + 8;
+}

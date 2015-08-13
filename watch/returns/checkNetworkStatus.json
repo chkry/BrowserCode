@@ -1,0 +1,23 @@
+{
+"subscribed":false,
+"errorString":"success",
+"errorCode":0,
+"returnValue":true,
+"extended":
+	{"mnc":"45",
+	"dataType":"hsdpa",
+	"tempCsRejectCause":false,
+	"registration":"home",
+	"psState":"attached",
+	"ratType":"UMTS",
+	"mcc":"404",
+	"psRejectCause":0,
+	"dataRegistered":true,
+	"networkName":"airtel",
+	"causeCode":"0",
+	"tempPsRejectCause":false,
+	"state":"service",
+	"csRejectCause":0,
+	"csState":"attached"
+	}
+}

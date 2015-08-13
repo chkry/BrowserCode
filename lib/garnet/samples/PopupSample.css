@@ -1,0 +1,10 @@
+/* PopupSample.css */
+
+.g-sample-popup {
+	font-size: 30px;
+	text-align: center;
+}
+.garnet.g-sample .g-sample-popup-button {
+	position: absolute;
+	margin: auto;
+}

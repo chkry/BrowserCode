@@ -1,0 +1,105 @@
+/* Button.css */
+
+.g-button {
+	// Background Properties
+
+	background-color: @g-button-background-color;
+
+	// Box Properties
+
+	position: relative;
+	display: inline-block;
+	height: @g-button-height;
+	padding: @g-button-padding;
+	box-sizing: border-box;
+	border-style: none;
+	border-top: @g-button-border-top-width solid @g-button-border-top-color;
+	border-bottom: @g-button-border-bottom-width solid @g-button-border-bottom-color;
+	border-radius: @g-button-border-radius;
+	// box-shadow: 0 2px #000000; // DO NOT DELETE without confirm of GUI team.
+	margin: @g-button-margin;
+
+	// Color Properties
+
+	color: @g-default-font-color;
+
+	// Text Properties
+
+	text-align: center;
+	white-space: nowrap;
+
+	// Basic User Interface Properties
+
+	cursor: pointer;
+
+	// webkit Properties
+
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.g-button > .g-button-client {
+	.g-common-mask-fade-out;
+	padding: @g-button-text-padding;
+}
+
+/*
+	IE8 can't handle these selectors in tandem:
+	.g-button.active, .g-button:active:not([disabled]) {
+
+	the effect is as if .g-button.active doesn't exist
+*/
+.g-button.pressed {
+	// Background Properties
+
+	background-color: @g-button-background-color-pressed;
+
+	// Color Properties
+
+	border-top-color: @g-button-border-top-color-pressed;
+	border-bottom-color: @g-button-border-bottom-color-pressed;
+	color: @g-button-text-color-pressed;
+}
+.g-button.pressed:before {
+	// Box Properties : Basic Box Properties, Border Properties & Flexible Box Layout
+
+	position: absolute;
+	left: -7px;
+	right: -7px;
+	top: -7px;
+	bottom: -7px;
+
+	// Basic User Interface Properties
+
+	content: '';
+}
+.g-button.active {
+	// Background Properties
+
+	background-color: @g-button-background-color-active;
+
+	// Color Properties
+
+	border-top-color: @g-button-border-top-color-active;
+	border-bottom-color: @g-button-border-bottom-color-active;
+	color: @g-button-text-color-active;
+}
+.g-button[disabled] {
+	// Background Properties
+
+	background-color: @g-button-background-color-disabled;
+
+	// Color Properties
+
+	border-top-color: @g-button-border-top-color-disabled;
+	border-bottom-color: @g-button-border-bottom-color-disabled;
+	// box-shadow: 0 2px rgba(0, 0, 0, 0.3); // DO NOT DELETE without confirm of GUI team.
+	color: @g-button-text-color-disabled;
+
+	// Basic User Interface Properties
+
+	cursor: default;
+}
+.g-button:focus {
+	// Basic User Interface Properties
+
+	outline: none;
+}

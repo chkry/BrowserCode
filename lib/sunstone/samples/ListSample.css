@@ -1,0 +1,15 @@
+.list-sample-item {
+	border: 1px solid #e6e6e6;
+	padding: 20px;
+	font-size:18px;
+	color:#000000;
+}
+.list-sample-index {
+	float: right;
+}
+.list-sample-selected {
+	background-color: #c4e3fe;
+}
+.list-sample-list .reorderDragger{
+	background-color: rgba(0,0,0,0.2);
+}

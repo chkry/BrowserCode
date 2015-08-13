@@ -1,0 +1,95 @@
+/* Import grid classes/mixins */
+
+/* sunstone - Common classes applicable to multiple controls */
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+:focus {
+  outline-style: none;
+}
+
+.sun {
+	font-size: @sun-item-font-size;
+	padding: @sun-app-keepout;
+	color: @sun-light-gray;
+}
+
+.sun-header-text {
+	font-size: @sun-header-font-size;
+	font-weight: @sun-header-font-style;
+}
+.sun-small-header-text {
+	font-size: @sun-small-header-font-size;
+	font-weight: @sun-sub-header-font-style;
+	letter-spacing: @sun-sub-header-letter-spacing;
+}
+.sun-sub-header-text {
+	font-size: @sun-sub-header-font-size;
+	font-weight: @sun-sub-header-font-style;
+	letter-spacing: @sun-sub-header-letter-spacing;
+}
+.sun-divider-text {
+	font-size: @sun-divider-font-size;
+	font-weight: @sun-divider-font-weight;
+	font-style: @sun-divider-font-style;
+	letter-spacing: @sun-divider-letter-spacing;
+}
+.sun-item-text {
+	font-size: @sun-item-font-size;
+	font-weight: @sun-item-font-weight;
+	font-style: @sun-item-font-style;
+	letter-spacing: @sun-item-letter-spacing;
+}
+.sun-divider-border {
+	border-bottom: 3px solid  #4d4d4d;
+}
+.sun-input-body-text {
+	font-size: @sun-input-font-size;
+	font-weight: @sun-input-body-font-weight;
+	font-style: @sun-input-body-font-style;
+	letter-spacing: @sun-input-body-letter-spacing;
+}
+.sun-input-decorator-text {
+	font-size: @sun-input-font-size;
+	font-weight: @sun-input-decorator-font-weight;
+	font-style: @sun-input-decorator-font-style;
+	letter-spacing: @sun-input-decorator-letter-spacing;
+}
+.sun-calendar-text {
+	font-size: @sun-calendar-font-size;
+	font-weight: @sun-calendar-font-weight;
+}
+
+/* sunstone - LESS pre-calculations */
+
+/* ---------------------------------------*/
+@sun-disabled-opacity: 0.6;
+@sun-disabled-opacity-ie: @sun-disabled-opacity*100;
+
+/* Individual widget CSS */
+@import "Button.less";
+@import "Checkbox.less";
+@import "CheckboxItem.less";
+@import "ContextualButton.less";
+@import "ContextualPopup.less";
+@import "GridList.less";
+@import "GridListImageItem.less";
+@import "Header.less";
+@import "Icon.less";
+@import "IconButton.less";
+@import "Input.less";
+@import "InputDecorator.less";
+@import "Panel.less";
+@import "Popup.less";
+@import "ProgressBar.less";
+@import "Radio.less";
+@import "RadioItem.less";
+@import "Scrim.less";
+@import "Slider.less";
+@import "Spinner.less";
+@import "Tab.less";
+@import "ToastPopup.less";
+@import "ToggleButton.less";
+/* Put this at the end because we want these to take precedence over others */

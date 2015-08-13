@@ -1,0 +1,104 @@
+/* DataFlipCardList.css */
+
+.g-data-flip-card-stage {
+	// Box Properties
+	position: relative;
+
+	// Transitions Properties
+	-webkit-perspective: 2000px;
+	perspective: 2000px;
+}
+.g-data-flip-card-child {
+	// Box Properties
+
+	height: @g-height/2;
+	top: @g-height/2;
+	width: @g-width;
+	position: absolute;
+
+	// Transitions Properties
+	-webkit-transform: rotateX(0deg);
+	transform: rotateX(0deg);
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transform-origin: center top;
+	transform-origin: center top;
+}
+
+.g-data-flip-card-child-back {
+	// Box Properties
+
+	overflow: hidden;
+	position: absolute;
+	z-index: 999;
+	height : @g-height/2;
+	width : @g-width;
+
+	// Transitions Properties
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform: rotateX(180deg);
+	transform: rotateX(180deg);
+}
+.g-data-flip-card-child-front {
+	// Box Properties
+
+	overflow: hidden;
+	position: absolute;
+	z-index: 999;
+	height : @g-height/2;
+	width : @g-width;
+
+	// Transitions Properties
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.g-data-flip-card-child-back-container {
+	// Box Properties
+
+	position: absolute;
+	top: 0px;
+	height: @g-height;
+	width: @g-width;
+}
+.g-data-flip-card-child-front-container {
+	// Box Properties
+
+	position: absolute;
+	top: -@g-height/2;
+	height: @g-height;
+	width: @g-width;
+}
+
+/* Additional SelectionOverlaySupport classes specific to DataFlipCardList to sync between two halves */
+
+.selection-enabled {
+	.selected {
+		.g-data-flip-card-child-front-container {
+			.g-selection-overlay-support {
+				.g-icon-button {
+					// Background Properties
+
+					background-position: 0 -@g-checkbox-image-height*3;
+				}
+			}
+		}
+	}
+}
+
+.selection-enabled {
+	.g-data-flip-card-child-back {
+		&.selected {
+			.g-data-flip-card-child-back-container {
+				.g-selection-overlay-support {
+					.g-icon-button {
+						// Background Properties
+
+						background-position: 0 -@g-checkbox-image-height*3;
+					}
+				}
+			}
+		}
+	}
+}

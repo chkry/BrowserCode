@@ -1,0 +1,36 @@
+/* Header.css */
+.sun-header {
+    color: @sun-header-color;
+    height: @sun-header-height;
+    background: @sun-header-background;
+    background-size: cover;
+    &.sun-no-backButton {
+        .sun-header-backIcon {
+            display: none;
+        }
+    }
+}
+.sun-header-backIcon {
+    min-width: @sun-backIcon-width;
+    min-height: @sun-header-height;
+    background: @sun-backIcon-background;
+}
+.sun-header-title {
+    display: inline-block;
+    .sun-header-text;
+    min-height: @sun-header-height;
+    line-height: @sun-header-height;
+    white-space: nowrap;
+    padding: 0 16px;
+}
+.header-Content.pressed {
+    background-color: rgba(0,0,0,0.3);
+}
+.sun-header-client {
+    position: absolute;
+    right: 0;
+    padding : 0 @sun-header-client-padding;
+    * {
+        float: left;
+    }
+}

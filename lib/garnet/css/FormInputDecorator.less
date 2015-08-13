@@ -1,0 +1,53 @@
+/* FormInputDecorator.css */
+
+.g-form-input-decorator {
+	// Background Properties
+
+	background-color: @g-form-input-background-color;
+
+	// Box Properties
+
+	display: block;
+	padding: @g-form-input-padding;
+	box-sizing: border-box;
+	border-style: none;
+	border: @g-form-input-border-width solid @g-form-input-border-color;
+	border-radius: @g-form-input-border-radius;
+	box-shadow: none;
+	margin: @g-form-input-margin;
+	overflow: hidden;
+
+	// Basic User Interface Properties
+
+	cursor: pointer;
+	outline: none;
+}
+
+/*
+	IE8 can't handle these selectors in tandem:
+	.g-form-input-decorator.active, .g-form-input:active:not([disabled]) {
+
+	the effect is as if .g-form-input-decorator.active doesn't exist
+*/
+.g-form-input-decorator.disabled {
+	// Background Properties
+
+	background-color: @g-form-input-background-color-disabled;
+
+	// Color Properties
+
+	border-color: @g-form-input-border-color-disabled;
+
+	// Basic User Interface Properties
+
+	cursor: default;
+}
+.g-form-input-decorator.focused {
+	// Background Properties
+
+	background-color: @g-form-input-background-color-active;
+
+	// Color Properties
+
+	border-color: @g-form-input-border-color-pressed;
+}

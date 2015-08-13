@@ -1,0 +1,2428 @@
+/* WARNING: This is a generated file for backward-compatibility.  Most      */
+/* users should instead modify LESS files.  If you choose to edit this CSS  */
+/* directly rather than LESS files, you should make sure less.xx.yy.min.js  */
+/* is commented out in your debug.html, and run deploy.sh/bat using the     */
+/* '-c' flag to disable LESS compilation.  This will force the loader and   */
+/* minifier to fall back to using CSS files in place of the same-name       */
+/* LESS file.                                                               */
+
+/* g default variable, especially size for 320 resolution, defined here */
+/* App */
+/* ---------------------------------------*/
+/* Wheel */
+/* ---------------------------------------*/
+/* Font */
+/* ---------------------------------------*/
+/* Font Sizes */
+/* Images */
+/* ---------------------------------------*/
+/* Icon */
+/* ---------------------------------------*/
+/* Icon Sizes */
+/* Icon URLs */
+/* g default parameters such as the color value, defined here */
+/* App */
+/* ---------------------------------------*/
+/* Colors */
+/* ---------------------------------------*/
+/* Font */
+/* ---------------------------------------*/
+/* Popup */
+/* ---------------------------------------*/
+/* PopupScrimAnimator */
+/* ---------------------------------------*/
+/* Disabled Opacity */
+/* ---------------------------------------*/
+/* Button */
+/* ---------------------------------------*/
+/* Form Input */
+/* ---------------------------------------*/
+/* Icon */
+/* ---------------------------------------*/
+/* ProgressBar */
+/* ---------------------------------------*/
+/* Checkbox */
+/* ---------------------------------------*/
+/* Spinner */
+/* ---------------------------------------*/
+/* FormPickerButton */
+/* ---------------------------------------*/
+/* WheelSectionListController */
+/* ---------------------------------------*/
+/* TimePickerPanel */
+/* ---------------------------------------*/
+/* PanelSet */
+/*size*/
+/* g font styles defined here */
+/* ----- WatchGothic------ */
+@font-face {
+  font-family: "WatchGothic";
+  src: local("WatchGothic-Regular"), local("NewSmartGothic-Regular"), url("../fonts/WatchGothic-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "WatchGothic Bold";
+  src: local("WatchGothic-Bold"), local("NewSmartGothic-Bold"), url("../fonts/WatchGothic-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "WatchGothic Light";
+  src: local("WatchGothic-Light"), local("NewSmartGothic-Light"), url("../fonts/WatchGothic-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* g common classes defined here */
+/* Common classes applicable to multiple controls */
+.garnet {
+  z-index: 0;
+  color: #fafafa;
+  font-weight: 400;
+  font-size: 28px;
+}
+.g-button-text {
+  font-weight: normal;
+  font-size: 28px;
+  font-style: normal;
+}
+.g-common-body-font {
+  color: #fafafa;
+  font-weight: 400;
+  font-size: 28px;
+}
+.g-common-width-height-fit {
+  width: 320px;
+  height: 320px;
+}
+.g-common-fit {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.g-common-fit-screen {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 320px;
+  height: 320px;
+}
+.g-common-hw-accelerated {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+}
+.g-common-user-select-none {
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  user-select: none;
+}
+.g-common-point-events-none {
+  pointer-events: none;
+}
+.g-common-circle-clip {
+  -webkit-clip-path: circle(160px, 160px, 160px);
+}
+.g-common-mask-fade-out {
+  -webkit-mask-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0), #000000 10px, #000000);
+  -webkit-mask-image: linear-gradient(right, rgba(0, 0, 0, 0), #000000 10px, #000000);
+}
+*[tabindex],
+label,
+input {
+  outline: none;
+  /* remove outline in case of adding tabindex */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  /* remove tap highlight in case of adding tabindex */
+}
+/* g individual widget CSS defined here */
+/* Button.css */
+.g-button {
+  background-color: #2b323c;
+  position: relative;
+  display: inline-block;
+  height: 62px;
+  padding: 0 10px 0px;
+  box-sizing: border-box;
+  border-style: none;
+  border-top: 1px solid rgba(230, 230, 230, 0.3);
+  border-bottom: 1px solid #2b323c;
+  border-radius: 28px;
+  margin: 1px 1px 3px 1px;
+  color: #fafafa;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.g-button > .g-button-client {
+  -webkit-mask-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0), #000000 10px, #000000);
+  -webkit-mask-image: linear-gradient(right, rgba(0, 0, 0, 0), #000000 10px, #000000);
+  padding: 0 10px;
+}
+/*
+	IE8 can't handle these selectors in tandem:
+	.g-button.active, .g-button:active:not([disabled]) {
+
+	the effect is as if .g-button.active doesn't exist
+*/
+.g-button.pressed {
+  background-color: #414750;
+  border-top-color: #2b323c;
+  border-bottom-color: rgba(230, 230, 230, 0.3);
+  color: #fafafa;
+}
+.g-button.pressed:before {
+  position: absolute;
+  left: -7px;
+  right: -7px;
+  top: -7px;
+  bottom: -7px;
+  content: '';
+}
+.g-button.active {
+  background-color: #414750;
+  border-top-color: #2b323c;
+  border-bottom-color: rgba(230, 230, 230, 0.3);
+  color: #fafafa;
+}
+.g-button[disabled] {
+  background-color: rgba(43, 50, 60, 0.3);
+  border-top-color: #454d55;
+  border-bottom-color: rgba(43, 50, 60, 0.3);
+  color: #646464;
+  cursor: default;
+}
+.g-button:focus {
+  outline: none;
+}
+/* Checkbox.css */
+.g-checkbox {
+  background: url(../images/btn_check.svg) no-repeat;
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  margin: 0;
+  /* reset for ? */
+  vertical-align: middle;
+  /* these entries cause toggle-button and checkbox to line up properly */
+  cursor: pointer;
+}
+.g-checkbox[pressed] {
+  background-position: 0 -48px;
+}
+.g-checkbox[disabled] {
+  background-position: 0 -96px;
+  cursor: default;
+}
+.g-checkbox[checked] {
+  background-position: 0 -144px;
+}
+.g-checkbox[checked][pressed] {
+  background-position: 0 -192px;
+}
+.g-checkbox[checked][disabled] {
+  background-position: 0 -240px;
+  cursor: default;
+}
+/* CommandBar.css */
+.g-panel.g-layout-absolute-wrapper > .g-command-bar {
+  top: initial;
+}
+.g-command-bar {
+  background: url(../images/btn_command_bg.png) no-repeat;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 116px;
+  text-align: center;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.g-command-bar > * {
+  margin: 24px 0 24px 48px;
+}
+.g-command-bar > :first-child {
+  margin-left: 0;
+  width: 68px;
+  height: 68px;
+}
+.g-command-bar > :nth-child(2) {
+  width: 68px;
+  height: 68px;
+}
+/* ConfirmPopup.css */
+.g-confirm-popup > * {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.g-confirm-popup-client {
+  width: 320px;
+  height: 218px;
+  overflow: hidden;
+}
+.g-confirm-popup-client .g-scroller-both-mask-fade-out > .enyo-touch-scroller {
+  -webkit-mask-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), #000000 16px, #000000 188px, rgba(0, 0, 0, 0));
+  -webkit-mask-image: linear-gradient(top, rgba(0, 0, 0, 0), #000000 16px, #000000 188px, rgba(0, 0, 0, 0));
+}
+.g-confirm-popup .g-confirm-popup-button-container {
+  position: absolute;
+  width: 320px;
+  height: 68px;
+  top: 218px;
+  pointer-events: none;
+}
+.g-confirm-popup .g-icon-button {
+  width: 68px;
+  height: 68px;
+  pointer-events: auto;
+}
+.g-confirm-popup .g-ok-image {
+  background: url(../images/btn_done.svg) no-repeat;
+  margin: 0 24px;
+}
+.g-confirm-popup .g-cancel-image {
+  background: url(../images/btn_cancel.svg) no-repeat;
+  margin: 0 24px;
+}
+/* DataFlipCardList.css */
+.g-data-flip-card-stage {
+  position: relative;
+  -webkit-perspective: 2000px;
+  perspective: 2000px;
+}
+.g-data-flip-card-child {
+  height: 160px;
+  top: 160px;
+  width: 320px;
+  position: absolute;
+  -webkit-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-origin: center top;
+  transform-origin: center top;
+}
+.g-data-flip-card-child-back {
+  overflow: hidden;
+  position: absolute;
+  z-index: 999;
+  height: 160px;
+  width: 320px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+}
+.g-data-flip-card-child-front {
+  overflow: hidden;
+  position: absolute;
+  z-index: 999;
+  height: 160px;
+  width: 320px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.g-data-flip-card-child-back-container {
+  position: absolute;
+  top: 0px;
+  height: 320px;
+  width: 320px;
+}
+.g-data-flip-card-child-front-container {
+  position: absolute;
+  top: -160px;
+  height: 320px;
+  width: 320px;
+}
+/* Additional SelectionOverlaySupport classes specific to DataFlipCardList to sync between two halves */
+.selection-enabled .selected .g-data-flip-card-child-front-container .g-selection-overlay-support .g-icon-button {
+  background-position: 0 -144px;
+}
+.selection-enabled .g-data-flip-card-child-back.selected .g-data-flip-card-child-back-container .g-selection-overlay-support .g-icon-button {
+  background-position: 0 -144px;
+}
+/* DataList.css */
+.g-data-list {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.g-data-list-header-comp {
+  width: 100%;
+  height: 60px;
+}
+.g-data-list-footer-comp {
+  width: 100%;
+  height: 27px;
+}
+/* DataGridList.css */
+.enyo-data-grid-list.g-data-grid-list {
+  background-color: #ffffff;
+  position: absolute;
+}
+.g-data-grid-list .g-scroller-v-column {
+  width: 10px;
+  right: -10px;
+}
+.g-data-grid-list .g-scroller-v-column .g-scroller-vthumb-container {
+  width: 100%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.g-data-grid-list .g-scroller {
+  transition: transform 0.2s;
+  -webkit-transition: -webkit-transform 0.2s;
+}
+/* DatePickerKnob.css */
+.g-datepickerknob {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  pointer-events: none;
+}
+.g-datepickerknob-grab {
+  width: 110px;
+  height: 57px;
+  margin: auto;
+  pointer-events: auto;
+}
+.g-datepickerknob-visible {
+  background-color: #fafafa;
+  border-width: 0px;
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin: auto;
+  pointer-events: none;
+}
+.g-datepickerknob-visible.pressed {
+  width: 48px;
+  height: 48px;
+  border-color: rgba(250, 250, 250, 0.3);
+  border-width: 16px;
+  margin-top: -16px;
+  background-clip: padding-box;
+  box-sizing: border-box;
+  border-style: solid;
+}
+/* DatePickerPanel.css */
+.g-panel.g-date-picker-panel {
+  background-color: #000000;
+  border-radius: 50%;
+  text-align: center;
+}
+.g-panel.g-date-picker-panel .g-datepickerknob-bg {
+  background-image: url(../images/bg_wheel_date_picker.png);
+  height: 100%;
+  border-radius: 50%;
+}
+.g-date-picker .g-date-picker-wrap {
+  position: absolute;
+  height: 78px;
+  cursor: pointer;
+}
+.g-date-picker .g-date-picker-wrap.year {
+  width: 190px;
+  left: 0;
+  right: 0;
+  top: 40px;
+  margin: 0 65px;
+}
+.g-date-picker .g-date-picker-wrap.month {
+  width: 90px;
+  right: 50%;
+  top: 109px;
+  text-align: right;
+}
+.g-date-picker .g-date-picker-wrap.day {
+  width: 90px;
+  left: 50%;
+  right: 0;
+  top: 109px;
+  text-align: left;
+}
+.g-date-picker .g-date-picker-field {
+  height: 78px;
+  margin: 12px;
+  color: #fafafa;
+  line-height: 78px;
+  font-size: 65px;
+}
+.g-date-picker .g-date-picker-field.selected {
+  color: #1cd2d2;
+}
+.g-date-picker .g-ok-image {
+  background: url(../images/btn_command_done.svg) no-repeat;
+  position: absolute;
+  width: 68px;
+  height: 68px;
+  right: 75px;
+  bottom: 52px;
+}
+.g-date-picker .g-cancel-image {
+  background: url(../images/btn_command_close.svg) no-repeat;
+  position: absolute;
+  width: 68px;
+  height: 68px;
+  left: 75px;
+  bottom: 52px;
+}
+.g-date-picker .day-animation {
+  animation: g-date-picker-animation 0.6s ease-out;
+  -webkit-animation: g-date-picker-animation 0.6s ease-out;
+}
+.g-date-picker .month-animation {
+  animation: g-date-picker-animation 0.5s ease-out;
+  -webkit-animation: g-date-picker-animation 0.5s ease-out;
+}
+.g-date-picker .year-animation {
+  animation: g-date-picker-animation 0.4s ease-out;
+  -webkit-animation: g-date-picker-animation 0.4s ease-out;
+}
+.g-date-picker .hide-date {
+  opacity: 0;
+  transform: translate3d(0, -78px, 0);
+}
+@keyframes g-date-picker-animation {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -78px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes g-date-picker-animation {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -78px, 0);
+    transform: translate3d(0, -78px, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+/* FormButton.css */
+.g-form-button {
+  display: block;
+  width: 248px;
+  height: 52px;
+  margin: 10px 38px 14px;
+}
+/* FormInput.css */
+.g-form-input {
+  background: transparent;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  box-shadow: none;
+  color: #fafafa;
+  text-align: left;
+  white-space: nowrap;
+  font-weight: normal;
+  font-size: 28px;
+  font-style: normal;
+  -webkit-mask-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0), #000000 10px, #000000);
+  -webkit-mask-image: linear-gradient(right, rgba(0, 0, 0, 0), #000000 10px, #000000);
+  font-size: 26px;
+  cursor: pointer;
+  outline: none;
+}
+.g-form-input::selection {
+  color: #767676;
+}
+/*
+	IE8 can't handle these selectors in tandem:
+	.g-form-input.active, .g-form-input:active:not([disabled]) {
+
+	the effect is as if .g-form-input.active doesn't exist
+*/
+.g-form-input.pressed,
+.g-form-input:active:hover:not([disabled]) {
+  color: #fafafa;
+}
+.g-form-input.active {
+  color: #fafafa;
+}
+.g-form-input[disabled] {
+  color: #767676;
+  cursor: default;
+}
+.g-form-input:focus {
+  color: #fafafa;
+}
+/* FormInputDecorator.css */
+.g-form-input-decorator {
+  background-color: #464646;
+  display: block;
+  padding: 6px 20px;
+  box-sizing: border-box;
+  border-style: none;
+  border: 3px solid #464646;
+  border-radius: 50px;
+  box-shadow: none;
+  margin: 10px 38px 14px;
+  overflow: hidden;
+  cursor: pointer;
+  outline: none;
+}
+/*
+	IE8 can't handle these selectors in tandem:
+	.g-form-input-decorator.active, .g-form-input:active:not([disabled]) {
+
+	the effect is as if .g-form-input-decorator.active doesn't exist
+*/
+.g-form-input-decorator.disabled {
+  background-color: #1e1e1e;
+  border-color: #1e1e1e;
+  cursor: default;
+}
+.g-form-input-decorator.focused {
+  background-color: #464646;
+  border-color: #1cd2d2;
+}
+/* FormLabel.css */
+.g-form-label {
+  display: block;
+  margin: 16px 40px 10px;
+  color: #1cd2d2;
+  font-size: 22px;
+  font-weight: 800;
+}
+/* FormPickerButton.css */
+.g-form-picker-button {
+  background-color: #464646;
+  position: relative;
+  display: block;
+  width: 248px;
+  height: 52px;
+  padding: 6px 42px 6px 7px;
+  box-sizing: border-box;
+  border-style: none;
+  border: 3px solid #464646;
+  border-radius: 50px;
+  box-shadow: none;
+  margin: 10px 38px 14px;
+  overflow: hidden;
+  color: #fafafa;
+  text-align: left;
+  white-space: nowrap;
+  font-weight: normal;
+  font-size: 28px;
+  font-style: normal;
+  font-size: 26px;
+  cursor: pointer;
+  outline: none;
+}
+/*
+	IE8 can't handle these selectors in tandem:
+	.g-picker-button.active, .g-picker-button:active:not([disabled]) {
+
+	the effect is as if .g-picker-button.active doesn't exist
+*/
+.g-form-picker-button.pressed {
+  background-color: #464646;
+  border-color: #1cd2d2;
+  color: #fafafa;
+}
+.g-form-picker-button.active {
+  background-color: #464646;
+  border-color: #1cd2d2;
+  color: #fafafa;
+}
+.g-form-picker-button[disabled] {
+  background-color: #1e1e1e;
+  border-color: #1e1e1e;
+  color: #646464;
+  cursor: default;
+}
+.g-form-picker-button:focus {
+  outline: none;
+}
+/* FormToolDecorator.css */
+.g-form-tool-decorator {
+  display: block;
+  margin: 10px 38px 12px;
+}
+.g-form-tool-decorator > * {
+  display: inline-block;
+  margin: 0;
+}
+/* Icon.css */
+.g-icon {
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  vertical-align: middle;
+}
+.g-icon.disabled {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+}
+/* IconButton.css */
+.g-icon-button {
+  background-repeat: no-repeat;
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.g-icon-button[disabled] {
+  cursor: default;
+}
+.g-icon-button.pressed:before {
+  position: absolute;
+  left: -5px;
+  right: -5px;
+  top: -5px;
+  bottom: -5px;
+  content: '';
+}
+/* IconMenuPopup.css */
+.g-popup-iconmenu .g-icon-button {
+  pointer-events: auto;
+}
+.g-popup-iconmenu .g-popup-iconmenu-button {
+  width: 82px;
+  height: 82px;
+}
+.g-popup-iconmenu.two-buttons .g-popup-iconmenu-button {
+  margin-top: 49px;
+}
+.g-popup-iconmenu .g-popup-close {
+  position: absolute;
+  width: 68px;
+  height: 68px;
+  margin: 24px 126px;
+  left: 0;
+  right: 0;
+  top: auto;
+  bottom: 0;
+}
+.g-popup-iconmenu .container {
+  top: 20px;
+  width: 320px;
+  height: 194px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.g-popup-iconmenu.icon-2-buttons .g-popup-iconmenu-button {
+  margin-top: 49px;
+}
+.g-popup-iconmenu.icon-2-buttons .g-popup-iconmenu-button:nth-child(1) {
+  margin-right: 88px;
+}
+.g-popup-iconmenu.icon-3-buttons .g-popup-iconmenu-button:nth-child(1) {
+  margin: 0 119px 17px 119px;
+}
+.g-popup-iconmenu.icon-3-buttons .g-popup-iconmenu-button:nth-child(2) {
+  margin-right: 116px;
+}
+/* Item.css */
+.g-item.pressed-effect {
+  background-color: rgba(230, 230, 230, 0.2);
+}
+/* Layout.css */
+/* Flex */
+.g-layout.fixed {
+  table-layout: fixed;
+}
+.g-layout.auto {
+  table-layout: auto;
+}
+.flex {
+  width: auto;
+}
+table.g-layout {
+  border-collapse: collapse;
+}
+.g-layout > * > * > td {
+  overflow: hidden;
+}
+.g-layout > * > * > td {
+  border: 0;
+}
+/* Absolute */
+.g-layout-absolute-wrapper {
+  position: relative;
+}
+.g-layout-absolute-wrapper > * {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.g-layout-absolute-center {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.g-layout-absolute-fit {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+/* Text */
+.g-layout-text-wrapper > .center,
+.g-layout-text-center {
+  text-align: center;
+}
+.g-layout-text-wrapper > .left,
+.g-layout-text-left {
+  text-align: left;
+}
+.g-layout-text-wrapper > .right,
+.g-layout-text-right {
+  text-align: right;
+}
+/* Block */
+.g-layout-block-center {
+  display: block;
+  margin: auto;
+}
+/* Box */
+.g-layout-box-wrapper > .outside-circle,
+.g-layout-box-outside-circle {
+  width: 320px;
+  height: 320px;
+  margin: auto;
+}
+.g-layout-box-wrapper > .outside-circle-no-wheel,
+.g-layout-box-outside-circle-no-wheel {
+  width: 280px;
+  height: 280px;
+  margin: auto;
+}
+.g-layout-box-wrapper > .inside-circle-no-wheel,
+.g-layout-box-inside-circle-no-wheel {
+  width: 226px;
+  height: 226px;
+  margin: auto;
+}
+.g-layout-box-wrapper > .inside-circle,
+.g-layout-box-inside-circle {
+  width: 198px;
+  height: 198px;
+  margin: auto;
+}
+/* Positioning */
+.g-layout-absolute-wrapper > .left {
+  left: 0;
+  right: auto;
+  margin: auto auto auto 0;
+}
+.g-layout-absolute-wrapper > .right {
+  left: auto;
+  right: 0;
+  margin: auto 0 auto auto;
+}
+.g-layout-absolute-wrapper > .top {
+  top: 0;
+  bottom: auto;
+  margin: 0 auto auto auto;
+}
+.g-layout-absolute-wrapper > .bottom {
+  top: auto;
+  bottom: 0;
+  margin: auto auto 0 auto;
+}
+.g-layout-absolute-wrapper > .left.right {
+  left: 0px;
+  right: 0px;
+}
+.g-layout-absolute-wrapper > .top.bottom {
+  top: 0px;
+  bottom: 0px;
+}
+.g-layout-absolute-wrapper > .center {
+  margin: auto;
+}
+/* MultiPicker.css */
+.g-multi-picker {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+}
+.g-multi-picker .g-multi-picker-list {
+  background-color: #000000;
+}
+.g-multipicker-item {
+  position: relative;
+  /* Do not omit this. It's critical */
+  height: 80px;
+  line-height: 80px;
+  cursor: pointer;
+}
+.g-multi-picker .g-multi-picker-item-border {
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px solid #202328;
+  bottom: 0;
+}
+.g-multi-picker .g-multi-picker-commandbar {
+  pointer-event: auto;
+}
+.g-multipicker-item .g-multipicker-item-title {
+  width: 186px;
+  height: 80px;
+  margin-left: 96px;
+  text-align: left;
+  -webkit-mask-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0), #ffffff 28px, #ffffff);
+  -webkit-mask-image: linear-gradient(right, rgba(0, 0, 0, 0), #ffffff 28px, #ffffff);
+}
+.g-multipicker-item .disabled {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+}
+/* This for always showing checkbox */
+.g-selection-overlay-support-scrim {
+  display: inline;
+}
+/* MenuScroller.css */
+.g-menu-scroller {
+  position: relative;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 320px;
+  height: 320px;
+}
+.g-menu-scroller > div {
+  -webkit-mask-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), #000000 37px, #000000 283px, rgba(0, 0, 0, 0));
+  -webkit-mask-image: linear-gradient(top, rgba(0, 0, 0, 0), #000000 37px, #000000 283px, rgba(0, 0, 0, 0));
+}
+.g-menu-scroller .stretch-client > div::before {
+  content: "";
+  width: 100%;
+  height: 37px;
+  display: block;
+}
+.g-menu-scroller .stretch-client > div::after {
+  content: "";
+  width: 100%;
+  height: 37px;
+  display: block;
+}
+.g-menu-scroller-item-content {
+  position: relative;
+  height: 100%;
+  min-height: 78px;
+}
+.g-menu-scroller-item-title-content {
+  max-height: 64px;
+  overflow: hidden;
+}
+.g-menu-scroller-item-title-content.singleline {
+  line-height: 64px;
+  -webkit-mask-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0), #ffffff 28px, #ffffff);
+  -webkit-mask-image: linear-gradient(right, rgba(0, 0, 0, 0), #ffffff 28px, #ffffff);
+}
+.g-menu-scroller-item-check-title {
+  width: 174px;
+  height: 66px;
+  display: table-cell;
+  vertical-align: middle;
+  left: 0;
+  white-space: normal;
+  line-height: 32px;
+  padding: 6px 0 6px 60px;
+  text-align: left;
+}
+.g-menu-scroller-item-title {
+  width: 222px;
+  height: 66px;
+  display: table-cell;
+  vertical-align: middle;
+  left: 0;
+  white-space: normal;
+  line-height: 32px;
+  padding: 6px 0 6px 60px;
+  text-align: left;
+}
+.g-menu-scroller-item-checkbox.g-toggle-icon-button {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  margin: auto;
+  right: 38px;
+  top: 0;
+  bottom: 0;
+}
+.g-menu-scroller-item-checkbox.g-checkbox {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  margin: auto;
+  right: 38px;
+  top: 0;
+  bottom: 0;
+}
+.g-menu-scroller-item {
+  border-width: 1px;
+  border-bottom-style: solid;
+  border-color: #4d5258;
+}
+.g-menu-scroller-item.pressed {
+  background-color: rgba(230, 230, 230, 0.2);
+}
+.g-menu-scroller-item.disabled {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+}
+.g-menu-scroller-item:nth-last-child(1) {
+  border: 0;
+}
+/* Panel.css */
+.g-panel {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 320px;
+  height: 320px;
+  overflow: hidden;
+}
+.g-panelset .g-panel,
+.g-panel .g-panel {
+  width: 100%;
+  height: 100%;
+}
+/* PageIndicator.css */
+.g-page-indicator {
+  position: absolute;
+  width: 100px;
+  height: 8px;
+  margin: 8px 110px 0;
+  top: 0;
+  text-align: center;
+  line-height: 8px;
+  font-size: 8px;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+}
+.page-indicator-container {
+  width: 320px;
+  height: 24px;
+  pointer-events: none;
+}
+.page-indicator-container.fadeout {
+  background: url(../images/ab_navigation_bg.svg) no-repeat;
+}
+.g-page-indicator .g-page-indicator-decorator {
+  height: 8px;
+}
+.g-page-indicator .g-page-indicator-decorator > * {
+  vertical-align: inherit;
+}
+.g-page-indicator .g-page-indicator-icon {
+  background-color: #a0a0a0;
+  width: 8px;
+  height: 8px;
+  border-radius: 9999px;
+  margin: 0 6px;
+}
+.g-page-indicator .g-page-indicator-icon.current {
+  background-color: #1cd2d2;
+}
+.g-page-indicator .hide {
+  -webkit-transform: translate3d(-320px, 0, 0);
+  transform: translate3d(-320px, 0, 0);
+}
+/* PanelSet.css */
+/* Panel default */
+.g-panelset {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  overflow: hidden;
+}
+.g-panelset .g-panelset,
+.g-panel .g-panelset {
+  width: 100%;
+  height: 100%;
+}
+.g-panelset .hidden {
+  display: none;
+  -webkit-transition-duration: 0;
+  transition-duration: 0;
+}
+.g-panelset .g-panelset-panel {
+  -webkit-transition-property: all;
+  -webkit-transition-timing-function: ease-in-out;
+  -webkit-transition-delay: 0;
+  -webkit-transition-duration: 0;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0;
+  transition-duration: 0;
+}
+.g-panelset > .client {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  z-index: 0;
+}
+.g-panelset > .page-indicator-container {
+  position: absolute;
+}
+/* PanelSet depth Transition layer effect start */
+.g-panelset-depth-transition-card-next-child-effect {
+  animation: depth-transition-from-next-child-effect 0s cubic-bezier(0, 0, 0.1, 1) forwards;
+  perspective: 1000;
+  -webkit-animation: depth-transition-from-next-child-effect 0s cubic-bezier(0, 0, 0.1, 1) forwards;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -moz-animation: depth-transition-from-next-child-effect 0s cubic-bezier(0, 0, 0.1, 1) forwards;
+}
+.g-panelset-depth-transition-previous-child-effect {
+  animation: depth-transition-from-previous-child-effect 0s forwards;
+  perspective: 1000;
+  -webkit-animation: depth-transition-from-previous-child-effect 0s forwards;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -moz-animation: depth-transition-from-previous-child-effect 0s forwards;
+}
+/* Animation effect on panel children while coming to focus */
+@keyframes depth-transition-from-next-child-effect {
+  0% {
+    transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes depth-transition-from-next-child-effect {
+  0% {
+    -webkit-transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+}
+/* Animation effect on panel children while going out of focus */
+@keyframes depth-transition-from-previous-child-effect {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(100%, 0, 0);
+  }
+}
+@-webkit-keyframes depth-transition-from-previous-child-effect {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(100%, 0, 0);
+  }
+}
+/*PanelSet depth-transition Transition layer effect End */
+/* Panel effect for hidden at start */
+@keyframes panel-hidden {
+  0% {
+    transform: translate3d(320px, 0px, 0px);
+  }
+  100% {
+    transform: translate3d(320px, 0px, 0px);
+  }
+}
+@-webkit-keyframes panel-hidden {
+  0% {
+    -webkit-transform: translate3d(320px, 0px, 0px);
+  }
+  100% {
+    -webkit-transform: translate3d(320px, 0px, 0px);
+  }
+}
+/* Panel effect */
+@keyframes flip-vertical-from-next {
+  0% {
+    transform: rotate3d(1, 0, 0, 90deg);
+  }
+  50% {
+    transform: rotate3d(1, 0, 0, 90deg);
+  }
+  100% {
+    transform: rotate3d(0, 0, 0, 0deg);
+  }
+}
+@-webkit-keyframes flip-vertical-from-next {
+  0% {
+    -webkit-transform: rotate3d(1, 0, 0, 90deg);
+  }
+  50% {
+    -webkit-transform: rotate3d(1, 0, 0, 90deg);
+  }
+  100% {
+    -webkit-transform: rotate3d(0, 0, 0, 0deg);
+  }
+}
+@keyframes flip-vertical-from-previous {
+  0% {
+    transform: rotate3d(1, 0, 0, 90deg);
+  }
+  50% {
+    transform: rotate3d(1, 0, 0, 90deg);
+  }
+  100% {
+    transform: rotate3d(0, 0, 0, 0deg);
+  }
+}
+@-webkit-keyframes flip-vertical-from-previous {
+  0% {
+    -webkit-transform: rotate3d(1, 0, 0, 90deg);
+  }
+  50% {
+    -webkit-transform: rotate3d(1, 0, 0, 90deg);
+  }
+  100% {
+    -webkit-transform: rotate3d(0, 0, 0, 0deg);
+  }
+}
+@keyframes flip-vertical-to-next {
+  0% {
+    transform: rotate3d(0, 0, 0, 0deg);
+  }
+  50% {
+    transform: rotate3d(1, 0, 0, 90deg);
+  }
+  100% {
+    transform: rotate3d(1, 0, 0, 90deg);
+  }
+}
+@-webkit-keyframes flip-vertical-to-next {
+  0% {
+    -webkit-transform: rotate3d(0, 0, 0, 0deg);
+  }
+  50% {
+    -webkit-transform: rotate3d(1, 0, 0, 90deg);
+  }
+  100% {
+    -webkit-transform: rotate3d(1, 0, 0, 90deg);
+  }
+}
+@keyframes flip-vertical-to-previous {
+  0% {
+    transform: rotate3d(0, 0, 0, 0deg);
+  }
+  50% {
+    transform: rotate3d(1, 0, 0, 90deg);
+  }
+  100% {
+    transform: rotate3d(1, 0, 0, 90deg);
+  }
+}
+@-webkit-keyframes flip-vertical-to-previous {
+  0% {
+    -webkit-transform: rotate3d(0, 0, 0, 0deg);
+  }
+  50% {
+    -webkit-transform: rotate3d(1, 0, 0, 90deg);
+  }
+  100% {
+    -webkit-transform: rotate3d(1, 0, 0, 90deg);
+  }
+}
+@keyframes slide-vertical-from-next {
+  0% {
+    transform: translate3d(0px, 320px, 0px);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+@-webkit-keyframes slide-vertical-from-next {
+  0% {
+    -webkit-transform: translate3d(0px, 320px, 0px);
+  }
+  100% {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+}
+@keyframes slide-vertical-from-previous {
+  0% {
+    transform: translate3d(0px, -320px, 0px);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+@-webkit-keyframes slide-vertical-from-previous {
+  0% {
+    -webkit-transform: translate3d(0px, -320px, 0px);
+  }
+  100% {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+}
+@keyframes slide-vertical-to-next {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  100% {
+    transform: translate3d(0px, 320px, 0px);
+  }
+}
+@-webkit-keyframes slide-vertical-to-next {
+  0% {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  100% {
+    -webkit-transform: translate3d(0px, 320px, 0px);
+  }
+}
+@keyframes slide-vertical-to-previous {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  100% {
+    transform: translate3d(0px, -320px, 0px);
+  }
+}
+@-webkit-keyframes slide-vertical-to-previous {
+  0% {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  100% {
+    -webkit-transform: translate3d(0px, -320px, 0px);
+  }
+}
+/* Panel move-transition effect end*/
+@keyframes move-transition-from-next {
+  0% {
+    transform: translate3d(320px, 0px, 0px);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+@-webkit-keyframes move-transition-from-next {
+  0% {
+    -webkit-transform: translate3d(320px, 0px, 0px);
+  }
+  100% {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+}
+@keyframes move-transition-from-previous {
+  0% {
+    transform: translate3d(-320px, 0px, 0px);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+@-webkit-keyframes move-transition-from-previous {
+  0% {
+    -webkit-transform: translate3d(-320px, 0px, 0px);
+  }
+  100% {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+}
+@keyframes move-transition-to-next {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  100% {
+    transform: translate3d(320px, 0px, 0px);
+  }
+}
+@-webkit-keyframes move-transition-to-next {
+  0% {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  100% {
+    -webkit-transform: translate3d(320px, 0px, 0px);
+  }
+}
+@keyframes move-transition-to-previous {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  100% {
+    transform: translate3d(-320px, 0px, 0px);
+  }
+}
+@-webkit-keyframes move-transition-to-previous {
+  0% {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  100% {
+    -webkit-transform: translate3d(-320px, 0px, 0px);
+  }
+}
+/* Panel move-transition effect end*/
+/* Panel depth-transition effect start*/
+@keyframes depth-transition-from-next {
+  0% {
+    transform: translate3d(320px, 0, 0);
+    z-index: 1;
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+    z-index: 1;
+  }
+}
+@-webkit-keyframes depth-transition-from-next {
+  0% {
+    -webkit-transform: translate3d(320px, 0, 0);
+    transform: translate3d(320px, 0, 0);
+    z-index: 1;
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    z-index: 1;
+  }
+}
+@keyframes depth-transition-from-previous {
+  0% {
+    transform: translate3d(0, 0, 0);
+    z-index: 0;
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+    z-index: 0;
+  }
+}
+@-webkit-keyframes depth-transition-from-previous {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    z-index: 0;
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    z-index: 0;
+  }
+}
+@keyframes depth-transition-to-next {
+  0% {
+    transform: translate3d(0, 0, 0);
+    z-index: 1;
+  }
+  100% {
+    transform: translate3d(320px, 0, 0);
+    z-index: 1;
+  }
+}
+@-webkit-keyframes depth-transition-to-next {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    z-index: 1;
+  }
+  100% {
+    -webkit-transform: translate3d(320px, 0, 0);
+    transform: translate3d(320px, 0, 0);
+    z-index: 1;
+  }
+}
+@keyframes depth-transition-to-previous {
+  0% {
+    transform: translate3d(0, 0, 0);
+    z-index: 0;
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+    z-index: 0;
+  }
+}
+@-webkit-keyframes depth-transition-to-previous {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    z-index: 0;
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    z-index: 0;
+  }
+}
+/* Panel depth-transition effect end*/
+/* PanelTitle.css */
+.g-panel-title {
+  -webkit-transform: translateY(-100%) translateZ(0);
+  transform: translateY(-100%) translateZ(0);
+  -webkit-transition: -webkit-transform 0.0001s ease;
+  transition: transform 0.0001s ease;
+}
+.g-panel-title.animate {
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+}
+.g-panel-title.showing {
+  -webkit-transform: translateY(0) translateZ(0);
+  transform: translateY(0) translateZ(0);
+}
+/* Picker.css */
+.g-picker {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+}
+.g-picker .g-picker-list {
+  background-color: #000000;
+}
+.g-picker .g-picker-footer-comp {
+  width: 100%;
+  height: 72px;
+}
+.g-picker-item {
+  position: relative;
+  /* Do not omit this. It's critical */
+  height: 80px;
+  line-height: 80px;
+  cursor: pointer;
+}
+.g-picker .g-picker-item-border {
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px solid #202328;
+  bottom: 0;
+}
+.g-picker-item .g-picker-item-title {
+  overflow: hidden;
+  margin-left: 38px;
+  width: 200px;
+  max-height: 80px;
+  text-align: left;
+  white-space: nowrap;
+  -webkit-mask-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0), #ffffff 28px, #ffffff);
+  -webkit-mask-image: linear-gradient(right, rgba(0, 0, 0, 0), #ffffff 28px, #ffffff);
+}
+.g-selection-overlay-support-scrim {
+  display: inline;
+}
+/* Popup.css */
+.g-popup {
+  background-color: rgba(56, 64, 75, 0.98);
+  width: 320px;
+  height: 320px;
+  color: #fafafa;
+  text-align: center;
+  font-weight: 400;
+  font-size: 28px;
+}
+.g-popup-gradual-showing {
+  -webkit-animation: popup-gradual-showing 0.2s forwards;
+  animation: popup-gradual-showing 0.2s forwards;
+}
+@-webkit-keyframes popup-gradual-showing {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes popup-gradual-showing {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.g-popdown-gradual-hiding {
+  -webkit-animation: popdown-gradual-hiding 0.2s forwards;
+  animation: popdown-gradual-hiding 0.2s forwards;
+}
+@-webkit-keyframes popdown-gradual-hiding {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes popdown-gradual-hiding {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.g-popup-depth-transition {
+  -webkit-animation: pop-up-depth-transition 0.4s forwards;
+  animation: pop-up-depth-transition 0.4s forwards;
+}
+@-webkit-keyframes pop-up-depth-transition {
+  0% {
+    -webkit-transform: translate3d(320px, 0, 0);
+    transform: translate3d(320px, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes pop-up-depth-transition {
+  0% {
+    transform: translate3d(320px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.g-popdown-depth-transition {
+  -webkit-animation: pop-down-depth-transition 0.4s forwards;
+  animation: pop-down-depth-transition 0.4s forwards;
+}
+@-webkit-keyframes pop-down-depth-transition {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(320px, 0, 0);
+    transform: translate3d(320px, 0, 0);
+  }
+}
+@keyframes pop-down-depth-transition {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(320px, 0, 0);
+  }
+}
+/* PopupScrimAnimator.css */
+.g-popup-scale-transition {
+  background-color: #38404b;
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 50%;
+  line-height: 320px;
+  -webkit-animation: pop-up 0.25s ease-out forwards;
+  animation: pop-up 0.25s ease-out forwards;
+}
+.g-popdown-scale-transition {
+  background-color: #38404b;
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 50%;
+  line-height: 320px;
+  -webkit-animation: pop-down 0.45s ease-in forwards;
+  animation: pop-down 0.45s ease-in forwards;
+}
+@-webkit-keyframes pop-up {
+  0% {
+    -webkit-transform: scale3D(0, 0, 0);
+    transform: scale3D(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: scale3D(1, 1, 1);
+    transform: scale3D(1, 1, 1);
+  }
+}
+@keyframes pop-up {
+  0% {
+    transform: scale3D(0, 0, 0);
+  }
+  100% {
+    transform: scale3D(1, 1, 1);
+  }
+}
+@-webkit-keyframes pop-down {
+  0% {
+    -webkit-transform: scale3D(1, 1, 1);
+    transform: scale3D(1, 1, 1);
+  }
+  44% {
+    -webkit-transform: scale3D(1, 1, 1);
+    transform: scale3D(1, 1, 1);
+  }
+  77% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale3D(0, 0, 0);
+    transform: scale3D(0, 0, 0);
+  }
+}
+@keyframes pop-down {
+  0% {
+    transform: scale3D(1, 1, 1);
+  }
+  44% {
+    transform: scale3D(1, 1, 1);
+  }
+  77% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    transform: scale3D(0, 0, 0);
+  }
+}
+/* PopupScroller.css */
+.g-popup-scroller {
+  width: 320px;
+  height: 208px;
+  overflow: hidden;
+}
+.g-popup-scroller-header {
+  width: 320px;
+  height: 66px;
+  color: #fafafa;
+  font-size: 0;
+}
+.g-popup-scroller-header-icon {
+  width: 22px;
+  height: 22px;
+}
+.g-popup-scroller-header-title {
+  -webkit-mask-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0), #000000 10px, #000000);
+  -webkit-mask-image: linear-gradient(right, rgba(0, 0, 0, 0), #000000 10px, #000000);
+  white-space: nowrap;
+  line-height: 27px;
+  margin-left: 72px;
+  overflow: hidden;
+  width: 176px;
+  text-overflow: clip;
+  text-align: center;
+  font-weight: 800;
+  font-size: 22px;
+}
+.g-popup-scroller-header-padding-icon-title {
+  padding-top: 15px;
+}
+.g-popup-scroller-header-padding-icon {
+  padding-top: 19px;
+}
+.g-popup-scroller-header-padding-title {
+  padding-top: 25px;
+}
+.g-popup-scroller-footer-padding {
+  padding-bottom: 30px;
+}
+.g-popup-scroller-content {
+  display: table-cell;
+  height: 142px;
+  width: 320px;
+  vertical-align: middle;
+  padding: 0 24px;
+}
+/* ProgressBar.css */
+.g-progress-bar {
+  background-color: #000000;
+  position: relative;
+  height: 8px;
+  border-radius: 20px;
+}
+.g-progress-bg-bar {
+  background-color: #323232;
+  position: absolute;
+  height: 100%;
+  border-radius: 20px;
+  top: 0;
+}
+.g-progress-bar-bar {
+  background-color: #1cd2d2;
+  position: absolute;
+  height: 100%;
+  border-radius: 20px;
+  top: 0;
+}
+/* Scroller.css for g.Scroller, g.ScrollStrategy and g.ScrollThumb */
+/* CSS for g.Scroller */
+.g-scroller {
+  overflow: hidden;
+  transition: transform 0.2s;
+  -webkit-transition: -webkit-transform 0.2s;
+}
+.g-scroller-top-mask-fade-out > .enyo-touch-scroller {
+  -webkit-mask-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), #000000 70px, #000000);
+  -webkit-mask-image: linear-gradient(top, rgba(0, 0, 0, 0), #000000 70px, #000000);
+}
+.g-scroller-both-mask-fade-out > .enyo-touch-scroller {
+  -webkit-mask-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), #000000 16px, #000000 290px, rgba(0, 0, 0, 0));
+  -webkit-mask-image: linear-gradient(top, rgba(0, 0, 0, 0), #000000 16px, #000000 290px, rgba(0, 0, 0, 0));
+}
+.g-scroller-bottom-mask-fade-out > .enyo-touch-scroller {
+  -webkit-mask-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0), #000000 70px, #000000);
+  -webkit-mask-image: linear-gradient(bottom, rgba(0, 0, 0, 0), #000000 70px, #000000);
+}
+.g-scroller.stretched .stretch-client {
+  transform: scaleY(1.12);
+  transition: transform 0.3s;
+  -webkit-transform: scaleY(1.12);
+  -webkit-transition: -webkit-transform 0.3s;
+}
+.g-scroller.stretch-to-normal .stretch-client {
+  transform: scaleY(1);
+  transition: transform 0.2s;
+  -webkit-transform: scaleY(1);
+  -webkit-transition: -webkit-transform 0.2s;
+}
+.g-scroller.compressed .stretch-client {
+  transform: scaleY(0.99);
+  transition: transform 0.4s;
+  -webkit-transform: scaleY(0.99);
+  -webkit-transition: -webkit-transform 0.4s;
+}
+.g-scroller.stretch-at-top .stretch-client {
+  transform-origin: center top;
+  -webkit-transform-origin: center top;
+}
+.g-scroller.stretch-at-bottom .stretch-client {
+  transform-origin: center bottom;
+  -webkit-transform-origin: center bottom;
+}
+.g-scroller .stretch-client {
+  height: 100%;
+}
+.g-scrollerknob {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  pointer-events: none;
+}
+.g-scrollerknob-grab {
+  width: 110px;
+  height: 57px;
+  margin: auto;
+  pointer-events: auto;
+}
+.g-scrollerknob-visible {
+  background: url(../images/scroller_knob_normal.png) no-repeat;
+  position: relative;
+  width: 100px;
+  height: 42px;
+  margin: auto;
+  overflow: hidden;
+  margin-top: -11px;
+  pointer-events: none;
+}
+.g-scrollerknob-visible.pressed {
+  background: url(../images/scroller_knob_pressed.png) no-repeat;
+}
+/* SelectionOverlaySupport.css */
+.selection-enabled .g-selection-overlay-support.selected .g-selection-overlay-support-scrim {
+  display: block;
+}
+.selection-enabled .g-selection-overlay-support.selected .g-icon-button {
+  background-position: 0 -144px;
+}
+.selection-enabled .g-selection-overlay-support .g-icon-button {
+  border-radius: 0;
+}
+.g-selection-overlay-support-scrim {
+  z-index: 100000;
+}
+.g-selection-overlay-support-scrim .g-selection-overlay-support-checkbox {
+  position: absolute;
+  margin-top: -24px;
+  margin-left: -24px;
+}
+.enyo-locale-right-to-left .g-selection-overlay-support-scrim .g-selection-overlay-support-checkbox {
+  margin-left: initial;
+  margin-right: -24px;
+}
+/* Spinner.css */
+.g-spinner {
+  background: transparent url(../images/list_spinner.gif) no-repeat;
+  background-position-x: 50%;
+  display: inline-block;
+  min-width: 56px;
+  height: 56px;
+  color: #fafafa;
+  line-height: 56px;
+}
+.g-spinner.content {
+  -webkit-mask-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0), #000000 10px, #000000);
+  -webkit-mask-image: linear-gradient(right, rgba(0, 0, 0, 0), #000000 10px, #000000);
+  height: 27px;
+  padding-top: 69px;
+  line-height: 27px;
+  font-size: 26px;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+}
+/* TimePickerPanel.css */
+.g-time-picker-panel {
+  background-color: #000000;
+  border-radius: 50%;
+}
+.g-time-picker-panel .g-knob-container {
+  width: 316px;
+  height: 316px;
+  margin: 2px;
+}
+.g-time-picker-panel .g-knob-container .g-knob-body {
+  margin-top: -8px;
+  opacity: 0.9;
+}
+.g-time-picker-panel .g-knob-body.g-big-dot {
+  margin-top: -8px;
+}
+.g-time-picker-panel .g-hour-text {
+  position: absolute;
+  width: 80px;
+  height: 72px;
+  left: 23%;
+  top: 69px;
+  color: #fafafa;
+  line-height: 72px;
+  font-size: 72px;
+  cursor: pointer;
+}
+.g-time-picker-panel .g-hour-text-animation {
+  animation: g-time-picker-animation 0.3s ease-out;
+  -webkit-animation: g-time-picker-animation 0.3s ease-out;
+}
+.g-time-picker-panel .g-hour-text.g-clock-24 {
+  top: 81px;
+}
+.g-time-picker-panel .g-hour-text.active {
+  color: #1cd2d2;
+}
+.g-time-picker-panel .g-colon-text {
+  position: absolute;
+  width: 80px;
+  height: 72px;
+  left: 48%;
+  top: 69px;
+  color: #fafafa;
+  line-height: 72px;
+  text-align: left;
+  font-size: 72px;
+}
+.g-time-picker-panel .g-colon-text-animation {
+  animation: g-time-picker-animation 0.5s ease-out;
+  -webkit-animation: g-time-picker-animation 0.5s ease-out;
+}
+.g-time-picker-panel .g-minute-text {
+  position: absolute;
+  width: 80px;
+  height: 72px;
+  right: 19%;
+  top: 69px;
+  color: #fafafa;
+  line-height: 72px;
+  font-size: 72px;
+  cursor: pointer;
+}
+.g-time-picker-panel .g-minute-text-animation {
+  animation: g-time-picker-animation 0.7s ease-out;
+  -webkit-animation: g-time-picker-animation 0.7s ease-out;
+}
+.g-time-picker-panel .g-clock-24 {
+  top: 81px;
+}
+.g-time-picker-panel .g-minute-text.active {
+  color: #1cd2d2;
+}
+.g-time-picker-panel .g-meridiem-text {
+  position: absolute;
+  width: 80px;
+  height: 32px;
+  left: 43%;
+  top: 151px;
+  color: #fafafa;
+  line-height: 32px;
+  text-align: left;
+  font-size: 32px;
+  cursor: pointer;
+}
+.g-time-picker-panel .g-ok-image {
+  background: url(../images/btn_command_done.svg) no-repeat;
+  position: absolute;
+  width: 68px;
+  height: 68px;
+  right: 75px;
+  bottom: 52px;
+}
+.g-time-picker-panel .g-cancel-image {
+  background: url(../images/btn_command_close.svg) no-repeat;
+  position: absolute;
+  width: 68px;
+  height: 68px;
+  left: 75px;
+  bottom: 52px;
+}
+.g-time-picker-panel .g-hour-label {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  color: #fafafa;
+  line-height: 40px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 800;
+}
+.g-time-picker-panel .g-minute-label {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  color: #fafafa;
+  line-height: 40px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 800;
+}
+.g-time-picker-panel .g-dot-label {
+  background-color: #454545;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin: 17px;
+  line-height: 40px;
+  text-align: center;
+}
+@keyframes g-time-picker-animation {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -78px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes g-time-picker-animation {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -78px, 0);
+    transform: translate3d(0, -78px, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+/* Title.css */
+.g-title {
+  background-color: #000;
+  position: absolute;
+  width: 148px;
+  height: 60px;
+  top: 0;
+  padding: 0 86px;
+}
+.g-title-content {
+  -webkit-mask-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0), #000000 10px, #000000);
+  -webkit-mask-image: linear-gradient(right, rgba(0, 0, 0, 0), #000000 10px, #000000);
+  display: inline-block;
+  width: 100%;
+  padding-top: 25px;
+  overflow: hidden;
+  color: #fafafa;
+  text-overflow: clip;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 27px;
+  font-weight: 800;
+  font-size: 22px;
+}
+.g-title:after {
+  position: absolute;
+  top: 0;
+  bottom: -7px;
+  left: 0;
+  right: 0;
+  content: '';
+}
+.g-title.g-title-icon .g-title-content:before {
+  background: url(../images/ic_action_bar_drawer.svg) no-repeat;
+  display: inline-block;
+  width: 22px;
+  height: 20px;
+  margin-right: 3px;
+  content: '';
+}
+/* Toast.css */
+.g-toast .g-toast-container {
+  width: 280px;
+  height: 170px;
+  margin: 75px 24px;
+  overflow: hidden;
+}
+.g-toast .g-toast-container .g-toast-client {
+  display: table-cell;
+  width: 280px;
+  height: 170px;
+  margin: 0 24px;
+  vertical-align: middle;
+  max-width: 280px;
+}
+/* Toggle.css */
+/* ToggleIconButton.css */
+.g-toggle-icon-button {
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border-radius: 10em;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.g-toggle-icon-button-disabled {
+  background-color: #4A4C4F !important;
+  cursor: default;
+}
+.g-toggle-icon-button.pressed:before {
+  position: absolute;
+  left: -5px;
+  right: -5px;
+  top: -5px;
+  bottom: -5px;
+  content: '';
+}
+/****************** start of toggle icon button animation *******************/
+.g-toggle-icon-button-off-effect {
+  -webkit-animation: g-toggle-icon-button-off-effect 0.3s ease-in-out;
+  -moz-animation: g-toggle-icon-button-off-effect 0.3s ease-in-out;
+  animation: g-toggle-icon-button-off-effect 0.3s ease-in-out;
+}
+@-webkit-keyframes g-toggle-icon-button-off-effect {
+  0% {
+    background-position: 0 0, 0 0;
+  }
+  100% {
+    background-position: 0 0, 0 -100%;
+  }
+}
+@keyframes g-toggle-icon-button-off-effect {
+  0% {
+    background-position: 0 0, 0 0;
+  }
+  100% {
+    background-position: 0 0, 0 -100%;
+  }
+}
+.g-toggle-icon-button-on-effect {
+  -webkit-animation: g-toggle-icon-button-on-effect 0.3s ease-in-out;
+  -moz-animation: g-toggle-icon-button-on-effect 0.3s ease-in-out;
+  animation: g-toggle-icon-button-on-effect 0.3s ease-in-out;
+}
+@-webkit-keyframes g-toggle-icon-button-on-effect {
+  0% {
+    background-position: 0 60%, 0 -100%;
+  }
+  100% {
+    background-position: 0 60%, 0 0;
+  }
+}
+@keyframes g-toggle-icon-button-on-effect {
+  0% {
+    background-position: 0 60%, 0 -100%;
+  }
+  100% {
+    background-position: 0 60%, 0 0;
+  }
+}
+.g-toggle-icon-button-on-pending-effect {
+  background-position: 0 60%, 0 -100%;
+  -webkit-animation: g-toggle-icon-button-on-pending-effect 1s infinite ease-in-out;
+  -moz-animation: g-toggle-icon-button-on-pending-effect 1s infinite ease-in-out;
+  animation: g-toggle-icon-button-on-pending-effect 1s infinite ease-in-out;
+}
+@-webkit-keyframes g-toggle-icon-button-on-pending-effect {
+  0% {
+    background-color: #1cd2d2;
+    background-position: 0 60%, 0 -100%;
+  }
+  50% {
+    background-color: rgba(28, 210, 210, 0.5);
+  }
+  100% {
+    background-color: #1cd2d2;
+    background-position: 0 60%, 0 -100%;
+  }
+}
+@keyframes g-toggle-icon-button-on-pending-effect {
+  0% {
+    background-color: #1cd2d2;
+    background-position: 0 60%, 0 -100%;
+  }
+  50% {
+    background-color: rgba(28, 210, 210, 0.5);
+  }
+  100% {
+    background-color: #1cd2d2;
+    background-position: 0 60%, 0 -100%;
+  }
+}
+.g-toggle-icon-button-off-pending-effect {
+  -webkit-animation: g-toggle-icon-button-off-pending-effect 1s infinite ease-in-out;
+  -moz-animation: g-toggle-icon-button-off-pending-effect 1s infinite ease-in-out;
+  animation: g-toggle-icon-button-off-pending-effect 1s infinite ease-in-out;
+}
+@-webkit-keyframes g-toggle-icon-button-off-pending-effect {
+  0% {
+    background-color: #a0a0a0;
+  }
+  50% {
+    background-color: rgba(160, 160, 160, 0.5);
+  }
+  100% {
+    background-color: #a0a0a0;
+  }
+}
+@keyframes g-toggle-icon-button-off-pending-effect {
+  0% {
+    background-color: #a0a0a0;
+  }
+  50% {
+    background-color: rgba(160, 160, 160, 0.5);
+  }
+  100% {
+    background-color: #a0a0a0;
+  }
+}
+/****************** end of toggle icon button animation *******************/
+/* Wheel.css */
+/* g.Wheel */
+.g-wheel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border-style: solid;
+  border-radius: 50%;
+}
+/* g.Arc */
+.g-arc {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+/* g.Knob */
+.g-knob-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.g-knob-container > .g-knob-body {
+  background-clip: padding-box;
+  box-sizing: border-box;
+  border-style: solid;
+  border-radius: 50%;
+  margin: auto;
+}
+/* WheelDatePickerController.css */
+.g-wheel-date-picker-controller {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.g-panel .g-wheel-date-picker-controller {
+  pointer-events: none;
+}
+.g-wheel-date-picker-controller > .g-wheel-bg {
+  background-image: url(../images/bg_wheel_date_picker.png);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+/* WheelSectionListController.css */
+.g-wheel-section-list-controller {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+.g-wheel-section-list-controller.hide {
+  -webkit-transform: translate3d(400px, 0, 0);
+  transform: translate3d(400px, 0, 0);
+}
+.g-panel .g-wheel-section-list-controller {
+  pointer-events: none;
+}
+.g-wheel-section-list-controller > .g-circle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border-style: solid;
+  border-radius: 50%;
+}
+.g-wheel-section-list-controller .g-wheel-section-bg {
+  background: url(../images/bg_wheel_section.svg) no-repeat;
+  position: absolute;
+  width: 320px;
+  height: 320px;
+}
+.g-wheel-section-list-controller .g-wheel-section-bg.expanded {
+  background: url(../images/bg_wheel_section_exp.svg) no-repeat;
+  position: absolute;
+  width: 320px;
+  height: 320px;
+}
+.g-wheel-section-list-controller > .g-knob-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.g-wheel-section-list-controller > .g-knob-wrapper > .g-knob {
+  border-radius: 50%;
+  margin: auto;
+}
+.g-wheel-section-list-controller .g-section-label {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  color: #aaaaaa;
+  text-align: center;
+  line-height: 25px;
+  font-size: 16px;
+  font-weight: 800;
+  pointer-events: initial;
+}
+.g-wheel-section-list-controller .g-section-label.tapped {
+  background: #1cd2d2;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 12px;
+  color: #fafafa;
+  text-align: center;
+  line-height: 25px;
+  font-size: 16px;
+  font-weight: 800;
+}
+.g-wheel-section-list-controller .g-index-popup {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  overflow: hidden;
+}
+.g-wheel-section-list-controller .g-index-popup-bg {
+  background-color: #1cd2d2;
+  position: absolute;
+  display: inline-block;
+  width: 160px;
+  height: 160px;
+  border-radius: 100%;
+  left: 80px;
+  top: 80px;
+  box-shadow: 0 8px 6px -6px #000000;
+  opacity: 0.8;
+}
+.g-wheel-section-list-controller .g-index-popup-content {
+  position: absolute;
+  display: inline-block;
+  width: 320px;
+  height: 320px;
+  left: 0px;
+  top: 0px;
+  color: #fafafa;
+  line-height: 320px;
+  text-align: center;
+  font-size: 100px;
+}
+.g-wheel-section-list-controller .g-index-popup-content-comp {
+  display: block;
+}
+.g-wheel-section-list-controller .hide {
+  -webkit-transform: translate3d(400px, 0, 0);
+  transform: translate3d(400px, 0, 0);
+}
+.g-wheel-section-list-controller .sections {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  overflow: hidden;
+}
+/* WheelSlider.css */
+.g-wheelslider {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 320px;
+  height: 320px;
+  pointer-events: none;
+}
+.g-wheelslider-knob-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.g-wheelslider-knob-container > .g-wheelslider-knob-body {
+  background-color: #FAFAFA;
+  background-clip: padding-box;
+  box-sizing: border-box;
+  border-style: solid;
+  border-radius: 50%;
+  margin: auto;
+}
+/* WheelSliderController.css */
+/* WheelTimePickerController.css */
+.g-wheeltimepickercontroller {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}

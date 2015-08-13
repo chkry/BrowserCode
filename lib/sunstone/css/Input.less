@@ -1,0 +1,30 @@
+/* Input.css */
+.sun-input {
+	.sun-input-body-text;
+	line-height: normal;
+	margin: @sun-input-margin;
+	padding: @sun-input-padding;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	background: transparent;
+	box-shadow: none;
+	color: @sun-input-color;
+}
+.sun-input-decorator.sun-focused .sun-input {
+	cursor: text;
+	color: @sun-input-active-color;
+}
+.sun-input-decorator.sun-disabled .sun-input {
+	cursor: default;
+}
+.sun-input-decorator > input::-webkit-input-placeholder {
+	color: @sun-input-placeholder-color;
+}
+.sun-input-decorator > input:-moz-placeholder {
+	color: @sun-input-placeholder-color;
+}
+/* IE10 */
+.sun-input-decorator.sun-focused > input:-ms-input-placeholder {
+	color: @sun-input-placeholder-color;
+}

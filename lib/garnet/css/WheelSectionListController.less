@@ -1,0 +1,193 @@
+/* WheelSectionListController.css */
+
+.g-wheel-section-list-controller {
+	// Box Properties
+
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+
+	// Basic User Interface Properties
+
+	pointer-events: none;
+}
+.g-wheel-section-list-controller.hide {
+	// Transform Properties
+
+	-webkit-transform: translate3d(400px, 0, 0);
+	transform: translate3d(400px, 0, 0);
+}
+.g-panel .g-wheel-section-list-controller {
+	// Basic User Interface Properties
+
+	pointer-events: none;
+}
+.g-wheel-section-list-controller > .g-circle {
+	// Box Properties
+
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	border-style: solid;
+	border-radius: 50%;
+}
+.g-wheel-section-list-controller .g-wheel-section-bg {
+	// Background Properties
+
+	background: @g-wheel-section-bg-image no-repeat;
+
+	// Box Properties
+
+	position: absolute;
+	width: 320px;
+	height: 320px;
+}
+.g-wheel-section-list-controller .g-wheel-section-bg.expanded {
+	// Background Properties
+
+	background: @g-wheel-section-bg-exp-image no-repeat;
+
+	// Box Properties
+
+	position: absolute;
+	width: 320px;
+	height: 320px;
+}
+.g-wheel-section-list-controller > .g-knob-wrapper {
+	// Box Properties
+
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.g-wheel-section-list-controller > .g-knob-wrapper > .g-knob {
+	// Box Properties
+
+	border-radius: 50%;
+	margin: auto;
+}
+.g-wheel-section-list-controller .g-section-label {
+	// Box Properties
+
+	position: absolute;
+	width: 25px;
+	height: 25px;
+
+	// Color Properties
+
+	color: @g-wheel-section-list-section-font-color;
+
+	// Text Properties
+
+	text-align: center;
+	line-height: 25px;
+
+	// Font Properties
+
+	font-size: @g-wheel-section-list-index-font-size;
+	font-weight: 800;
+
+	// Basic User Interface Properties
+
+	pointer-events: initial;
+}
+.g-wheel-section-list-controller .g-section-label.tapped {
+	// Background Properties
+
+	background: @g-wheel-section-list-section-bg-color;
+
+	// Box Properties
+
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	border-radius: 12px;
+
+	// Color Properties
+
+	color: @g-wheel-section-list-section-label-color;
+
+	// Text Properties
+
+	text-align: center;
+	line-height: 25px;
+
+	// Font Properties
+
+	font-size: @g-wheel-section-list-index-font-size;
+	font-weight: 800;
+}
+.g-wheel-section-list-controller .g-index-popup {
+	// Box Properties
+
+	position: relative;
+	width: 320px;
+	height: 320px;
+	overflow: hidden;
+}
+.g-wheel-section-list-controller .g-index-popup-bg {
+	// Background Properties
+
+	background-color: @g-color-point;
+
+	// Box Properties
+
+	position: absolute;
+	display: inline-block;
+	width: @g-wheel-section-list-index-popup-bg-size;
+	height: @g-wheel-section-list-index-popup-bg-size;
+	border-radius: 100%;
+	left: @g-wheel-section-list-index-popup-bg-pos;
+	top: @g-wheel-section-list-index-popup-bg-pos;
+	box-shadow: 0 8px 6px -6px black;
+
+	// Color Properties
+
+	opacity: 0.8;
+}
+.g-wheel-section-list-controller .g-index-popup-content {
+	// Box Properties
+
+	position: absolute;
+	display: inline-block;
+	width: 320px;
+	height: 320px;
+	left: 0px;
+	top: 0px;
+
+	// Color Properties
+
+	color: @g-wheel-section-list-section-label-color;
+
+	// Text Properties
+
+	line-height: 320px;
+	text-align: center;
+
+	// Font Properties
+
+	font-size: @g-wheel-section-list-index-popup-font-size;
+}
+.g-wheel-section-list-controller .g-index-popup-content-comp {
+	// Box Properties
+
+	display: block;
+}
+.g-wheel-section-list-controller .hide {
+	// Transform Properties
+
+	-webkit-transform: translate3d(400px, 0, 0);
+	transform: translate3d(400px, 0, 0);
+}
+.g-wheel-section-list-controller .sections {
+	// Box Properties
+
+	position: absolute;
+	width: 320px;
+	height: 320px;
+	overflow: hidden;
+}

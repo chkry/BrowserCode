@@ -1,0 +1,107 @@
+.toggle-header .sun-header-client {
+	padding-top: 7px;
+}
+.location-consent-pop-up-buttons {
+	width: 50%;
+	margin-top: 20px;
+}
+.emergency-number-block {
+	margin-top: 23.5px;
+	height: 72px;
+	margin-left: 16px;
+	width: 328px
+}
+.add-number-block {
+	margin-top: 23.5px;
+	height: 80px;
+}
+.add-contact-popup-button {
+	width: 100%;
+	margin-top: 20px;
+}
+.app-description {
+	font-size: 16px;
+	color: #000;
+	font-weight: 400;
+	margin-left: 16px;
+	margin-right: 16px;
+	width: 328px;
+	margin-top: 17.5px;
+}
+.emergency-contact-header {
+	font-weight: 800;
+	font-size: 18px;
+	color: #465879;
+}
+.contact-number-input {
+	width: 220px;
+}
+.input-box {
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 240px;
+	float: left;
+	border: 3px;
+	color: #FFF;
+	height: 40px;
+}
+.gui-image {
+	background-repeat: no-repeat;
+	width: 664px !important;
+	height: 227px!important;
+	background-size: 58% 100% !important;
+	position: relative;
+	background-repeat: no-repeat;
+	position: relative;
+	background: url("../../assets/safetycare_img_contacts_notice.png") no-repeat;
+}
+.add-contact-image {
+	width: 40px !important;
+	height: 40px !important;
+	min-width: 45px !important;
+	background-size: 40px 40px !important;
+	position: relative;
+	background-repeat: no-repeat;
+	position: fixed;
+	background: url("../../assets/ic_list_contact.png") no-repeat;
+}
+.default-number {
+	font-weight: 400;
+	font-size: 12px;
+	cursor: pointer;
+	color: rgba(0, 0, 0, 0.54);
+}
+.default-name {
+	font-weight: 800;
+	font-size: 16px;
+	line-height: 30px;
+	margin-top: 4px;
+	cursor: pointer;
+	width: 328px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: #465879;
+}
+.cancel-button {
+	width: 50% !important;
+	position: fixed;
+	bottom: 0px;
+	left: 0%;
+}
+.add-button {
+	left: 50%;
+}
+.pop-up-class {
+	z-index: 132;
+	top: 163.5px !important;
+	left: 24px !important;
+	max-height: 829px !important;
+	width: 87% !important;
+	padding: 0px !important;
+	overflow: hidden;
+}
+.pop-up-content {
+	width: 90%;
+	padding: 14px 5%;
+	font-size: 20px;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>The webOS - My Application</title>
+		<link rel="shortcut icon" href="assets/favicon.ico"/>
+		<!-- -->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf8"/>
+		<meta name="apple-mobile-web-app-capable" content="yes"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<!-- Less.js (uncomment for client-side rendering of less stylesheets; leave commented to use only CSS) -->
+		<script src="enyo/tools/minifier/node_modules/less/dist/less-1.7.0.min.js"></script>
+		<!-- enyo (debug) -->
+		<script type="text/javascript" src="./mobile/mobile.js"></script>
+		<script src="enyo/enyo.js" charset="utf-8"></script>
+		<script src="./watch/watch.js" charset="utf-8"></script>
+		<!-- application (debug) -->
+		<script src="source/package.js" charset="utf-8"></script>
+	</head>
+	<body class="enyo-unselectable">
+		<script type="text/javascript">
+			if (window.PalmSystem) {
+				window.PalmSystem.stageReady();
+				window.PalmSystem.enableFullScreenMode(true);
+			} else {
+				document.write('<scri' + 'pt type="text/javascript" src="./watch/watch.js"></scri' + 'pt>');
+			}
+		</script>
+	</body>
+</html>

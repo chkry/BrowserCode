@@ -1,0 +1,92 @@
+/* Common classes applicable to multiple controls */
+
+.garnet {
+	// Box Properties
+
+	z-index: 0;
+
+	// Font Properties
+
+	.g-common-body-font;
+}
+.g-button-text {
+	// Font Properties
+
+	font-weight: @g-button-font-weight;
+	font-size: @g-button-font-size;
+	font-style: @g-button-font-style;
+}
+.g-common-body-font {
+	// Color Properties
+
+	color: @g-default-font-color;
+
+	// Font Properties
+
+	font-weight: 400;
+	font-size: @g-body-font-size;
+}
+.g-common-width-height-fit {
+	// Box Properties
+
+	width: @g-width;
+	height: @g-height;
+}
+.g-common-fit {
+	// Box Properties
+
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+.g-common-fit-screen {
+	// Box Properties
+
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	.g-common-width-height-fit;
+}
+.g-common-hw-accelerated {
+	// Transform Properties
+
+	-webkit-transform: scale3d(1,1,1);
+	transform: scale3d(1,1,1);
+}
+.g-common-user-select-none {
+	// Basic User Interface Properties
+
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	user-select: none;
+}
+.g-common-point-events-none {
+	// Basic User Interface Properties
+
+	pointer-events: none;
+}
+.g-common-circle-clip {
+	// Box Properties
+
+	-webkit-clip-path: circle(160px, 160px, 160px);
+}
+.g-common-mask-fade-out {
+	// Masking Properties
+
+	-webkit-mask-image: -webkit-linear-gradient(right, rgba(0,0,0,0), rgba(0,0,0,1) 10px, rgba(0,0,0,1));
+	-webkit-mask-image: linear-gradient(right, rgba(0,0,0,0), rgba(0,0,0,1) 10px, rgba(0,0,0,1));
+}
+*[tabindex], label, input {
+	// Basic User Interface Properties
+
+	outline: none;	/* remove outline in case of adding tabindex */
+
+	// Color Properties
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);	/* remove tap highlight in case of adding tabindex */
+}

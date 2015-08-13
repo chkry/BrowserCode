@@ -1,0 +1,279 @@
+/* TimePickerPanel.css */
+
+.g-time-picker-panel {
+	// Background Properties
+
+	background-color: @g-time-picker-bg-color;
+
+	// Box Properties
+
+	border-radius: 50%;
+}
+.g-time-picker-panel .g-knob-container {
+	// Box Properties
+
+	width: 316px;
+	height: 316px;
+	margin: 2px;
+}
+.g-time-picker-panel .g-knob-container .g-knob-body {
+	// Box Properties
+
+	margin-top: -8px;
+
+	// Color Properties
+
+	opacity: 0.9;
+}
+.g-time-picker-panel .g-knob-body.g-big-dot {
+	// Box Properties
+
+	margin-top: -8px;
+}
+.g-time-picker-panel .g-hour-text {
+	// Box Properties
+
+	position: absolute;
+	width: 80px;
+	height: 72px;
+	left: 23%;
+	top: 69px;
+
+	// Color Properties
+
+	color:@g-time-picker-default-font-color;
+
+	// Text Properties
+
+	line-height: 72px;
+
+	// Font Properties
+
+	font-size: @g-time-picker-current-hour-min-font-size;
+
+	// Basic User Interface Properties
+
+	cursor: pointer;
+}
+.g-time-picker-panel .g-hour-text-animation {
+
+	// Animation Properties
+
+	animation: g-time-picker-animation 0.3s ease-out;
+	-webkit-animation: g-time-picker-animation 0.3s ease-out;
+}
+.g-time-picker-panel .g-hour-text.g-clock-24 {
+	top: 81px;
+}
+.g-time-picker-panel .g-hour-text.active {
+	// Color Properties
+
+	color: @g-color-point;
+}
+.g-time-picker-panel .g-colon-text {
+	// Box Properties
+
+	position: absolute;
+	width: 80px;
+	height: 72px;
+	left: 48%;
+	top: 69px;
+
+	// Color Properties
+
+	color: @g-time-picker-default-font-color;
+
+	// Text Properties
+
+	line-height: 72px;
+	text-align: left;
+
+	// Font Properties
+
+	font-size: @g-time-picker-current-hour-min-font-size;
+}
+
+.g-time-picker-panel .g-colon-text-animation {
+
+	// Animation Properties
+
+	animation: g-time-picker-animation 0.5s ease-out;
+	-webkit-animation: g-time-picker-animation 0.5s ease-out;
+}
+.g-time-picker-panel .g-minute-text {
+	// Box Properties
+
+	position: absolute;
+	width: 80px;
+	height: 72px;
+	right: 19%;
+	top: 69px;
+
+	// Color Properties
+
+	color: @g-time-picker-default-font-color;
+
+	// Text Properties
+
+	line-height: 72px;
+
+	// Font Properties
+
+	font-size: @g-time-picker-current-hour-min-font-size;
+
+	// Basic User Interface Properties
+
+	cursor: pointer;
+}
+
+.g-time-picker-panel .g-minute-text-animation {
+
+	// Animation Properties
+
+	animation: g-time-picker-animation 0.7s ease-out;
+	-webkit-animation: g-time-picker-animation 0.7s ease-out;
+}
+
+.g-time-picker-panel .g-clock-24 {
+	top: 81px;
+}
+.g-time-picker-panel .g-minute-text.active {
+	// Color Properties
+
+	color: @g-color-point;
+}
+.g-time-picker-panel .g-meridiem-text {
+	// Box Properties
+
+	position: absolute;
+	width: 80px;
+	height: 32px;
+	left: 43%;
+	top: 151px;
+
+	// Color Properties
+
+	color:@g-time-picker-default-font-color;
+
+	// Text Properties
+
+	line-height: 32px;
+	text-align: left;
+
+	// Font Properties
+
+	font-size: @g-time-picker-meridiem-font-size;
+
+	// Basic User Interface Properties
+
+	cursor: pointer;
+}
+.g-time-picker-panel .g-ok-image {
+	// Background Properties
+
+	background: @g-icon-commandbar-done no-repeat;
+
+	// Box Properties
+
+	position: absolute;
+	width: 68px;
+	height: 68px;
+	right: 75px;
+	bottom: 52px;
+}
+.g-time-picker-panel .g-cancel-image {
+	// Background Properties
+
+	background: @g-icon-commandbar-close no-repeat;
+
+	// Box Properties
+
+	position: absolute;
+	width: 68px;
+	height: 68px;
+	left: 75px;
+	bottom: 52px;
+}
+.g-time-picker-panel .g-hour-label {
+	// Box Properties
+
+	position: absolute;
+	width: 40px;
+	height: 40px;
+
+	// Color Properties
+
+	color: @g-time-picker-default-font-color;
+
+	// Text Properties
+
+	line-height: 40px;
+	text-align: center;
+
+	// Font Properties
+
+	font-size: @g-time-picker-hour-min-font-size;
+	font-weight: 800;
+}
+.g-time-picker-panel .g-minute-label {
+	// Box Properties
+
+	position: absolute;
+	width: 40px;
+	height: 40px;
+
+	// Color Properties
+
+	color: @g-time-picker-default-font-color;
+
+	// Text Properties
+
+	line-height: 40px;
+	text-align: center;
+
+	// Font Properties
+
+	font-size: @g-time-picker-hour-min-font-size;
+	font-weight: 800;
+}
+.g-time-picker-panel .g-dot-label {
+	// Background Properties
+
+	background-color: @g-time-picker-dot-color;
+
+	// Box Properties
+
+	position: absolute;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	margin: 17px;
+
+	// Text Properties
+
+	line-height: 40px;
+	text-align: center;
+}
+@keyframes g-time-picker-animation {
+0% {
+	opacity: 0;
+	transform: translate3d(0, -78px, 0);
+}
+100% {
+	opacity: 1;
+	transform: translate3d(0, 0, 0);
+}
+}
+
+@-webkit-keyframes g-time-picker-animation {
+0% {
+	opacity: 0;
+	-webkit-transform: translate3d(0, -78px, 0);
+	transform: translate3d(0, -78px, 0);
+}
+100% {
+	opacity: 1;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+}

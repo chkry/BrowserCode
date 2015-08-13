@@ -1,0 +1,17 @@
+/* DataFlipCardListSample.css */
+
+.g-sample-dataflipcard-list-item {
+	border-radius: 50%;
+	overflow: hidden;
+	width: 320px;
+	height: 320px;
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	box-sizing: border-box;
+}
+.g-sample-dataflipcard-list-item-title {
+	position: absolute;
+	top: 130px;
+	left: 25%;
+	color: black;
+	font-size: 2em;
+}

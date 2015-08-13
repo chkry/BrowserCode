@@ -1,0 +1,21 @@
+{
+	"wd_safetycare_add_emergency_contact": "Добавить экстренный контакт",
+	"wd_safetycare_add_emergency_contact_cancel": "Отмена",
+	"wd_safetycare_add_emergency_contact_content": "Добавить экстренный контакт для вызова в чрезвычайной ситуации.",
+	"wd_safetycare_add_emergency_contact_ok": "ОК",
+	"wd_safetycare_alert_content": "Вызвать экстренный контакт и отправить текущее местоположение в сообщении?",
+	"wd_safetycare_alert_title": "Экст. служ.",
+	"wd_safetycare_app_description": "Удерживайте кнопку \"Назад\" для вызова вашего экстренного контакта и отправки сообщения с информацией о вашем местоположении.",
+	"wd_safetycare_check_phone": "Прочесть на телефоне",
+	"wd_safetycare_emergency_contact_header": "Экстренные контакты",
+	"wd_safetycare_emergency_contact_number": "Ввести экстренный номер",
+	"wd_safetycare_false": "Включить Safety care на случай чрезвычайных ситуаций?",
+	"wd_safetycare_location_fail_message_content": "Данные о местоположении недоступны",
+	"wd_safetycare_location_popup_agree": "Принять",
+	"wd_safetycare_location_popup_content": "Информация о местоположении будет использована для отправки сообщений, даже если на часах отключена функция определения местоположения или беспроводная сеть. Может взиматься дополнительная плата.",
+	"wd_safetycare_location_popup_disagree": "Не принимаю",
+	"wd_safetycare_location_popup_header": "Согласие раскрыть данные о местоположении",
+	"wd_safetycare_no_contact": "Добавить экстренный контакт на случай чрезвычайных ситуаций?",
+	"wd_safetycare_not_connected": "Не подключено к телефону. Проверьте соединение Bluetooth в LG Watch Manager.",
+	"wd_safetycare_not_paired": "Подключить телефон для использования оповещений о чрезвычайных ситуациях"
+}

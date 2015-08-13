@@ -1,0 +1,7 @@
+{
+	"enyo": "./enyo",
+	"packagejs": "./package.js",
+	"assets": ["./index.html", "./assets","./resources","./MashupService.js"],
+	"libs": []
+}
+

@@ -1,0 +1,8 @@
+{
+    "category": "option",
+    "method": "getSystemSettings",
+    "settings": {
+        "eulaAccepted": true
+    },
+    "returnValue": true
+}

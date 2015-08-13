@@ -1,0 +1,69 @@
+/* Scroller.css for g.Scroller, g.ScrollStrategy and g.ScrollThumb */
+
+/* CSS for g.Scroller */
+.g-scroller {
+	// Box Properties
+
+	overflow: hidden;
+
+	transition: transform 0.2s;
+	-webkit-transition: -webkit-transform 0.2s;
+}
+.g-scroller-top-mask-fade-out > .enyo-touch-scroller {
+	// Masking Properties
+
+	-webkit-mask-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,1) 70px, rgba(0,0,0,1));
+	-webkit-mask-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,1) 70px, rgba(0,0,0,1));
+}
+.g-scroller-both-mask-fade-out > .enyo-touch-scroller {
+	// Masking Properties
+
+	-webkit-mask-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,1) 16px, rgba(0,0,0,1) 290px, rgba(0,0,0,0));
+	-webkit-mask-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,1) 16px, rgba(0,0,0,1) 290px, rgba(0,0,0,0));
+}
+.g-scroller-bottom-mask-fade-out > .enyo-touch-scroller {
+	// Masking Properties
+
+	-webkit-mask-image: -webkit-linear-gradient(bottom, rgba(0,0,0,0), rgba(0,0,0,1) 70px, rgba(0,0,0,1));
+	-webkit-mask-image: linear-gradient(bottom, rgba(0,0,0,0), rgba(0,0,0,1) 70px, rgba(0,0,0,1));
+}
+.g-scroller.stretched .stretch-client {
+	// Transition Properties
+
+	transform: scaleY(1.12);
+	transition: transform 0.3s;
+	-webkit-transform: scaleY(1.12);
+	-webkit-transition: -webkit-transform 0.3s;
+}
+.g-scroller.stretch-to-normal .stretch-client {
+	// Transition Properties
+
+	transform: scaleY(1);
+	transition: transform 0.2s;
+	-webkit-transform: scaleY(1);
+	-webkit-transition: -webkit-transform 0.2s;
+}
+
+.g-scroller.compressed .stretch-client {
+	// Transition Properties
+
+	transform: scaleY(0.99);
+	transition: transform 0.4s;
+	-webkit-transform: scaleY(0.99);
+	-webkit-transition: -webkit-transform 0.4s;
+}
+.g-scroller.stretch-at-top .stretch-client {
+	// Transition Properties
+
+	transform-origin: center top;
+	-webkit-transform-origin: center top;
+}
+.g-scroller.stretch-at-bottom .stretch-client {
+	// Transition Properties
+
+	transform-origin: center bottom;
+	-webkit-transform-origin: center bottom;
+}
+.g-scroller .stretch-client {
+	height: 100%;
+}

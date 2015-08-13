@@ -1,0 +1,52 @@
+/* Checkbox.css */
+
+.g-checkbox {
+	// Background Properties
+
+	background: @g-checkbox-image no-repeat;
+
+	// Box Properties
+
+	display: inline-block;
+	width: @g-checkbox-image-width;
+	height: @g-checkbox-image-height;
+	margin: 0; /* reset for ? */
+	vertical-align: middle; /* these entries cause toggle-button and checkbox to line up properly */
+
+	// Basic User Interface Properties
+
+	cursor: pointer;
+}
+.g-checkbox[pressed] {
+	// Background Properties
+
+	background-position: 0 -@g-checkbox-image-height * 1;
+}
+.g-checkbox[disabled] {
+	// Background Properties
+
+	background-position: 0 -@g-checkbox-image-height * 2;
+
+	// Basic User Interface Properties
+
+	cursor: default;
+}
+.g-checkbox[checked] {
+	// Background Properties
+
+	background-position: 0 -@g-checkbox-image-height * 3;
+}
+.g-checkbox[checked][pressed] {
+	// Background Properties
+
+	background-position: 0 -@g-checkbox-image-height * 4;
+}
+.g-checkbox[checked][disabled] {
+	// Background Properties
+
+	background-position: 0 -@g-checkbox-image-height * 5;
+
+	// Basic User Interface Properties
+
+	cursor: default;
+}

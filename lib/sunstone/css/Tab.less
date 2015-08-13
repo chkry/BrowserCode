@@ -1,0 +1,67 @@
+/* Tab.css */
+.sun-tabbar {
+	background: @sun-tab-background-image no-repeat;
+	background-size: cover;
+	white-space: nowrap;
+	height:48px;
+}
+
+.sun-tabbar-item {
+	display: block;
+	padding-top: 10px;
+	padding-left: 1px;
+	font-size: 16px;
+	overflow: hidden;
+	text-align: center;
+}
+
+.sun-tabbar-item-wrapper {
+	color: #ffffff;
+	border-radius: 18px;
+	height: 36px;
+	margin-top: 6px;
+	margin-left: 8px;
+	margin-right: 8px;
+}
+
+.sun-tab-mask {
+	-webkit-mask-image: -webkit-linear-gradient(left, rgba(0,0,0,1), rgba(0,0,0,1) 80%, rgba(0,0,0,0));
+    -webkit-mask-image: linear-gradient(left, rgba(0,0,0,1), rgba(0,0,0,1) 80%, rgba(0,0,0,0));
+}
+
+.sun-tabbar-inline > * {
+	white-space: nowrap;
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+.sun-tab-layout {
+	height: 100%;
+	width:100%;
+	&.enyo-fit {
+		height: auto;
+	};
+}
+
+.sun-tabbar-item-selected {
+	color: #435461;
+	font-weight: bold;
+	opacity: 1;
+	border-radius: 18px;
+	background-color: #ffffff;
+}
+
+.sun-tabbar-item-wrapper.sun-tabbar-item-active {
+	background-color: #000000;
+	opacity: 0.2;
+  	color: #435461;
+	font-weight: bold;
+}
+
+.sun-tabbar-item-selected.sun-tabbar-item-selected-active {
+  	background-color: #cccccc;
+  	opacity: 1;
+  	color: #435461;
+	font-weight: bold;
+}
+

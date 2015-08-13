@@ -1,0 +1,14 @@
+enyo.depends(
+	"$lib/layout",
+	//"$lib/enyo-cordova",
+	"$lib/enyo-ilib",
+	//"$lib/enyo-webos",
+	"$lib/sunstone",
+	"css",
+	"ext",
+	"router",
+	"controllers",
+	"views",
+	"apps",
+	"start.js"
+);

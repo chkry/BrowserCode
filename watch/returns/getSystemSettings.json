@@ -1,0 +1,1 @@
+{ "settings": { "targetAutoReading": true, "targetLanguage": "english" }, "category": "Translator", "method": "getSystemSettings", "returnValue": true }

@@ -1,0 +1,36 @@
+/* Spinner.css */
+.g-spinner {
+	// Background Properties
+
+	background: transparent @g-spinner-image no-repeat;
+	background-position-x: 50%;
+
+	// Box Properties
+
+	display: inline-block;
+	min-width: @g-spinner-size;
+	height: @g-spinner-size;
+
+	// Color Properties
+
+	color: @g-default-font-color;
+
+	// Text Properties
+
+	line-height: @g-spinner-size;
+}
+.g-spinner.content {
+
+	.g-common-mask-fade-out;
+
+	// Box Properties
+	height: 27px;
+	padding-top: 69px;
+
+	// Text Properties
+	line-height: 27px;
+	font-size: @g-spinner-content-font-size;
+	text-align: center;
+	overflow: hidden;
+	white-space: nowrap;
+}

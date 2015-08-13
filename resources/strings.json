@@ -1,0 +1,23 @@
+{
+	"Safety Care": "[W2] Safetycare",
+	"wd_safetycare_add_emergency_contact": "Tap to add emergency contact",
+	"wd_safetycare_add_emergency_contact_cancel": "Cancel",
+	"wd_safetycare_add_emergency_contact_content": "Add contact for emergencies.",
+	"wd_safetycare_add_emergency_contact_ok": "OK",
+	"wd_safetycare_alert_content": "Call emergency contact and send message with your location?",
+	"wd_safetycare_alert_title": "Emergency",
+	"wd_safetycare_app_description": "You can press and hold the Back key on watch to call your emergency contact and send them a message with your location.",
+	"wd_safetycare_app_title": "Safety Care",
+	"wd_safetycare_check_phone": "Check connected phone",
+	"wd_safetycare_emergency_contact_header": "Emergency contact",
+	"wd_safetycare_emergency_contact_number": "Enter emergency number",
+	"wd_safetycare_false": "Turn on Safety care in preparation for emergencies?",
+	"wd_safetycare_location_fail_message_content": "Location info unavailable",
+	"wd_safetycare_location_popup_agree": "Agree",
+	"wd_safetycare_location_popup_content": "Allow emergency messages to be sent with location info even when Location, Wi-Fi, and Mobile data on watch are off. Charges may apply.",
+	"wd_safetycare_location_popup_disagree": "Disagree",
+	"wd_safetycare_location_popup_header": "Location consent",
+	"wd_safetycare_no_contact": "Add emergency contact in preparation for emergencies?",
+	"wd_safetycare_not_connected": "Not connected to phone. Check Bluetooth connection in LG Watch Manager.",
+	"wd_safetycare_not_paired": "Connect phone to use Emergency alert"
+}

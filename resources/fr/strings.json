@@ -1,0 +1,20 @@
+{
+	"wd_safetycare_add_emergency_contact": "Appuyez pour ajouter un contact d’urgence",
+	"wd_safetycare_add_emergency_contact_cancel": "Annuler",
+	"wd_safetycare_add_emergency_contact_content": "Ajoutez un contact d’urgence pour pouvoir utiliser la fonction d’urgence.",
+	"wd_safetycare_alert_content": "Appeler le contact d’urgence et envoyer la position géographique dans le message ?",
+	"wd_safetycare_alert_title": "SOS",
+	"wd_safetycare_app_description": "Vous pouvez garder Retour enfoncé pour appeler votre contact d’urgence et lui envoyer un message contenant votre position géographique.",
+	"wd_safetycare_check_phone": "Lire sur le téléphone",
+	"wd_safetycare_emergency_contact_header": "Contacts d'urgence",
+	"wd_safetycare_emergency_contact_number": "Entrez le numéro d’urgence",
+	"wd_safetycare_false": "Activer Safety Care en vue des urgences ?",
+	"wd_safetycare_location_fail_message_content": "Informations locales non disponibles",
+	"wd_safetycare_location_popup_agree": "Accepter",
+	"wd_safetycare_location_popup_content": "Les informations de géolocalisation serviront à envoyer des messages, même si le GPS ou le réseau sans fil de la montre sont désactivés. Des frais de données risquent de s’appliquer sur la montre.",
+	"wd_safetycare_location_popup_disagree": "Refuser",
+	"wd_safetycare_location_popup_header": "Accord de localisation",
+	"wd_safetycare_no_contact": "Ajouter le contact aux contacts d’urgence ?",
+	"wd_safetycare_not_connected": "Non connecté au téléphone. Vérifiez la connexion avec LG Watch Manager via le Bluetooth",
+	"wd_safetycare_not_paired": "Connecter le téléphone pour pouvoir utiliser les alertes d’urgence"
+}

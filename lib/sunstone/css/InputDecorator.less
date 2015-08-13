@@ -1,0 +1,40 @@
+/* InputDecorator.css */
+.sun-input-decorator {
+	.sun-input-decorator-text;
+	padding: @sun-input-decorator-padding-top-bottom @sun-input-decorator-padding-left-right;
+	border-radius: @sun-input-decorator-radius;
+	border: none;
+	background-color: @sun-input-decorator-bg-color;
+	height: @sun-input-decorator-height;
+	box-sizing:border-box;
+}
+
+.sun-textarea-decorator {
+  .sun-input-decorator-text;
+    margin: @sun-input-decorator-margin;
+    padding: @sun-input-decorator-padding-top-bottom @sun-input-decorator-padding-left-right;
+    border-radius: @sun-input-decorator-radius;
+    border: @sun-input-border-width solid @sun-input-decorator-color;
+    background-color: @sun-input-decorator-bg-color;
+    color: @sun-input-decorator-color;
+    box-sizing:border-box;
+}
+
+.sun-input-decorator.sun-disabled, .sun-textarea-decorator.sun-disabled {
+	background-color: @sun-input-decorator-disable-bg-color;
+}
+.sun-input-decorator.sun-focused, .sun-textarea-decorator.sun-focused {
+	border: @sun-input-border-width solid @sun-input-active-border-color;
+	background-color: @sun-input-decorator-active-bg-color;
+}
+
+.sun-textarea-decorator > textarea::-webkit-input-placeholder {
+	color: @sun-input-placeholder-color;
+}
+.sun-textarea-decorator > textarea:-moz-placeholder {
+	color: @sun-input-placeholder-color;
+}
+/* IE10 */
+.sun-textarea-decorator > textarea:-ms-input-placeholder {
+	color: @sun-input-placeholder-color;
+}

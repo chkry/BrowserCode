@@ -1,0 +1,23 @@
+.divider {
+	border-bottom: 1px solid #e6e6e6;
+}
+.contacts-table-cell {
+	display:table-cell;
+	vertical-align:middle;
+}
+.contacts-table {
+	height:56px;
+	display:table;
+}
+.two-line {
+	height: 72px;
+}
+.general-index{
+	height: 48px;
+	line-height: 48px;
+	font-weight: bold;
+	font-size: 14px;
+	color: #797979;
+	padding: 0 16px;
+	background-color: #ffffff;
+}

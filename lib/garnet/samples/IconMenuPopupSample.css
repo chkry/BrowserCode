@@ -1,0 +1,10 @@
+/* IconMenuPopupSample.css */
+
+.g-sample-iconmenu-popup {
+	font-size: 30px;
+	text-align: center;
+}
+.garnet.g-sample .g-sample-iconmenu-popup-button {
+	position: absolute;
+	margin: auto;
+}

@@ -1,0 +1,108 @@
+/* sample.css */
+
+@media all and (min-width: 401px) and (min-height: 401px) {
+
+body {
+	background-color: #EDEDED;
+}
+hr {
+	border-width: 1px 0px 0px 0px;
+	border-color: #EDEDED;
+	margin: 0;
+}
+table {
+	margin-bottom: 30px;
+}
+.g-sample {
+	margin: 20px 10px 10px;
+	color: #FFFFFF;
+}
+.g-sample .g-sample-header {
+	margin-bottom: 40px;
+	color: #4B4B4B;
+	font-size: 50pt;
+	text-transform: uppercase;
+	letter-spacing: -0.04em;
+	white-space: nowrap;
+}
+.g-sample .g-sample-subheader {
+	padding-bottom: 5px;
+	border-bottom: 1px solid;
+	border-color: #4B4B4B;
+	margin: 30px 0 35px 0;
+	color: #4B4B4B;
+	font-style: italic;
+	font-size: 22px;
+	letter-spacing: 0.05em;
+	white-space: nowrap;
+}
+.g-sample .g-sample-description {
+	color: #4B4B4B;
+	font-size: 22px;
+	white-space: nowrap;
+}
+.g-common-header-font {
+	font-size: 27pt;
+	color: #FFFFFF;
+}
+
+} /* @media all and (min-width: 401px) and (min-height: 401px) { */
+
+@media all and (max-width: 400px), all and (max-height: 400px) {
+
+body {
+	/*background-color: #EDEDED;*/
+	background-color: #000000;
+}
+body .enyo-scroller {
+	overflow-y: hidden !important;
+	overflow-x: hidden !important;
+}
+hr {
+	border-width: 1px 0px 0px 0px;
+	border-color: #EDEDED;
+	margin: 0;
+}
+table {
+	margin-bottom: 30px;
+}
+.g-sample {
+	width: 320px;
+	height: 320px;
+	color: #FFFFFF;
+}
+.g-sample .g-sample-header {
+	position: absolute;
+	width: 60px;
+	height: 320px;
+	top: 260px;
+	left: 0;
+	right: 0;
+	color: white;
+	margin: 0;
+	padding: 0 130px;
+	border-radius: 9999px;
+	font-size: 60px;
+	line-height: 60px;
+	z-index: 9999;
+	font-weight: bold;
+	background-color: gray;
+	opacity: 0.8;
+	text-align: center;
+	overflow: hidden;
+}
+.g-sample .g-sample-subheader {
+	display: none;
+}
+.g-sample .g-sample-description {
+	display: none;
+}
+.g-common-header-font {
+	font-size: 27pt;
+	color: #FFFFFF;
+}
+.g-sample-result {
+	display: none;
+}
+
+} /* @media all and (max-width: 400px), all and (max-height: 400px) { */

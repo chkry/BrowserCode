@@ -1,0 +1,9 @@
+/* LayoutFlexSample.css */
+
+td:nth-child(even) { background-color: white; color: black; font-weight: bold; }
+td:nth-child(odd) { background-color: black; color: white; font-weight: bold; }
+.garnet.g-sample .g-layout>*>*>td { padding-top:20px; padding-left:3px; vertical-align:bottom; }
+
+.garnet.g-sample .g-layout.g-sample-setting td { background-color: gray;}
+.garnet.g-sample .g-layout.g-sample-setting>*>*>td { border: 3px solid black; height: 50%; padding-top:0px; padding-left:0px; vertical-align:middle; }
+.garnet.g-sample .g-sample-setting { width: 100%; height: 100%; }

@@ -1,0 +1,29 @@
+.sun-toggle-button {
+	background: @sun-toggle-image no-repeat;
+	height:@sun-toggle-image-height;
+	width:@sun-toggle-image-width;
+}
+
+.sun-toggle-button.disabled{
+	background-position: 0 -@sun-toggle-image-height * 2;
+}
+
+.sun-toggle-button-knob{
+	position:relative;
+	background: @sun-toggle-knob-image no-repeat;
+	width:@sun-toggle-button-knob-width;
+	height:@sun-toggle-button-knob-height;
+	left:45%;
+	cursor: pointer;
+}
+
+.sun-toggle-button-knob.off{
+	background: @sun-toggle-knob-image-off no-repeat;
+	left:0%;
+}
+.sun-toggle-button-knob[pressed]{
+	background-position: 0 -@sun-toggle-button-knob-height * 3;
+}
+.disabled .sun-toggle-button-knob{
+	background-position: 0 -@sun-toggle-button-knob-height * 2;
+}

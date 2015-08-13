@@ -1,0 +1,20 @@
+/* Icon.css */
+
+.g-icon {
+	// Background Properties
+
+	background-repeat: no-repeat;
+
+	// Box Properties
+
+	display: inline-block;
+	width: @g-icon-size;
+	height: @g-icon-size;
+	vertical-align: middle;
+}
+.g-icon.disabled {
+	// Color Properties
+
+	opacity: @g-disabled-opacity;
+	filter: alpha(opacity=@g-disabled-opacity-ie);
+}

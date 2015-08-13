@@ -1,0 +1,45 @@
+/* SelectionOverlaySupport.css */
+
+.selection-enabled {
+	.g-selection-overlay-support {
+		&.selected {
+			.g-selection-overlay-support-scrim {
+				// Box Properties
+
+				display: block;
+			}
+		}
+		&.selected {
+			.g-icon-button {
+				// Background Properties
+
+				background-position: 0 -@g-checkbox-image-height*3;
+			}
+		}
+		.g-icon-button {
+			// Box Properties
+
+			border-radius: 0;
+		}
+	}
+}
+.g-selection-overlay-support-scrim {
+	// Box Properties
+	z-index: 100000;
+	.g-selection-overlay-support-checkbox {
+		// Box Properties
+
+		position: absolute;
+		margin-top: -@g-checkbox-image-height/2;
+		margin-left: -@g-checkbox-image-height/2;
+	}
+}
+
+.enyo-locale-right-to-left .g-selection-overlay-support-scrim {
+	.g-selection-overlay-support-checkbox {
+		// Box Properties
+
+		margin-left: initial;
+		margin-right: -@g-checkbox-image-height/2;
+	}
+}

@@ -1,0 +1,1472 @@
+/* ---------------------------------------*/
+/* Sunstone default colors defined here */
+/* Colors */
+/* ---------------------------------------*/
+/* BodyText */
+/* ---------------------------------------*/
+/* Button */
+/* ---------------------------------------*/
+/* Calendar */
+/* ---------------------------------------*/
+/* ContextualPopup */
+/* ---------------------------------------*/
+/* CheckBox */
+/* ---------------------------------------*/
+/* DataList */
+/* ---------------------------------------*/
+/* Divider */
+/* ---------------------------------------*/
+/* Drawer */
+/* ---------------------------------------*/
+/* Dropdown Picker */
+/* ---------------------------------------*/
+/* Footer */
+/* ---------------------------------------*/
+/* GridList */
+/* ---------------------------------------*/
+/* Header */
+/* ---------------------------------------*/
+/* IconButton */
+/* Panel */
+/* ---------------------------------------*/
+/* Popup */
+/* ---------------------------------------*/
+/* ProgressBar */
+/* ---------------------------------------*/
+/* Scroller */
+/* ---------------------------------------*/
+/* Spinner */
+/* ---------------------------------------*/
+/* SelectionOverlay */
+/* ---------------------------------------*/
+/* Tab */
+/* ---------------------------------------*/
+/* ToastPopup */
+/* ---------------------------------------*/
+/* ToggleSwitch */
+/* ---------------------------------------*/
+/* ToggleSwitch */
+/* ---------------------------------------*/
+/* Input */
+/* ---------------------------------------*/
+/* Video Slider */
+/* ---------------------------------------*/
+/* ViewTypeButton */
+/* ---------------------------------------*/
+/* Sunstone default parameters defined here */
+/* App */
+/* ---------------------------------------*/
+/* Font */
+/* ---------------------------------------*/
+/* Font Sizes */
+/* Other Font Properties */
+/*Basement*/
+/* ---------------------------------------*/
+/*Checkbox*/
+/* ---------------------------------------*/
+/*Radio*/
+/* ---------------------------------------*/
+/* Calendar */
+/* ---------------------------------------*/
+/* CircleProgress */
+/* ---------------------------------------*/
+/*ContextualPopup*/
+/* ---------------------------------------*/
+/* Divider */
+/* ---------------------------------------*/
+/* Drawer */
+/* ---------------------------------------*/
+/* DropdownPicker */
+/* ---------------------------------------*/
+/* GridList(include GridListImageItem) */
+/* ---------------------------------------*/
+/* Header */
+/* ---------------------------------------*/
+/* Icon Sizes */
+/* ---------------------------------------*/
+/* Footer */
+/* ---------------------------------------*/
+/* Button */
+/* ---------------------------------------*/
+/* DatePicker */
+/* ---------------------------------------*/
+/* DataList */
+/* ---------------------------------------*/
+/* GridList */
+/* ---------------------------------------*/
+/* IconButton */
+/* ---------------------------------------*/
+/* IntegerPicker */
+/* ---------------------------------------*/
+/* Scroller */
+/* ---------------------------------------*/
+/* Spinner */
+/* ---------------------------------------*/
+/* Tab */
+/* ---------------------------------------*/
+/* ToastPopup */
+/* ---------------------------------------*/
+/* ToggleSwitch */
+/* ---------------------------------------*/
+/* Input */
+/* ---------------------------------------*/
+/* InputDecorator */
+/* ---------------------------------------*/
+/* ProgressBar */
+/* ---------------------------------------*/
+/* RichText */
+/* ---------------------------------------*/
+/* Slider */
+/* ---------------------------------------*/
+/* TextArea */
+/* ---------------------------------------*/
+/* Tooltip */
+/* ---------------------------------------*/
+/* ViewTypeButton */
+/* ---------------------------------------*/
+/* Video Player */
+/* ---------------------------------------*/
+/* Video Slider */
+/* ---------------------------------------*/
+/* Sunstone rules defined here */
+/* Import grid classes/mixins */
+/* sunstone - Common classes applicable to multiple controls */
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+:focus {
+  outline-style: none;
+}
+.sun {
+  font-size: 30px;
+  padding: 20px;
+  color: #4b4b4b;
+}
+.sun-header-text {
+  font-size: 20px;
+  font-weight: normal;
+}
+.sun-small-header-text {
+  font-size: 90px;
+  font-weight: bold;
+  letter-spacing: -0.04em;
+}
+.sun-sub-header-text {
+  font-size: 60px;
+  font-weight: bold;
+  letter-spacing: -0.04em;
+}
+.sun-divider-text {
+  font-size: 60px;
+  font-weight: normal;
+  font-style: italic;
+  letter-spacing: 0.05em;
+}
+.sun-item-text {
+  font-size: 30px;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: -0.04em;
+}
+.sun-divider-border {
+  border-bottom: 3px solid  #4d4d4d;
+}
+.sun-input-body-text {
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 0;
+}
+.sun-input-decorator-text {
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 0;
+}
+.sun-calendar-text {
+  font-size: 48px;
+  font-weight: bold;
+}
+/* sunstone - LESS pre-calculations */
+/* ---------------------------------------*/
+/* Individual widget CSS */
+/* Button */
+.sun-button {
+  position: relative;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  height: 40px;
+  border: 0;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  padding: 0 20px;
+  min-width: 60px;
+  margin: 0;
+  background-color: #f8f9fa;
+  color: #000000;
+  vertical-align: middle;
+}
+.sun-button[disabled] {
+  cursor: default;
+  background-color: rgba(255, 255, 255, 0.6);
+  color: rgba(0, 0, 0, 0.2);
+}
+.sun-button.active:not([disabled]),
+.sun-button.pressed:not([disabled]) {
+  background-color: #dfe0e1;
+}
+.sun-button-text {
+  width: 100%;
+}
+/* Checkbox.css */
+.sun-checkbox {
+  background: url(../images/btn_check_off.svg) no-repeat;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin: 0;
+  /* reset for ? */
+  vertical-align: middle;
+  /* these entries cause toggle-button and checkbox to line up properly */
+  cursor: pointer;
+}
+.sun-checkbox[pressed] {
+  background: url(../images/btn_check_off.svg) no-repeat;
+  background-position: 0 -96px;
+}
+.sun-checkbox[disabled] {
+  background: url(../images/btn_check_off.svg) no-repeat;
+  background-position: 0 -32px;
+  cursor: default;
+}
+.sun-checkbox[checked] {
+  background: url(../images/btn_check_on.svg) no-repeat;
+  background-position: 0 0;
+}
+.sun-checkbox[checked][pressed] {
+  background: url(../images/btn_check_on.svg) no-repeat;
+  background-position: 0 -96px;
+}
+.sun-checkbox[checked][disabled] {
+  background: url(../images/btn_check_on.svg) no-repeat;
+  background-position: 0 -32px;
+  cursor: default;
+}
+.sun-checkbox-item {
+  display: block;
+  position: relative;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  padding: 0 16px;
+}
+/* Checkbox */
+.sun-checkbox-item .sun-checkbox-item-label-wrapper {
+  margin-right: 48px;
+  line-height: 32px;
+}
+.sun-checkbox-item .sun-checkbox-item-subContent-wrapper {
+  font-size: 14px;
+  color: #b5b5b5;
+  margin-right: 48px;
+  line-height: 16px;
+}
+.sun-checkbox-item .sun-checkbox {
+  position: absolute;
+  top: 50%;
+  left: auto;
+  right: 16px;
+  margin-top: -16px;
+}
+.sun-checkbox-item.disabled .sun-checkbox-item-label-wrapper,
+.sun-checkbox-item.disabled .sun-checkbox-item-subContent-wrapper {
+  cursor: default;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+}
+.sun-checkbox-item .sun-checkbox[disabled] {
+  cursor: default;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+/* Left-handed checkbox */
+/* Label */
+.sun-checkbox-item.left-handed .sun-checkbox {
+  left: 16px;
+}
+/* Label */
+.sun-checkbox-item.left-handed .sun-checkbox-item-label-wrapper {
+  margin-right: 0px;
+  margin-left: 56px;
+}
+.sun-checkbox-item.left-handed .sun-checkbox-item-subContent-wrapper {
+  margin-right: 0px;
+  margin-left: 56px;
+}
+/* ContextualButton.css */
+.sun-contextual-button {
+  font-size: 18px;
+  color: #000000;
+  letter-spacing: 0;
+  overflow: visible;
+  border: 1px solid #c5c9cd;
+  border-radius: 3px;
+  background-color: #ffffff;
+  padding-right: 6px;
+  padding-left: 16px;
+  min-height: 40px;
+  min-width: 80px;
+  line-height: 38px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.sun-contextual-button.disabled {
+  opacity: 0.2;
+}
+.sun-contextual-button[pressed] {
+  background-color: #e5e5e5;
+}
+.sun-dropdown-icon-container {
+  float: right;
+}
+.sun-dropdown-icon {
+  min-width: 9px;
+  min-height: 4px;
+  margin-left: 12px;
+  margin-top: 18px;
+  background: url(../images/spinner_arrow_close.svg) no-repeat;
+  /*&.open{
+		background: @sun-dropdown-icon-open no-repeat center center;
+	}*/
+}
+/* prevent button pressed GUI when popup open */
+.sun-contextual-button.popupShow.pressed:not([disabled]) {
+  background-color: #e3e3e3;
+  color: #686868;
+}
+.sun-icon-button.popupShow.pressed:not([disabled]) {
+  background-color: #e0e0e0;
+  background-position: center 0;
+}
+.sun-footer .sun-icon-button.popupShow.pressed:not([disabled]) {
+  background-color: #ffffff;
+}
+/* ContextualPopup.css */
+.sun-contextual-popup {
+  -webkit-user-select: none;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.45);
+}
+.sun-contextual-popup.top::before {
+  border-color: transparent transparent #d0d0d0 transparent;
+  border-width: 0px 17px 17px 17px;
+  border-style: solid;
+  position: absolute;
+  content: "";
+  top: -15px;
+  width: 0px;
+  height: 0px;
+}
+.sun-contextual-popup.top.left::before {
+  left: 60px;
+}
+.sun-contextual-popup.top.right::before {
+  right: 60px;
+}
+.sun-contextual-popup.bottom::after {
+  border-color: #d0d0d0 transparent transparent transparent;
+  border-width: 17px 17px 0px 17px;
+  border-style: solid;
+  position: absolute;
+  content: "";
+  top: calc(100% - 2px);
+  width: 0px;
+  height: 0px;
+}
+.sun-contextual-popup.bottom.right::after {
+  right: 60px;
+}
+.sun-contextual-popup.bottom.left::after {
+  left: 60px;
+}
+.sun-contextual-popup.bottom.left.center::after {
+  left: 45%;
+}
+.sun-contextual-popup.top.left.center::before {
+  left: 45%;
+}
+.sun-contextual-popup.top.right.center::before {
+  left: 45%;
+}
+.sun-contextual-popup.inner-scrim.inner-scrim-translucent {
+  opacity: 0.4;
+  border-radius: 0;
+}
+/**************** Start of contextual popup animation********************/
+/*Popup Animation for 0.5 seconds*/
+.sun-contextual-popup.context-menu-effect.iconType,
+.enyo.sun-contextual-popup.context-menu-effect.iconType {
+  -webkit-animation: context-menu-effect 0.3s ease-in-out;
+  -moz-animation: context-menu-effect 0.3s ease-in-out;
+  -ms-animation: context-menu-effect 0.3s ease-in-out;
+  -o-animation: context-menu-effect 0.3s ease-in-out;
+  animation: context-menu-effect 0.3s ease-in-out;
+}
+/*Popup Animation keyframe with scaling and svg image masking for webkit*/
+@-webkit-keyframes context-menu-effect {
+  0% {
+    border-radius: 50%;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  15% {
+    border-radius: 50%;
+    -webkit-transform: scale(0.2, 0.5);
+    transform: scale(0.2, 0.5);
+  }
+  20% {
+    border-radius: 0;
+    -webkit-transform: scale(0.3, 0.6);
+    transform: scale(0.3, 0.6);
+    -webkit-mask-box-image: url(../images/context_menu_popup1.svg);
+  }
+  25% {
+    -webkit-transform: scale(0.4, 0.6);
+    transform: scale(0.4, 0.6);
+    -webkit-mask-box-image: url(../images/context_menu_popup2.svg);
+  }
+  30% {
+    -webkit-transform: scale(0.4, 0.55);
+    transform: scale(0.4, 0.55);
+    -webkit-mask-box-image: url(../images/context_menu_popup3.svg);
+  }
+  35% {
+    -webkit-transform: scale(0.7, 0.6);
+    transform: scale(0.7, 0.6);
+    -webkit-mask-box-image: url(../images/context_menu_popup4.svg);
+  }
+  55% {
+    -webkit-transform: scale(1, 0.6);
+    transform: scale(1, 0.6);
+    -webkit-mask-box-image: url(../images/context_menu_popup5.svg);
+  }
+  65% {
+    border-radius: 0;
+    -webkit-transform: scale(1.15, 0.9);
+    transform: scale(1.15, 0.9);
+    -webkit-mask-box-image: url(../images/context_menu_popup6.svg);
+  }
+  85% {
+    -webkit-transform: scale(1.2, 1.05);
+    transform: scale(1.2, 1.05);
+    -webkit-mask-box-image: url(../images/context_menu_popup7.svg);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+/*Popup Animation keyframe with scaling and svg image masking for other browser(default browser)*/
+@keyframes context-menu-effect {
+  0% {
+    border-radius: 50%;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  15% {
+    border-radius: 50%;
+    -webkit-transform: scale(0.2, 0.5);
+    transform: scale(0.2, 0.5);
+  }
+  20% {
+    border-radius: 0;
+    -webkit-transform: scale(0.3, 0.6);
+    transform: scale(0.3, 0.6);
+    -webkit-mask-box-image: url(../images/context_menu_popup1.svg);
+  }
+  25% {
+    -webkit-transform: scale(0.4, 0.6);
+    transform: scale(0.4, 0.6);
+    -webkit-mask-box-image: url(../images/context_menu_popup2.svg);
+  }
+  30% {
+    -webkit-transform: scale(0.4, 0.55);
+    transform: scale(0.4, 0.55);
+    -webkit-mask-box-image: url(../images/context_menu_popup3.svg);
+  }
+  35% {
+    -webkit-transform: scale(0.7, 0.6);
+    transform: scale(0.7, 0.6);
+    -webkit-mask-box-image: url(../images/context_menu_popup4.svg);
+  }
+  55% {
+    -webkit-transform: scale(1, 0.6);
+    transform: scale(1, 0.6);
+    -webkit-mask-box-image: url(../images/context_menu_popup5.svg);
+  }
+  65% {
+    border-radius: 0;
+    -webkit-transform: scale(1.15, 0.9);
+    transform: scale(1.15, 0.9);
+    -webkit-mask-box-image: url(../images/context_menu_popup6.svg);
+  }
+  85% {
+    -webkit-transform: scale(1.2, 1.05);
+    transform: scale(1.2, 1.05);
+    -webkit-mask-box-image: url(../images/context_menu_popup7.svg);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+/*Pseudo nub after Animation*/
+.sun-contextual-popup.nub-after-effect.iconType:after,
+.enyo.sun-contextual-popup.nub-after-effect.iconType:after {
+  -webkit-animation: nub-after-effect 0.3s;
+  -moz-animation: nub-after-effect 0.3s;
+  -ms-animation: nub-after-effect 0.3s;
+  -o-animation: nub-after-effect 0.3s;
+  animation: nub-after-effect 0.3s;
+}
+/*Pseudo nub after Animation keyframe with transform for webkit*/
+@-webkit-keyframes nub-after-effect {
+  0% {
+    -webkit-transform: translateY(-35px);
+    transform: translateY(-35px);
+  }
+  95% {
+    -webkit-transform: translateY(-35px);
+    transform: translateY(-35px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+/*Pseudo nub after Animation keyframe with transform for other browser (default browser)*/
+@keyframes nub-after-effect {
+  0% {
+    -webkit-transform: translateY(-35px);
+    transform: translateY(-35px);
+  }
+  95% {
+    -webkit-transform: translateY(-35px);
+    transform: translateY(-35px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+/*Pseudo nub before Animation*/
+.sun-contextual-popup.nub-before-effect.iconType:before,
+.enyo.sun-contextual-popup.nub-before-effect.iconType:before {
+  -webkit-animation: nub-before-effect 0.3s;
+  -moz-animation: nub-before-effect 0.3s;
+  -ms-animation: nub-before-effect 0.3s;
+  -o-animation: nub-before-effect 0.3s;
+  animation: nub-before-effect 0.3s;
+}
+/*Pseudo nub after Animation keyframe with transform for webkit*/
+@-webkit-keyframes nub-before-effect {
+  0% {
+    -webkit-transform: translateY(35px);
+    transform: translateY(35px);
+  }
+  95% {
+    -webkit-transform: translateY(35px);
+    transform: translateY(35px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+/*Pseudo nub after Animation keyframe with transform for other browser (default browser)*/
+@keyframes nub-before-effect {
+  0% {
+    -webkit-transform: translateY(35px);
+    transform: translateY(35px);
+  }
+  95% {
+    -webkit-transform: translateY(35px);
+    transform: translateY(35px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+/**************** end of context popup animation ********************/
+/**************** start of option menu animation********************/
+/*top left OptionMenu Animation for 0.4 seconds*/
+.sun-contextual-popup.top.left.option-menu-effect {
+  -webkit-transform-origin: 10% 0;
+  -moz-transform-origin: 10% 0;
+  -o-transform-origin: 10% 0;
+  -ms-transform-origin: 10% 0;
+  transform-origin: 10% 0;
+  -webkit-animation: option-menu-top-effect 0.4s ease-in-out;
+  -moz-animation: option-menu-top-effect 0.4s ease-in-out;
+  -ms-animation: option-menu-top-effect 0.4s ease-in-out;
+  -o-animation: option-menu-top-effect 0.4s ease-in-out;
+  animation: option-menu-top-effect 0.4s ease-in-out;
+}
+/*top right OptionMenu Animation for 0.4 seconds*/
+.sun-contextual-popup.top.right.option-menu-effect {
+  -webkit-transform-origin: 90% 0;
+  -moz-transform-origin: 90% 0;
+  -o-transform-origin: 90% 0;
+  -ms-transform-origin: 90% 0;
+  transform-origin: 90% 0;
+  -webkit-animation: option-menu-top-effect 0.4s ease-in-out;
+  -moz-animation: option-menu-top-effect 0.4s ease-in-out;
+  -ms-animation: option-menu-top-effect 0.4s ease-in-out;
+  -o-animation: option-menu-top-effect 0.4s ease-in-out;
+  animation: option-menu-top-effect 0.4s ease-in-out;
+}
+/*top center OptionMenu Animation for 0.4 seconds*/
+.sun-contextual-popup.top.left.center.option-menu-effect {
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  -o-transform-origin: 50% 0;
+  -ms-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-animation: option-menu-top-effect 0.4s ease-in-out;
+  -moz-animation: option-menu-top-effect 0.4s ease-in-out;
+  -ms-animation: option-menu-top-effect 0.4s ease-in-out;
+  -o-animation: option-menu-top-effect 0.4s ease-in-out;
+  animation: option-menu-top-effect 0.4s ease-in-out;
+}
+/*bottom left OptionMenu Animation for 0.4 seconds*/
+.sun-contextual-popup.bottom.left.option-menu-effect {
+  -webkit-transform-origin: 10% 100%;
+  -moz-transform-origin: 10% 100%;
+  -o-transform-origin: 10% 100%;
+  -ms-transform-origin: 10% 100%;
+  transform-origin: 10% 100%;
+  -webkit-animation: option-menu-bottom-effect 0.4s ease-in-out;
+  -moz-animation: option-menu-bottom-effect 0.4s ease-in-out;
+  -ms-animation: option-menu-bottom-effect 0.4s ease-in-out;
+  -o-animation: option-menu-bottom-effect 0.4s ease-in-out;
+  animation: option-menu-bottom-effect 0.4s ease-in-out;
+}
+/*bottom right OptionMenu Animation for 0.4 seconds*/
+.sun-contextual-popup.bottom.right.option-menu-effect {
+  -webkit-transform-origin: 90% 100%;
+  -moz-transform-origin: 90% 100%;
+  -o-transform-origin: 90% 100%;
+  -ms-transform-origin: 90% 100%;
+  transform-origin: 90% 100%;
+  -webkit-animation: option-menu-bottom-effect 0.4s ease-in-out;
+  -moz-animation: option-menu-bottom-effect 0.4s ease-in-out;
+  -ms-animation: option-menu-bottom-effect 0.4s ease-in-out;
+  -o-animation: option-menu-bottom-effect 0.4s ease-in-out;
+  animation: option-menu-bottom-effect 0.4s ease-in-out;
+}
+/*bottom center OptionMenu Animation for 0.4 seconds*/
+.sun-contextual-popup.bottom.left.center.option-menu-effect {
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -o-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-animation: option-menu-bottom-effect 0.4s ease-in-out;
+  -moz-animation: option-menu-bottom-effect 0.4s ease-in-out;
+  -ms-animation: option-menu-bottom-effect 0.4s ease-in-out;
+  -o-animation: option-menu-bottom-effect 0.4s ease-in-out;
+  animation: option-menu-bottom-effect 0.4s ease-in-out;
+}
+/*bottom OptionMenu Animation keyframe definition with scaling and svg image masking for webkit*/
+@-webkit-keyframes option-menu-bottom-effect {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-mask-box-image: url(../images/optionmenu1.svg) 0 0 0 0 stretch stretch;
+  }
+  20% {
+    -webkit-transform: scale(0.3, 0.4);
+    transform: scale(0.3, 0.4);
+    -webkit-mask-box-image: url(../images/optionmenu1.svg) 0 0 0 0 stretch stretch;
+  }
+  25% {
+    -webkit-transform: scale(0.4, 0.5);
+    transform: scale(0.5, 0.6);
+    -webkit-mask-box-image: url(../images/optionmenu2.svg) 0 0 0 0 stretch stretch;
+  }
+  30% {
+    -webkit-transform: scale(0.5, 0.6);
+    transform: scale(0.7, 0.8);
+    -webkit-mask-box-image: url(../images/optionmenu3.svg) 0 0 0 0 stretch stretch;
+  }
+  31% {
+    -webkit-transform: scale(0.5, 0.6);
+    transform: scale(0.7, 0.8);
+    -webkit-mask-box-image: url(../images/optionmenu4.svg) 0 0 0 0 stretch stretch;
+  }
+  50% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-mask-box-image: url(../images/optionmenu4.svg) 0 0 0 0 stretch stretch;
+  }
+  70% {
+    -webkit-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
+    -webkit-mask-box-image: url(../images/optionmenu5.svg) 0 0 0 0 stretch stretch;
+  }
+  90% {
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+    -webkit-mask-box-image: url(../images/optionmenu6.svg) 0 0 0 0 stretch stretch;
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+/*bottom OptionMenu Animation keyframe definition with scaling and svg image masking for other browsers*/
+@keyframes option-menu-bottom-effect {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-mask-box-image: url(../images/optionmenu1.svg) 0 0 0 0 stretch stretch;
+  }
+  20% {
+    -webkit-transform: scale(0.3, 0.4);
+    transform: scale(0.3, 0.4);
+    -webkit-mask-box-image: url(../images/optionmenu1.svg) 0 0 0 0 stretch stretch;
+  }
+  25% {
+    -webkit-transform: scale(0.4, 0.5);
+    transform: scale(0.5, 0.6);
+    -webkit-mask-box-image: url(../images/optionmenu2.svg) 0 0 0 0 stretch stretch;
+  }
+  30% {
+    -webkit-transform: scale(0.5, 0.6);
+    transform: scale(0.7, 0.8);
+    -webkit-mask-box-image: url(../images/optionmenu3.svg) 0 0 0 0 stretch stretch;
+  }
+  31% {
+    -webkit-transform: scale(0.5, 0.6);
+    transform: scale(0.7, 0.8);
+    -webkit-mask-box-image: url(../images/optionmenu4.svg) 0 0 0 0 stretch stretch;
+  }
+  50% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-mask-box-image: url(../images/optionmenu4.svg) 0 0 0 0 stretch stretch;
+  }
+  70% {
+    -webkit-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
+    -webkit-mask-box-image: url(../images/optionmenu5.svg) 0 0 0 0 stretch stretch;
+  }
+  90% {
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+    -webkit-mask-box-image: url(../images/optionmenu6.svg) 0 0 0 0 stretch stretch;
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+/*top OptionMenu Animation keyframe definition with scaling and svg image masking for webkit*/
+@-webkit-keyframes option-menu-top-effect {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-mask-box-image: url(../images/optionmenu1i.svg) 0 0 0 0 stretch stretch;
+  }
+  20% {
+    -webkit-transform: scale(0.3, 0.4);
+    transform: scale(0.3, 0.4);
+    -webkit-mask-box-image: url(../images/optionmenu1i.svg) 0 0 0 0 stretch stretch;
+  }
+  25% {
+    -webkit-transform: scale(0.4, 0.5);
+    transform: scale(0.5, 0.6);
+    -webkit-mask-box-image: url(../images/optionmenu2i.svg) 0 0 0 0 stretch stretch;
+  }
+  30% {
+    -webkit-transform: scale(0.5, 0.6);
+    transform: scale(0.7, 0.8);
+    -webkit-mask-box-image: url(../images/optionmenu3i.svg) 0 0 0 0 stretch stretch;
+  }
+  31% {
+    -webkit-transform: scale(0.5, 0.6);
+    transform: scale(0.7, 0.8);
+    -webkit-mask-box-image: url(../images/optionmenu4i.svg) 0 0 0 0 stretch stretch;
+  }
+  50% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-mask-box-image: url(../images/optionmenu4i.svg) 0 0 0 0 stretch stretch;
+  }
+  70% {
+    -webkit-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
+    -webkit-mask-box-image: url(../images/optionmenu5i.svg) 0 0 0 0 stretch stretch;
+  }
+  90% {
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+    -webkit-mask-box-image: url(../images/optionmenu6i.svg) 0 0 0 0 stretch stretch;
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+/*top OptionMenu Animation keyframe definition with scaling and svg image masking for other browsers*/
+@keyframes option-menu-top-effect {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-mask-box-image: url(../images/optionmenu1i.svg) 0 0 0 0 stretch stretch;
+  }
+  20% {
+    -webkit-transform: scale(0.3, 0.4);
+    transform: scale(0.3, 0.4);
+    -webkit-mask-box-image: url(../images/optionmenu1i.svg) 0 0 0 0 stretch stretch;
+  }
+  25% {
+    -webkit-transform: scale(0.4, 0.5);
+    transform: scale(0.5, 0.6);
+    -webkit-mask-box-image: url(../images/optionmenu2i.svg) 0 0 0 0 stretch stretch;
+  }
+  30% {
+    -webkit-transform: scale(0.5, 0.6);
+    transform: scale(0.7, 0.8);
+    -webkit-mask-box-image: url(../images/optionmenu3i.svg) 0 0 0 0 stretch stretch;
+  }
+  31% {
+    -webkit-transform: scale(0.5, 0.6);
+    transform: scale(0.7, 0.8);
+    -webkit-mask-box-image: url(../images/optionmenu4i.svg) 0 0 0 0 stretch stretch;
+  }
+  50% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-mask-box-image: url(../images/optionmenu4i.svg) 0 0 0 0 stretch stretch;
+  }
+  70% {
+    -webkit-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
+    -webkit-mask-box-image: url(../images/optionmenu5i.svg) 0 0 0 0 stretch stretch;
+  }
+  90% {
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+    -webkit-mask-box-image: url(../images/optionmenu6i.svg) 0 0 0 0 stretch stretch;
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+/**************** End of option menu animation********************/
+/*
+	Put anything you reference with "url()" in ../assets/
+	This way, you can minify your application, and just remove the "source" folder for production
+*/
+.sun-gridlist {
+  height: 100%;
+  /*activate the GPU for compositing each page */
+  -webkit-transform: translate3d(0, 0, 0);
+  z-index: 1;
+}
+.sun-gridlist-row {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  vertical-align: top;
+  border: 0;
+  padding: 0;
+  margin: 0 auto;
+  /* TODO: Investigate if these properties cause scrolling performance issues */
+  /*
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 2px 3px rgba(0,0,0,0.5);
+	-ms-box-shadow: 0 2px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+	*/
+}
+.sun-gridlist-dummy {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  z-index: -1;
+}
+/*
+	Put anything you reference with "url()" in ../assets/
+	This way, you can minify your application, and just remove the "source" folder for production
+*/
+.sun-gridlist-imageitem {
+  width: 100%;
+  height: 100%;
+}
+.sun-gridlist-imageitem img {
+  display: block;
+  width: 100%;
+}
+.sun-gridlist-imageitem .caption {
+  text-align: center;
+  font-size: 18px;
+  z-index: 10;
+  padding-top: 6px;
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #ffffff;
+}
+.sun-gridlist-imageitem.disabled {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+}
+/* Header.css */
+.sun-header {
+  color: #ffffff;
+  height: 56px;
+  background: url("../images/bg_action_bar_watch_manager.svg") no-repeat;
+  background-size: cover;
+}
+.sun-header.sun-no-backButton .sun-header-backIcon {
+  display: none;
+}
+.sun-header-backIcon {
+  min-width: 56px;
+  min-height: 56px;
+  background: url("../images/ic_ab_back_am.svg") center center no-repeat;
+}
+.sun-header-title {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: normal;
+  min-height: 56px;
+  line-height: 56px;
+  white-space: nowrap;
+  padding: 0 16px;
+}
+.header-Content.pressed {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.sun-header-client {
+  position: absolute;
+  right: 0;
+  padding: 0 8px;
+}
+.sun-header-client * {
+  float: left;
+}
+/* Icon.css */
+.inner-icon {
+  width: 45px;
+  height: 45px;
+  display: inline-block;
+}
+.sun-icon {
+  width: 48px;
+  height: 48px;
+  background-position: center 0;
+}
+.sun-icon.small {
+  width: 32px;
+  height: 32px;
+  background-position: center 0;
+}
+.sun-icon.large {
+  width: 64px;
+  height: 64px;
+  background-position: center 0;
+}
+.sun-icon-setting {
+  background-image: url(../images/btn_setting.svg);
+}
+/* IconButton.css */
+.sun-icon-button {
+  cursor: pointer;
+  box-sizing: border-box;
+  border-radius: 24px;
+}
+.sun-icon-button.small {
+  border-radius: 16px;
+}
+.sun-icon-button.large {
+  border-radius: 32px;
+}
+.sun-icon-button.pressed:not([disabled]) {
+  background-position: center -48px;
+}
+.sun-icon-button.pressed:not([disabled]).no-background {
+  background-color: transparent;
+}
+.sun-icon-button.pressed:not([disabled]).small {
+  background-position: center -30px;
+}
+.sun-icon-button.pressed:not([disabled]).large {
+  background-position: center -62px;
+}
+.sun-icon-button[disabled] {
+  cursor: default;
+  background-position: center -144px;
+}
+.sun-icon-button.no-background {
+  background-color: transparent;
+  border-color: transparent;
+}
+/* Input.css */
+.sun-input {
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 0;
+  line-height: normal;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+  box-shadow: none;
+  color: #b5b5b5;
+}
+.sun-input-decorator.sun-focused .sun-input {
+  cursor: text;
+  color: #000000;
+}
+.sun-input-decorator.sun-disabled .sun-input {
+  cursor: default;
+}
+.sun-input-decorator > input::-webkit-input-placeholder {
+  color: #b5b5b5;
+}
+.sun-input-decorator > input:-moz-placeholder {
+  color: #b5b5b5;
+}
+/* IE10 */
+.sun-input-decorator.sun-focused > input:-ms-input-placeholder {
+  color: #b5b5b5;
+}
+/* InputDecorator.css */
+.sun-input-decorator {
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 0;
+  padding: 8.5px 16px;
+  border-radius: 3px;
+  border: none;
+  background-color: #f0f1f1;
+  height: 40px;
+  box-sizing: border-box;
+}
+.sun-textarea-decorator {
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 0;
+  margin: 0px;
+  padding: 8.5px 16px;
+  border-radius: 3px;
+  border: 1px solid #a2a2a2;
+  background-color: #f0f1f1;
+  color: #a2a2a2;
+  box-sizing: border-box;
+}
+.sun-input-decorator.sun-disabled,
+.sun-textarea-decorator.sun-disabled {
+  background-color: #f5f5f5;
+}
+.sun-input-decorator.sun-focused,
+.sun-textarea-decorator.sun-focused {
+  border: 1px solid #1ddbd8;
+  background-color: #ffffff;
+}
+.sun-textarea-decorator > textarea::-webkit-input-placeholder {
+  color: #b5b5b5;
+}
+.sun-textarea-decorator > textarea:-moz-placeholder {
+  color: #b5b5b5;
+}
+/* IE10 */
+.sun-textarea-decorator > textarea:-ms-input-placeholder {
+  color: #b5b5b5;
+}
+.sun-panels > * {
+  width: 100%;
+}
+.sun-panel {
+  -webkit-transform: scale3d(1, 1, 1);
+  overflow: hidden;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+.sun-panel.enyo-fit {
+  height: auto;
+}
+.sun-panel-body {
+  overflow: hidden;
+  position: relative;
+}
+/* Popup.css */
+.inner-popup {
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+.inner-popup-overflow-hidden {
+  overflow: hidden;
+}
+.sun-popup {
+  position: absolute;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  max-height: 80%;
+}
+.sun-popup .sun-dark-gray * {
+  color: #4b4b4b;
+}
+/* ProgressBar.css */
+.sun-progress-bar {
+  position: relative;
+  border-radius: 3px;
+  height: 4px;
+  background-color: #6f7071;
+  min-width: 128px;
+}
+.sun-progress-bg-bar {
+  height: 100%;
+  border-radius: 3px;
+  background-color: #b1b1b1;
+  position: absolute;
+  top: 0;
+}
+.sun-progress-bar-bar {
+  height: 100%;
+  border-radius: 3px;
+  background-color: #1ddbd8;
+  position: absolute;
+  top: 0;
+}
+/* Radio.css */
+.sun-radio {
+  background: url(../images/btn_radio_off.svg) no-repeat;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin: 0;
+  /* reset for ? */
+  vertical-align: middle;
+  /* these entries cause toggle-button and checkbox to line up properly */
+  cursor: pointer;
+}
+.sun-radio[pressed] {
+  background: url(../images/btn_radio_off.svg) no-repeat;
+  background-position: 0 -64px;
+}
+.sun-radio[focused] {
+  background: url(../images/btn_radio_off.svg) no-repeat;
+  background-position: 0 -64px;
+}
+.sun-radio[disabled] {
+  background: url(../images/btn_radio_off.svg) no-repeat;
+  background-position: 0 -32px;
+  cursor: default;
+}
+.sun-radio[checked] {
+  background: url(../images/btn_radio_on.svg) no-repeat;
+}
+.sun-radio[checked][pressed] {
+  background: url(../images/btn_radio_on.svg) no-repeat;
+  background-position: 0 -64px;
+}
+.sun-radio[checked][disabled] {
+  background: url(../images/btn_radio_on.svg) no-repeat;
+  background-position: 0 -32px;
+  cursor: default;
+}
+/* RadioItem */
+.sun-radio-item {
+  display: block;
+  position: relative;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  padding: 0 16px;
+  min-height: 32px;
+}
+.sun-radio-item .sun-radio-item-label-wrapper {
+  margin-right: 48px;
+  line-height: 32px;
+}
+.sun-radio-item .sun-radio-item-subContent-wrapper {
+  font-size: 14px;
+  color: #b5b5b5;
+  margin-right: 48px;
+  line-height: 16px;
+}
+.sun-radio-item .sun-radio {
+  position: absolute;
+  top: 50%;
+  left: auto;
+  right: 16px;
+  margin-top: -16px;
+}
+.sun-radio-item.disabled .sun-radio-item-label-wrapper,
+.sun-radio-item.disabled .sun-radio-item-subContent-wrapper {
+  cursor: default;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+}
+/* Left-handed radio */
+.sun-radio-item.left-handed .sun-radio {
+  left: 16px;
+}
+/* Label */
+.sun-radio-item.left-handed .sun-radio-item-label-wrapper {
+  margin-right: 0px;
+  margin-left: 56px;
+}
+.sun-radio-item.left-handed .sun-radio-item-subContent-wrapper {
+  margin-right: 0px;
+  margin-left: 56px;
+}
+/* Scrim.css */
+.inner-scrim {
+  z-index: 1;
+  /*
+		note: by using pointer-events we allow tapping on scrim
+		while it is fading out; however, this requires any showing classes
+		to set pointer events to auto or scrim will not function as expected.
+	*/
+  pointer-events: none;
+}
+.inner-scrim.inner-scrim-translucent {
+  pointer-events: auto;
+  background-color: #000000;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+}
+.inner-scrim.inner-scrim-transparent {
+  pointer-events: auto;
+  background: transparent;
+}
+.sun-slider {
+  margin: 20px;
+}
+.sun-slider-taparea {
+  position: absolute;
+  top: -18px;
+  height: 38px;
+  width: 100%;
+}
+.sun-slider-knob {
+  position: absolute;
+  top: 10px;
+  height: 20px;
+  width: 20px;
+  margin-left: -10px;
+  background-color: #1ddbd8;
+  border-radius: 10px;
+}
+.sun-slider-knob.disabled {
+  background-color: #f0f1f1;
+  box-shadow: 0 0 0 #cecece;
+}
+.sun-slider-knob-pressed {
+  top: 0;
+  height: 40px;
+  width: 40px;
+  margin-left: -20px;
+  border-radius: 20px;
+}
+.sun-slider.disabled {
+  cursor: default;
+  opacity: 0.6;
+}
+.sun-slider-popup {
+  position: absolute;
+  display: block;
+  white-space: nowrap;
+  z-index: 20;
+  left: 50%;
+}
+.sun-slider-popup.sun-slider-popup-flip-h {
+  left: auto;
+  right: 50%;
+}
+.sun-slider-popup-arrow {
+  position: absolute;
+  top: 40px;
+  width: 40px;
+  height: 50px;
+}
+.sun-slider-popup-label {
+  white-space: nowrap;
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
+  color: #ffffff;
+}
+.sun-slider-popup-flip-h {
+  transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+}
+/* Spinner.css */
+.sun-spinner {
+  display: inline-block;
+  min-height: 48px;
+  min-width: 48px;
+  background: url("../images/spinner_white_48.svg") no-repeat center center;
+  -webkit-animation: spin 1.83s infinite linear;
+  animation: spin 1.83s infinite linear;
+}
+.sun-spinner.small {
+  min-height: 24px;
+  min-width: 24px;
+  background: url("../images/spinner_white_24.svg") no-repeat center center;
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotateZ(360deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(0deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotateZ(360deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+/* Tab.css */
+.sun-tabbar {
+  background: url(../images/bg_action_bar_watch_manager.svg) no-repeat;
+  background-size: cover;
+  white-space: nowrap;
+  height: 48px;
+}
+.sun-tabbar-item {
+  display: block;
+  padding-top: 10px;
+  padding-left: 1px;
+  font-size: 16px;
+  overflow: hidden;
+  text-align: center;
+}
+.sun-tabbar-item-wrapper {
+  color: #ffffff;
+  border-radius: 18px;
+  height: 36px;
+  margin-top: 6px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.sun-tab-mask {
+  -webkit-mask-image: -webkit-linear-gradient(left, #000000, #000000 80%, rgba(0, 0, 0, 0));
+  -webkit-mask-image: linear-gradient(left, #000000, #000000 80%, rgba(0, 0, 0, 0));
+}
+.sun-tabbar-inline > * {
+  white-space: nowrap;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.sun-tab-layout {
+  height: 100%;
+  width: 100%;
+}
+.sun-tab-layout.enyo-fit {
+  height: auto;
+}
+.sun-tabbar-item-selected {
+  color: #435461;
+  font-weight: bold;
+  opacity: 1;
+  border-radius: 18px;
+  background-color: #ffffff;
+}
+.sun-tabbar-item-wrapper.sun-tabbar-item-active {
+  background-color: #000000;
+  opacity: 0.2;
+  color: #435461;
+  font-weight: bold;
+}
+.sun-tabbar-item-selected.sun-tabbar-item-selected-active {
+  background-color: #cccccc;
+  opacity: 1;
+  color: #435461;
+  font-weight: bold;
+}
+/* ToastPopup.css */
+.sun-toastpopup {
+  z-index: 20;
+  bottom: 36px;
+  max-width: 50%;
+  box-sizing: initial;
+  -webkit-box-sizing: initial;
+  background-repeat: no-repeat;
+  background-color: #00c5d7;
+  text-align: center;
+  padding: 0;
+  min-height: 20px;
+  max-height: 200px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+}
+.sun-toastpopup-label {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
+  padding: 10px 12px;
+  border-radius: 9999px;
+  background-color: #00c5d7;
+}
+.sun-toggle-button {
+  background: url(../images/switch_bg_latin.svg) no-repeat;
+  height: 34px;
+  width: 62px;
+}
+.sun-toggle-button.disabled {
+  background-position: 0 -68px;
+}
+.sun-toggle-button-knob {
+  position: relative;
+  background: url(../images/switch_thumb_latin_activated.svg) no-repeat;
+  width: 34px;
+  height: 34px;
+  left: 45%;
+  cursor: pointer;
+}
+.sun-toggle-button-knob.off {
+  background: url(../images/switch_thumb_latin.svg) no-repeat;
+  left: 0%;
+}
+.sun-toggle-button-knob[pressed] {
+  background-position: 0 -102px;
+}
+.disabled .sun-toggle-button-knob {
+  background-position: 0 -68px;
+}
+/* Put this at the end because we want these to take precedence over others */

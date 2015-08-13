@@ -1,0 +1,8 @@
+/* LayoutBoxSample.css */
+
+.garnet.g-sample {
+	font-size: 10px;
+}
+.garnet.g-sample .box {
+	color: gray;
+}
